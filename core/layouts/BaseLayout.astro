@@ -53,7 +53,7 @@ const website = {
     {home && <link rel="preload" as="image" href={client.heroDesktop} media="(min-width: 701px)" fetchpriority="high" />}
     {home && <link rel="preload" as="image" href={client.heroMobile} media="(max-width: 700px)" fetchpriority="high" />}
   </head>
-  <body class={home ? 'home-page' : 'inner-page'}>
+  <body class:list={[home ? 'home-page' : 'inner-page', client.layout !== 'legacy' && `layout-${client.layout}`]}>
     <a class="skip-link" href="#main">Skip to content</a>
     <SiteHeader home={home} />
     <slot />

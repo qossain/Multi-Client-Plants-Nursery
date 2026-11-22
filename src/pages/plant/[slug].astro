@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../../core/layouts/BaseLayout.astro';
-import PlantCard from '../../../core/components/PlantCard.astro';
+import { productCards } from '../../../core/variants/registry';
 import { categoryFor, plants, plantsFor, priceLabel } from '../../data/catalog';
 import { client } from '../../../core/client';
 
@@ -9,6 +9,7 @@ export function getStaticPaths() {
 }
 
 const { plant } = Astro.props;
+const PlantCard = productCards[client.productCard as keyof typeof productCards];
 const category = categoryFor(plant.category)!;
 const related = plantsFor(plant.category).filter((item) => item.slug !== plant.slug).slice(0, 4);
 const photos = plant.photoVariants ?? [plant.image, ...(plant.originalImage ? [plant.originalImage] : []), ...(plant.additionalImages ?? [])].map((image) => ({ image, detail: plant.detail, price: plant.price }));

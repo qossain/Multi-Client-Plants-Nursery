@@ -65,6 +65,28 @@ button { color: inherit; }
 .brand small { display: block; margin-top: 4px; color: var(--muted); font-size: 9px; font-weight: 500; letter-spacing: .13em; text-transform: uppercase; }
 .site-nav { grid-column: 2; justify-self: center; display: flex; align-items: center; gap: clamp(18px, 2.4vw, 34px); }
 .site-nav a { color: var(--legacy-color-13); font-size: 12px; font-weight: 500; transition: color .2s ease, background .2s ease, transform .2s ease; }
+.layout-catalog .site-nav a { font-size: 13px; }
+
+/* Provisional concept layouts until client-specific designs are approved. */
+.concept-hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 70vh; background: var(--bg); color: var(--text); }
+.concept-hero-image { min-height: 400px; }
+.concept-hero-image img { width: 100%; height: 100%; object-fit: cover; }
+.concept-hero-copy { align-self: center; padding: clamp(2rem, 7vw, 7rem); }
+.concept-hero-copy h1 { font: 500 clamp(2.6rem, 5vw, 5rem)/1.05 var(--font-heading); margin: 0 0 1rem; }
+.concept-hero-copy p { margin: 0 0 2rem; }
+.concept-hero[data-variant="family-garden-center"] .concept-hero-image,
+.concept-hero[data-variant="desert-xeriscaping"] .concept-hero-image { order: 2; }
+.concept-hero[data-variant="unkillable-urban"] { grid-template-columns: 3fr 2fr; }
+.concept-hero[data-variant="biophilic-commercial"] { grid-template-columns: 2fr 3fr; }
+.concept-hero[data-variant="desert-xeriscaping"] .concept-hero-copy h1 { font-family: var(--font-body); }
+.rounded-plant-card { min-width: 0; }
+.rounded-plant-card .plant-card-image { overflow: hidden; border-radius: var(--radius); }
+@media (max-width: 700px) {
+  .concept-hero, .concept-hero[data-variant="unkillable-urban"], .concept-hero[data-variant="biophilic-commercial"] { grid-template-columns: 1fr; }
+  .concept-hero-image { min-height: 260px; }
+  .concept-hero[data-variant="family-garden-center"] .concept-hero-image,
+  .concept-hero[data-variant="desert-xeriscaping"] .concept-hero-image { order: 0; }
+}
 .site-nav a:hover, .site-nav a:focus-visible { color: var(--forest); }
 .site-nav .nav-contact { position: absolute; top: 50%; right: 9px; padding: 10px 18px; color: var(--white); background: var(--forest); border-radius: 999px; transform: translateY(-50%); }
 .site-nav .nav-contact:hover { color: var(--white); background: var(--legacy-color-14); transform: translateY(calc(-50% - 1px)); }

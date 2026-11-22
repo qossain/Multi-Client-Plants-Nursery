@@ -1,15 +1,15 @@
 ---
 import BaseLayout from '../../core/layouts/BaseLayout.astro';
-import Hero from '../../core/components/Hero.astro';
 import Experience from '../../core/components/Experience.astro';
 import CategoryCarousel from '../../core/components/CategoryCarousel.astro';
 import Services from '../../core/components/Services.astro';
 import Testimonials from '../../core/components/Testimonials.astro';
-import PlantCard from '../../core/components/PlantCard.astro';
-import { plants } from '../data/catalog';
+import Featured from '../../core/components/Featured.astro';
 import { client } from '../../core/client';
+import { heroes } from '../../core/variants/registry';
 
-const featuredPlants = plants.filter((plant) => client.featured.includes(plant.slug));
+const Hero = heroes[client.hero as keyof typeof heroes];
+const sections = { hero: Hero, about: Experience, categories: CategoryCarousel, services: Services, featured: Featured, testimonials: Testimonials };
 ---
 
 <BaseLayout
@@ -18,21 +18,6 @@ const featuredPlants = plants.filter((plant) => client.featured.includes(plant.s
   home
 >
   <main id="main">
-    <Hero />
-    <Experience />
-    <CategoryCarousel />
-    <Services />
-    <section class="featured-products" aria-labelledby="featured-products-title">
-      <div class="section-wrap">
-        <div class="collections-heading featured-heading">
-          <h2 id="featured-products-title">Trending Products</h2>
-        </div>
-        <div class="plant-grid">
-          {featuredPlants.map((plant) => <PlantCard plant={plant} />)}
-        </div>
-        <div class="featured-action"><a class="button button-dark" href="/plants/"><span>View all plants</span></a></div>
-      </div>
-    </section>
-    <Testimonials />
+    {client.sections.map((id) => { const Section = sections[id as keyof typeof sections]; return <Section client={client} />; })}
   </main>
 </BaseLayout>

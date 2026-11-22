@@ -61,3 +61,8 @@ Update this file after each meaningful change: date, scope, verification, next s
 
 - Added checks for client fields, catalog relationships, product prices and local image paths, plus a legacy theme and five provisional concept palettes. Color literals in the shared stylesheet were extracted to theme variables; reconstructing the original CSS from those variables matched the prior source exactly. The concept palettes are placeholders, not approved Figma designs.
 - The first client build succeeded with 259 pages and the existing client-selection test passed. No visual regression, multiple-client isolation, or malformed-data test suite has yet been completed; other-client builds remain blocked.
+
+## 2026-11-22 — Section and variant registry
+
+- Added a section-order registry, a common hero props interface, legacy and five provisional concept hero variants, and legacy/rounded product-card variants. Added early key validation. The concept visuals are placeholders and require design approval before client use.
+- The first-client build succeeded with 259 pages. A text and image/link extraction of home, directory, one category, one product and 404 matched the existing original build. This is not a visual or interaction comparison. Other-client builds remain blocked.

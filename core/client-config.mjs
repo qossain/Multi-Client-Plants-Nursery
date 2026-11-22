@@ -20,6 +20,9 @@ export function loadClient(slug) {
     if (typeof config[key] !== 'string' || !config[key].trim()) throw new Error(`Client ${slug}: ${key} must be a nonempty string.`);
   }
   if (!['legacy', 'rare-aroids', 'family-garden-center', 'unkillable-urban', 'biophilic-commercial', 'desert-xeriscaping'].includes(config.theme)) throw new Error(`Client ${slug}: unknown theme ${config.theme}.`);
+  if (!['legacy', 'catalog'].includes(config.layout)) throw new Error(`Client ${slug}: unknown layout ${config.layout}.`);
+  if (!['legacy', 'rare-aroids', 'family-garden-center', 'unkillable-urban', 'biophilic-commercial', 'desert-xeriscaping'].includes(config.hero)) throw new Error(`Client ${slug}: unknown hero ${config.hero}.`);
+  if (!['legacy', 'rounded'].includes(config.productCard)) throw new Error(`Client ${slug}: unknown product card ${config.productCard}.`);
   if (!/^\+\d{7,15}$/.test(config.phone) || !/^\d{7,15}$/.test(config.whatsapp)) throw new Error(`Client ${slug}: phone and WhatsApp must use international digits.`);
   try {
     if (new URL(config.site).protocol !== 'https:') throw new Error();
@@ -29,6 +32,7 @@ export function loadClient(slug) {
   for (const key of ['sections', 'featured', 'shrubs', 'awards']) {
     if (!Array.isArray(config[key]) || config[key].some((value) => typeof value !== 'string' || !value)) throw new Error(`Client ${slug}: ${key} must be an array of nonempty strings.`);
   }
+  if (new Set(config.sections).size !== config.sections.length || config.sections.some((id) => !['hero', 'about', 'categories', 'services', 'featured', 'testimonials'].includes(id))) throw new Error(`Client ${slug}: invalid or duplicate section.`);
   if (!Number.isInteger(config.founded) || config.founded < 1 || config.founded > new Date().getUTCFullYear()) throw new Error(`Client ${slug}: founded must be a valid year.`);
   for (const key of ['reviewCount', 'clientCount']) {
     if (!Number.isSafeInteger(config[key]) || config[key] < 0) throw new Error(`Client ${slug}: ${key} must be a nonnegative integer.`);

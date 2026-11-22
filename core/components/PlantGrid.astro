@@ -1,6 +1,8 @@
 ---
 import { categories, type Plant } from '../../src/data/catalog';
-import PlantCard from './PlantCard.astro';
+import { client } from '../client';
+import { productCards } from '../variants/registry';
+const PlantCard = productCards[client.productCard as keyof typeof productCards];
 
 interface Props {
   plants: Plant[];

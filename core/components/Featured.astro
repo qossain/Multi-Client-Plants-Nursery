@@ -1,0 +1,18 @@
+---
+import { client } from '../client';
+import { productCards } from '../variants/registry';
+import { plants } from '../../src/data/catalog';
+const ProductCard = productCards[client.productCard as keyof typeof productCards];
+const featuredPlants = plants.filter((plant) => client.featured.includes(plant.slug));
+---
+<section class="featured-products" aria-labelledby="featured-products-title">
+  <div class="section-wrap">
+    <div class="collections-heading featured-heading">
+      <h2 id="featured-products-title">Trending Products</h2>
+    </div>
+    <div class="plant-grid">
+      {featuredPlants.map((plant) => <ProductCard plant={plant} />)}
+    </div>
+    <div class="featured-action"><a class="button button-dark" href="/plants/"><span>View all plants</span></a></div>
+  </div>
+</section>
