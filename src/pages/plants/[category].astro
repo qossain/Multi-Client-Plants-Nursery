@@ -13,18 +13,17 @@ export function getStaticPaths() {
 
 const { category } = Astro.props;
 const listings = plantsFor(category.slug);
-const hero = ['trees', 'topiary', 'shrubs'].includes(category.slug) ? 'outdoor' : category.slug;
 ---
 
-<BaseLayout title={`${category.title} in ${client.locality} | ${client.name}`} description={`${category.description} Contact ${client.name} in ${client.storyLocation}, for availability and prices.`} image={category.coverImage}>
+<BaseLayout title={`${category.title}${client.locality ? ` in ${client.locality}` : ''} | ${client.name}`} description={client.copy.categoryMeta.replace('{description}', category.description).replace('{name}', client.name).replace('{location}', client.storyLocation ? ` in ${client.storyLocation}` : '')} image={category.coverImage}>
   <main id="main">
     <header class="category-hero">
       <picture class="category-hero-image">
-        <source media="(max-width: 700px)" srcset={`/category-heroes/${hero}-mobile.webp`} />
-        <img src={`/category-heroes/${hero}-desktop.webp`} width="840" height="520" alt="" fetchpriority="high" decoding="async" />
+        <source media="(max-width: 700px)" srcset={category.heroMobile ?? category.coverImage} />
+        <img src={category.heroDesktop ?? category.coverImage} width="840" height="520" alt="" fetchpriority="high" decoding="async" />
       </picture>
       <div class="category-hero-copy">
-        <p>Plant collection</p>
+        <p>{client.copy.collectionKicker}</p>
         <h1>{category.title}</h1>
         <p>{category.description}</p>
       </div>

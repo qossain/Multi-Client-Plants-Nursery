@@ -13,37 +13,37 @@ const { plants, filterCategories = false } = Astro.props;
 ---
 
 <div class="plant-tools" data-plant-tools>
-  <label class="visually-hidden" for="plant-search">Search plants</label>
-  <input id="plant-search" class="plant-search" type="search" placeholder="Search plant names" autocomplete="off" data-plant-search />
+  <label class="visually-hidden" for="plant-search">{client.copy.searchLabel}</label>
+  <input id="plant-search" class="plant-search" type="search" placeholder={client.copy.searchPlaceholder} autocomplete="off" data-plant-search />
   {filterCategories && (
     <>
-      <label class="visually-hidden" for="plant-category">Choose a plant collection</label>
+      <label class="visually-hidden" for="plant-category">{client.copy.chooseCollection}</label>
       <select id="plant-category" class="plant-sort" data-plant-category>
-        <option value="all">All collections</option>
+        <option value="all">{client.copy.allCollections}</option>
         {categories.map((category) => <option value={category.slug}>{category.title}</option>)}
       </select>
     </>
   )}
-  <label class="visually-hidden" for="plant-sort">Sort by price</label>
+  <label class="visually-hidden" for="plant-sort">{client.copy.sortLabel}</label>
     <select id="plant-sort" class="plant-sort" data-plant-sort hidden={!filterCategories}>
-      <option value="featured">Featured</option>
-      <option value="low">Price low first</option>
-      <option value="high">Price high first</option>
+      <option value="featured">{client.copy.sortFeatured}</option>
+      <option value="low">{client.copy.sortLow}</option>
+      <option value="high">{client.copy.sortHigh}</option>
     </select>
   {!filterCategories && <details class="sort-control" data-sort-menu>
-    <summary aria-label="Sort plants"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M7 12h10m-7 5h4" /></svg></summary>
-    <div class="sort-menu" aria-label="Sort plants">
-      <button type="button" data-sort-value="featured" aria-pressed="true">Featured</button>
-      <button type="button" data-sort-value="low" aria-pressed="false">Price low first</button>
-      <button type="button" data-sort-value="high" aria-pressed="false">Price high first</button>
+    <summary aria-label={client.copy.sortPlants}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M7 12h10m-7 5h4" /></svg></summary>
+    <div class="sort-menu" aria-label={client.copy.sortPlants}>
+      <button type="button" data-sort-value="featured" aria-pressed="true">{client.copy.sortFeatured}</button>
+      <button type="button" data-sort-value="low" aria-pressed="false">{client.copy.sortLow}</button>
+      <button type="button" data-sort-value="high" aria-pressed="false">{client.copy.sortHigh}</button>
     </div>
   </details>}
-  <span class={filterCategories ? 'result-count' : 'visually-hidden'} aria-live="polite" data-result-count>{plants.length} plants</span>
+  <span class={filterCategories ? 'result-count' : 'visually-hidden'} aria-live="polite" data-result-count data-plant-one={client.copy.plantSingular} data-plant-many={client.copy.plantPlural}>{plants.length} {client.copy.plantPlural}</span>
 </div>
 <div class="plant-grid" data-plant-grid>
   {plants.map((plant, index) => <PlantCard plant={plant} priority={filterCategories && index < 4} />)}
 </div>
-<p class="empty-state" data-empty-state>No plants match that search. Try a different name.</p>
+<p class="empty-state" data-empty-state>{client.copy.noResults}</p>
 
 <script>
   const grid = document.querySelector<HTMLElement>('[data-plant-grid]');
@@ -74,7 +74,7 @@ const { plants, filterCategories = false } = Astro.props;
           : Number(second.dataset.price) - Number(first.dataset.price));
       cards.forEach((card) => { card.hidden = !matches.includes(card); });
       matches.forEach((card) => grid.append(card));
-      count.textContent = `${matches.length} ${matches.length === 1 ? 'plant' : 'plants'}`;
+      count.textContent = `${matches.length} ${matches.length === 1 ? count.dataset.plantOne : count.dataset.plantMany}`;
       empty.style.display = matches.length ? 'none' : 'block';
     };
 

@@ -5,12 +5,12 @@ import { categories, plants } from '../../data/catalog';
 import { client } from '../../../core/client';
 ---
 
-<BaseLayout title={`Plant collections | ${client.name}`} description={`Browse plant collections from ${client.name} in ${client.locality}.`}>
+<BaseLayout title={`${client.copy.collectionPageTitle} | ${client.name}`} description={client.copy.collectionMeta.replace('{name}', client.name).replace('{location}', client.locality ? ` in ${client.locality}` : '')}>
   <main id="main" class="section-wrap">
     <header class="page-heading">
-      <p class="section-kicker">The plant directory</p>
-      <h1>Explore the collections.</h1>
-      <p>Explore our plant collections and find the plants you are looking for.</p>
+      <p class="section-kicker">{client.copy.directoryKicker}</p>
+      <h1>{client.copy.directoryTitle}</h1>
+      <p>{client.copy.directoryDescription}</p>
     </header>
     <PlantGrid plants={plants} filterCategories />
   </main>

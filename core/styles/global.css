@@ -81,6 +81,7 @@ button { color: inherit; }
 .concept-hero[data-variant="desert-xeriscaping"] .concept-hero-copy h1 { font-family: var(--font-body); }
 .rounded-plant-card { min-width: 0; }
 .rounded-plant-card .plant-card-image { overflow: hidden; border-radius: var(--radius); }
+.platform-contact { padding-block: 4rem; }
 @media (max-width: 700px) {
   .concept-hero, .concept-hero[data-variant="unkillable-urban"], .concept-hero[data-variant="biophilic-commercial"] { grid-template-columns: 1fr; }
   .concept-hero-image { min-height: 260px; }

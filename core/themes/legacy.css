@@ -113,4 +113,8 @@
   --bg: var(--legacy-color-2);
   --text: var(--legacy-color-7);
   --radius: 12px;
+  --google-blue: #4285f4;
+  --google-green: #34a853;
+  --google-yellow: #fbbc05;
+  --google-red: #ea4335;
 }

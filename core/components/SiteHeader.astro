@@ -6,33 +6,33 @@ interface Props {
 
 const { home = false } = Astro.props;
 const links = [
-  { label: 'Home', href: '/' },
-  { label: 'Plants', href: '/plants/' },
-  { label: 'Our story', href: '/#story' },
-  { label: client.visitLabel, href: client.maps, external: true },
-  { label: 'Get in touch', href: `https://wa.me/${client.whatsapp}`, external: true, contact: true },
+  { label: client.copy.homeLabel, href: '/' },
+  { label: client.copy.plantsLabel, href: '/plants/' },
+  ...(client.sections.includes('about') ? [{ label: client.copy.storyLabel, href: '/#story' }] : []),
+  ...(client.maps ? [{ label: client.visitLabel, href: client.maps, external: true }] : []),
+  { label: client.copy.getInTouch, href: `https://wa.me/${client.whatsapp}`, external: true, contact: true },
 ];
 ---
 
 <header class={home ? 'site-header home-header' : 'site-header'}>
   <a class="brand" href="/" aria-label={`${client.name} home`}>
-    <img src="/logo.webp" alt="" width="44" height="44" />
+    <img src={client.logo} alt="" width="44" height="44" />
     <span>{client.brandTitle}<small>{client.brandSubtitle}</small></span>
   </a>
-  <nav class="site-nav" aria-label="Main navigation">
+  <nav class="site-nav" aria-label={client.copy.mainNavigation}>
     {links.map((link) => <a class={link.contact ? 'nav-contact' : undefined} href={link.href} target={link.external ? '_blank' : undefined} rel={link.external ? 'noreferrer' : undefined}>{link.label}</a>)}
   </nav>
-  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle>
+  <button class="menu-toggle" type="button" aria-label={client.copy.openNavigation} aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle>
     <span class="dot-matrix" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
   </button>
 </header>
 
-<dialog class="mobile-nav" id="mobile-nav" aria-label="Navigation" data-mobile-nav>
+<dialog class="mobile-nav" id="mobile-nav" aria-label={client.copy.navigation} data-mobile-nav>
   <div class="mobile-nav-top">
-    <span class="mobile-nav-brand"><img src="/logo.webp" alt="" width="42" height="42" /> {client.brandName}</span>
-    <button class="mobile-nav-close" type="button" aria-label="Close navigation" data-menu-close><span aria-hidden="true">×</span></button>
+    <span class="mobile-nav-brand"><img src={client.logo} alt="" width="42" height="42" /> {client.brandName}</span>
+    <button class="mobile-nav-close" type="button" aria-label={client.copy.closeNavigation} data-menu-close><span aria-hidden="true">×</span></button>
   </div>
-  <nav class="mobile-nav-links" aria-label="Mobile navigation">
+  <nav class="mobile-nav-links" aria-label={client.copy.mobileNavigation}>
     {links.map((link) => <a class={link.contact ? 'mobile-nav-contact' : undefined} href={link.href} target={link.external ? '_blank' : undefined} rel={link.external ? 'noreferrer' : undefined}>{link.label}</a>)}
   </nav>
 </dialog>

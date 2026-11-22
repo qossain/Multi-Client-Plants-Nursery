@@ -24,7 +24,9 @@
         "/plant-images/ornamental-10-red-anthurium.webp"
       ],
       "coverImage": "/plant-images/indoor-001.webp",
-      "description": "Explore indoor plants for rooms, offices and sheltered spaces. Ask our Pattoki nursery about suitable plants and current availability."
+      "description": "Explore indoor plants for rooms, offices and sheltered spaces. Ask our Pattoki nursery about suitable plants and current availability.",
+      "heroDesktop": "/category-heroes/indoor-desktop.webp",
+      "heroMobile": "/category-heroes/indoor-mobile.webp"
     },
     {
       "slug": "outdoor",
@@ -53,7 +55,9 @@
         "/plant-images/trees-10-bottlebrush-tree.webp"
       ],
       "coverImage": "/plant-images/outdoor-08-ficus-benjamina.webp",
-      "description": "Browse outdoor plants for gardens, courtyards and open spaces, including shrubs and ornamental greenery."
+      "description": "Browse outdoor plants for gardens, courtyards and open spaces, including shrubs and ornamental greenery.",
+      "heroDesktop": "/category-heroes/outdoor-desktop.webp",
+      "heroMobile": "/category-heroes/outdoor-mobile.webp"
     },
     {
       "slug": "fruit",
@@ -72,7 +76,9 @@
         "/plant-images/fruit-10-pineapple-plant.webp"
       ],
       "coverImage": "/plant-images/fruit-01-mango-sapling.webp",
-      "description": "Explore fruit plants and young trees for home gardens and orchards. Contact the nursery about varieties, sizes and prices."
+      "description": "Explore fruit plants and young trees for home gardens and orchards. Contact the nursery about varieties, sizes and prices.",
+      "heroDesktop": "/category-heroes/fruit-desktop.webp",
+      "heroMobile": "/category-heroes/fruit-mobile.webp"
     },
     {
       "slug": "bonsai",
@@ -91,7 +97,9 @@
         "/plant-images/bonsai-10-carmona-bonsai.webp"
       ],
       "coverImage": "/plant-images/bonsai-01-ficus-bonsai.webp",
-      "description": "Discover bonsai and shaped miniature trees for terraces, courtyards and indoor spaces. Contact us to confirm availability."
+      "description": "Discover bonsai and shaped miniature trees for terraces, courtyards and indoor spaces. Contact us to confirm availability.",
+      "heroDesktop": "/category-heroes/bonsai-desktop.webp",
+      "heroMobile": "/category-heroes/bonsai-mobile.webp"
     },
     {
       "slug": "cactus",
@@ -110,7 +118,9 @@
         "/plant-images/succulents-10-sedum-succulent.webp"
       ],
       "coverImage": "/plant-images/succulents-06-golden-barrel-cactus.webp",
-      "description": "Browse cactus plants and succulents for bright windows, patios and rock gardens. Ask the nursery about available varieties."
+      "description": "Browse cactus plants and succulents for bright windows, patios and rock gardens. Ask the nursery about available varieties.",
+      "heroDesktop": "/category-heroes/cactus-desktop.webp",
+      "heroMobile": "/category-heroes/cactus-mobile.webp"
     },
     {
       "slug": "flowering",
@@ -132,7 +142,9 @@
         "/plant-images/ornamental-09-tropical-heliconia.webp"
       ],
       "coverImage": "/plant-images/flowering-01-red-rose.webp",
-      "description": "Explore flowering plants for pots, garden borders and landscaping. Ask our nursery about seasonal selection and availability."
+      "description": "Explore flowering plants for pots, garden borders and landscaping. Ask our nursery about seasonal selection and availability.",
+      "heroDesktop": "/category-heroes/flowering-desktop.webp",
+      "heroMobile": "/category-heroes/flowering-mobile.webp"
     },
     {
       "slug": "palms",
@@ -151,7 +163,9 @@
         "/plant-images/palms-10-coconut-palm-sapling.webp"
       ],
       "coverImage": "/plant-images/palms-01-areca-palm.webp",
-      "description": "Browse palms for entrances, terraces and larger gardens, including the nursery’s Royal, Sylvester and Alexandra palms."
+      "description": "Browse palms for entrances, terraces and larger gardens, including the nursery’s Royal, Sylvester and Alexandra palms.",
+      "heroDesktop": "/category-heroes/palms-desktop.webp",
+      "heroMobile": "/category-heroes/palms-mobile.webp"
     },
     {
       "slug": "trees",
@@ -161,7 +175,9 @@
         "/plant-images/nursery-terminalia.webp"
       ],
       "coverImage": "/plant-images/nursery-terminalia.webp",
-      "description": "Explore trees for gardens, avenues and landscape projects, including Terminalia, Jamun and Pink Tabebuia."
+      "description": "Explore trees for gardens, avenues and landscape projects, including Terminalia, Jamun and Pink Tabebuia.",
+      "heroDesktop": "/category-heroes/outdoor-desktop.webp",
+      "heroMobile": "/category-heroes/outdoor-mobile.webp"
     },
     {
       "slug": "topiary",
@@ -171,7 +187,9 @@
         "/plant-images/topiary-enhanced-swan-pair.webp"
       ],
       "coverImage": "/plant-images/topiary-enhanced-swan-pair.webp",
-      "description": "Discover shaped plants and living sculptures, from Buxus cones and spirals to animal topiary for gardens and landscape projects."
+      "description": "Discover shaped plants and living sculptures, from Buxus cones and spirals to animal topiary for gardens and landscape projects.",
+      "heroDesktop": "/category-heroes/outdoor-desktop.webp",
+      "heroMobile": "/category-heroes/outdoor-mobile.webp"
     },
     {
       "slug": "shrubs",
@@ -181,7 +199,9 @@
         "/plant-images/outdoor-09-duranta-golden-shrub.webp"
       ],
       "coverImage": "/plant-images/outdoor-09-duranta-golden-shrub.webp",
-      "description": "Explore shrubs and hedging plants for garden borders, screens and outdoor spaces. Contact the nursery to check availability."
+      "description": "Explore shrubs and hedging plants for garden borders, screens and outdoor spaces. Contact the nursery to check availability.",
+      "heroDesktop": "/category-heroes/outdoor-desktop.webp",
+      "heroMobile": "/category-heroes/outdoor-mobile.webp"
     }
   ],
   "plants": [

@@ -1,12 +1,13 @@
 ---
+import { client } from '../client';
 import services from '@client-services';
 ---
 
 <section class="services" aria-labelledby="services-title">
   <div class="section-wrap">
     <div class="services-heading">
-      <div><p class="section-kicker">Plants and landscapes</p><h2 id="services-title">Our services</h2></div>
-      <p>From choosing plants to planning a landscape, find the right place to begin.</p>
+      <div><p class="section-kicker">{client.copy.servicesKicker}</p><h2 id="services-title">{client.copy.servicesTitle}</h2></div>
+      <p>{client.copy.servicesDescription}</p>
     </div>
     <div class="services-accordion" data-services-accordion>
       {services.map((service, index) => (
@@ -24,7 +25,7 @@ import services from '@client-services';
         </details>
       ))}
     </div>
-    <button class="services-control" type="button" data-services-control hidden>Pause rotation</button>
+    <button class="services-control" type="button" data-services-control data-pause-label={client.copy.pauseRotation} data-resume-label={client.copy.resumeRotation} hidden>{client.copy.pauseRotation}</button>
     <div class="service-cards">
       {services.map((service, index) => (
         <article class="service-card" style={`--stack-order: ${index}`}>
@@ -71,7 +72,7 @@ import services from '@client-services';
     accordion.addEventListener('focusout', (event) => { interacting = accordion.contains(event.relatedTarget as Node | null) || accordion.matches(':hover'); updateRotation(); });
     control.addEventListener('click', () => {
       paused = !paused;
-      control.textContent = paused ? 'Resume rotation' : 'Pause rotation';
+      control.textContent = paused ? control.dataset.resumeLabel ?? '' : control.dataset.pauseLabel ?? '';
       updateRotation();
     });
     new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; updateRotation(); }, { threshold: 0.2 }).observe(accordion);

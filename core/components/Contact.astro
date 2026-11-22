@@ -1,0 +1,10 @@
+---
+import { client } from '../client';
+---
+<section class="section-wrap platform-contact" id="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title">{client.copy.contactTitle}</h2>
+  {client.address && <p>{client.address}</p>}
+  <p><a href={`tel:${client.phone}`}>{client.displayPhone}</a></p>
+  {client.email && <p><a href={`mailto:${client.email}`}>{client.email}</a></p>}
+  <a class="button button-dark" href={`https://wa.me/${client.whatsapp}`} target="_blank" rel="noreferrer">{client.copy.whatsappLabel}</a>
+</section>

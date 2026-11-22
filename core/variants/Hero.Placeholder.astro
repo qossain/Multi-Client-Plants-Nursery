@@ -11,6 +11,6 @@ const { client, variant } = Astro.props;
   <div class="concept-hero-copy">
     <h1 id="hero-title">{client.heroTitle}<br /><em>{client.heroEmphasis}</em></h1>
     <p>{client.heroDescription}</p>
-    <a class="button button-dark" href="/plants/">Explore our plants</a>
+    <a class="button button-dark" href="/plants/">{client.copy.explorePlants}</a>
   </div>
 </section>

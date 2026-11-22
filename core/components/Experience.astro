@@ -14,19 +14,19 @@ const experienceYears = new Date().getUTCFullYear() - client.founded;
 <section class="experience" id="story" aria-labelledby="experience-title">
   <div class="section-wrap">
   <div class="experience-heading">
-    <img class="experience-logo" src="/logo.webp" alt="" width="80" height="80" loading="lazy" decoding="async" />
+    <img class="experience-logo" src={client.logo} alt="" width="80" height="80" loading="lazy" decoding="async" />
     <h2 id="experience-title">{client.brandName}</h2>
     <p>{client.brandSubtitle}</p>
     <span>{client.storyLocation}</span>
   </div>
-  <div class="experience-facts" aria-label="Nursery experience">
+  <div class="experience-facts" aria-label={client.copy.nurseryExperience}>
     <div><svg viewBox="0 0 32 40" aria-hidden="true"><path d="M16 37V14M16 25C8 25 4 20 4 14c7 0 12 4 12 11Zm0-8C16 8 21 4 28 3c0 8-4 13-12 14Z" /></svg><strong>Since {client.founded}</strong></div>
     <div><svg viewBox="0 0 32 40" aria-hidden="true"><path d="M16 25V8M16 18C9 18 6 14 6 9c6 0 10 3 10 9Zm0-4C16 7 20 4 26 3c0 6-3 10-10 11ZM6 26h20l-3 10H9Z" /></svg><strong>{client.storyFact}</strong></div>
-    <div><svg viewBox="0 0 32 40" aria-hidden="true"><path d="M13 37h6l-1-13c6-1 10-5 10-10 0-6-5-10-12-10S4 8 4 14c0 5 4 9 10 10Zm-3 0h12" /></svg><strong data-experience-label aria-label={`${experienceYears} years of nursery experience`}><span data-experience-years data-founded={client.founded}>{experienceYears}</span> years of nursery experience</strong></div>
+    <div><svg viewBox="0 0 32 40" aria-hidden="true"><path d="M13 37h6l-1-13c6-1 10-5 10-10 0-6-5-10-12-10S4 8 4 14c0 5 4 9 10 10Zm-3 0h12" /></svg><strong data-experience-label aria-label={`${experienceYears} ${client.copy.yearsExperience}`}><span data-experience-years data-founded={client.founded} data-years-label={client.copy.yearsExperience}>{experienceYears}</span> {client.copy.yearsExperience}</strong></div>
   </div>
   {awards.length > 0 && <div class="recognition">
     <div class="recognition-heading">
-      <h3>Awards and recognition</h3>
+      <h3>{client.copy.awardsTitle}</h3>
     </div>
     <div class="award-list">
       {awards.map((award) => (
@@ -57,7 +57,7 @@ const experienceYears = new Date().getUTCFullYear() - client.founded;
   if (years && label) {
     const current = new Date().getFullYear() - Number(years.dataset.founded);
     years.textContent = String(current);
-    label.setAttribute('aria-label', `${current} years of nursery experience`);
+    label.setAttribute('aria-label', `${current} ${years.dataset.yearsLabel}`);
   }
   document.querySelectorAll<HTMLButtonElement>('[data-award]').forEach((award) => {
     award.addEventListener('click', () => {

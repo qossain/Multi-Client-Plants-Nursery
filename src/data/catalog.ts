@@ -8,6 +8,8 @@ export type Category = {
   images: string[];
   description: string;
   basePrice: number;
+  heroDesktop?: string;
+  heroMobile?: string;
 };
 
 export type Plant = {
@@ -33,5 +35,5 @@ export const plants: Plant[] = catalog.plants;
 
 export const categoryFor = (slug: string) => categories.find((category) => category.slug === slug);
 export const isShrub = (plant: Plant) => client.shrubs.includes(plant.slug);
-export const plantsFor = (slug: string) => plants.filter((plant) => slug === 'shrubs' ? isShrub(plant) : plant.category === slug);
-export const priceLabel = (amount: number, maxPrice?: number) => 'Rs ' + new Intl.NumberFormat('en-PK').format(amount) + (maxPrice ? ' to Rs ' + new Intl.NumberFormat('en-PK').format(maxPrice) : '');
+export const plantsFor = (slug: string) => plants.filter((plant) => slug === 'shrubs' ? plant.category === slug || isShrub(plant) : plant.category === slug);
+export const priceLabel = (amount: number, maxPrice?: number) => client.currencyPrefix + new Intl.NumberFormat(client.priceLocale).format(amount) + (maxPrice != null ? ' to ' + client.currencyPrefix + new Intl.NumberFormat(client.priceLocale).format(maxPrice) : '');
