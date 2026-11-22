@@ -6,7 +6,7 @@ const client = loadClient(process.env.CLIENT);
 
 export default defineConfig({
   site: client.config.site,
-  vite: { resolve: { alias: { '@client-products': resolve(client.directory, 'products.json') } } },
+  vite: { resolve: { alias: { '@client-products': resolve(client.directory, 'products.json'), '@client-reviews': resolve(client.directory, 'reviews.json'), '@client-config': resolve(client.directory, 'config.json') } } },
   output: 'static',
   compressHTML: true,
 });

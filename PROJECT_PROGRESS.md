@@ -40,3 +40,8 @@ Update this file after each meaningful change: date, scope, verification, next s
 - Added a first-client configuration and a build-time loader. `CLIENT=abdul-jabbar` selects its catalog and site URL; missing or unsafe slugs fail clearly. Other clients are deliberately rejected until content isolation is complete, to prevent cross-client leakage. The current configuration schema and validation are incomplete.
 - With `CLIENT=abdul-jabbar`, the build produced 259 pages and matched all 644 existing original `dist` files byte for byte. Focused selection checks passed. No mobile visual comparison or cross-client isolation test was performed.
 - Next: extract and validate the remaining client data and assets, implement and test multiple-client support, themes and variants, scaffolding and deployment filtering. Nothing has been pushed or deployed.
+
+## 2026-11-22 — Review data extraction
+
+- Moved the existing review summaries and their source excerpts into the first client's `reviews.json`, selected through the build alias. The summaries remain distinct from quotations. Other-client builds remain blocked while isolation is incomplete.
+- The first client build succeeded with 259 pages; all 644 files present in the original existing build matched. Mobile visual and interaction comparisons remain outstanding.
