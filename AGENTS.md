@@ -1,6 +1,6 @@
 # Abdul Jabbar Nursery Farm project context
 
-For the multi-client platform, also read `MULTI_CLIENT_PLAN.md` and `PROJECT_PROGRESS.md`. Update the plan when decisions change and the progress log after each meaningful change, including verification and remaining risks. Develop the platform in a separate repository and do not alter the existing production deployment without explicit approval.
+For the multi-client platform, read `MULTI_CLIENT_PLAN.md` and `PROJECT_PROGRESS.md`. Update the plan when decisions change and the progress log after each meaningful change, including verification and remaining risks. Work only in this separate platform repository and do not alter the existing production site or deployment without explicit approval. The historical client details below are a snapshot; actual implementation has moved to `core/` and `clients/abdul-jabbar/`. Select a client using `CLIENT` for every Astro command. Current source, build output and progress log supersede old file paths, catalog counts and commands below.
 
 This file is the handoff for future chats and coding agents. Check the current code and Git state before acting; this is a snapshot, not proof that a deployment or external fact is current.
 

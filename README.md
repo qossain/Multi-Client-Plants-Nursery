@@ -1,40 +1,34 @@
-# Abdul Jabbar Nursery Farm preview
+# Multi-client nursery platform
 
-Astro static website concept for the Pattoki nursery. Plant names, collection photographs, sizes and prices are sample content. The optimized local WebP images are concept assets and may not show the exact listed variety or the nursery's real stock. Confirm all inventory and prices with the nursery before publication.
+An Astro static-site platform for separate nursery clients. Work in this repository is isolated from the original Abdul Jabbar website; no production switch is implied. See [MULTI_CLIENT_PLAN.md](MULTI_CLIENT_PLAN.md) and [PROJECT_PROGRESS.md](PROJECT_PROGRESS.md) for status, safeguards and verification.
 
-## Run locally
+## Local setup
 
-Use Node.js 22.23.4 or later.
-
-```powershell
-npm install
-npm run dev
-```
-
-The site is built as static pages. To build the production preview:
+Use Node.js 22.23.4 or later and run `npm ci`. In PowerShell select a client before running the site:
 
 ```powershell
+$env:CLIENT = 'abdul-jabbar'
+npm run dev -- --port 4174
 npm run build
-npm run preview
+npm run preview -- --port 4175
+npm test
 ```
 
-The production files are written to `dist`. Vercel can detect Astro and build the project with `npm run build`, publishing `dist`. A static site does not need the Vercel adapter.
+The client must exist and pass build-time validation. The static output is `dist`. On systems that block Astro's user configuration directory, set `ASTRO_TELEMETRY_DISABLED=1` and point `APPDATA` to a writable temporary folder for the build.
 
-## Site structure
+## New client
 
-- `src/pages/index.astro` is the home page.
-- `src/pages/plants/` contains the directory and seven collection pages.
-- `src/pages/plant/[slug].astro` builds a separate static page for each sample listing.
-- `src/data/catalog.ts` holds the seven groups and thirty sample listings per group.
-- `src/styles/global.css` contains the responsive design system and interaction states.
-- `public/logo.webp` is the optimized nursery logo. Its source copy remains in `assets/source-images/legacy-preview`.
-- `public/plant-images/` contains 100 optimized WebP preview images assigned across the seven plant collections.
-- `public/hero-legacy-desktop.webp` and `public/hero-rooftop-mobile.webp` are the saved desktop and mobile hero images.
+Run `npm run new-client` from the repository root and provide a lowercase slug, nursery name, international phone number, theme and layout. The script refuses to overwrite an existing folder. The new folder under `clients/<slug>/` contains configuration, an empty catalog, empty services and reviews, a neutral placeholder image and the locally hosted fonts.
 
-There is no cart or checkout. Listing actions open WhatsApp so the visitor can ask about real availability and pricing.
+Before publication, replace the placeholder domain and images, add approved products and prices, confirm all contact details, and review every visible section. The scaffold uses an `.example.invalid` domain for local work and does not supply verified inventory, reviews, awards or sales figures. Edit `config.json` to set client details, design keys, section selection and order; edit `products.json`, `services.json` and `reviews.json` for content; place that client's assets inside its `images/` folder. A client build publishes only that folder as its public assets. See `clients/abdul-jabbar` for the complete historical example, whose content caveats are recorded in AGENTS.md.
 
-## Before launch
+The five named themes and hero variants are provisional placeholders, not finalized Figma designs. Do not treat them as approved client designs. Consult the progress log for the checks performed and remaining client-specific verification.
 
-Replace the sample plant names, prices, size notes and concept photos with an approved nursery inventory and owner supplied photography. Add only award and certificate scans the owner has verified. Confirm contact details, delivery areas and each social profile with the business.
+## Structure and deployment
 
-Product sales activity figures are fixed examples for design review, not real sales. Replace them with verified data before publication. Original source images are kept locally and are excluded from the repository; optimized website images are in `public`.
+- `core/components`, `core/layouts`, `core/variants` and `core/themes`: shared code, page layout, design choices and theme variables. The variant manifest maps selection keys to files.
+- `clients/<slug>`: client-owned configuration, product data, services, reviews and public assets.
+- `src/pages`: Astro routes; `scripts`: client scaffolding, tests and the Vercel build filter.
+- [VERCEL_SETUP.md](VERCEL_SETUP.md): separate project setup, conservative build filtering and migration safeguards.
+
+No cart, checkout or payment is provided. Product enquiries open WhatsApp with a configured message and product name; they do not create verified sales records.

@@ -1,12 +1,12 @@
 # Multi-client nursery platform
 
-Status: planning, 2026-11-21. This document describes intended work, not implemented functionality. Update it and PROJECT_PROGRESS.md when decisions or implementation change.
+Status: local platform implementation and initial verification completed, 2026-11-22. The five concept designs are placeholders, and actual client content, Vercel deployment and full regression verification remain to be completed. See PROJECT_PROGRESS.md for evidence and limitations. Update both files as decisions and implementation change.
 
 ## Goal and production protection
 
 Maintain one Astro codebase for multiple nursery clients, each with its own content, visual identity, Vercel project and domain. Target approximately 30 minutes to set up a client once suitable designs and content exist; validate this target in practice.
 
-The existing Abdul Jabbar Nursery site is client 1. Its current repository and production deployment must remain untouched during platform development. Create a separate repository for the platform, initially private, using an isolated local checkout. Do not connect or switch the existing production project or domain without explicit approval and a reviewed rollback plan. Check actual Vercel settings and current production before migration; repository state alone does not establish what is live.
+The existing Abdul Jabbar Nursery site is client 1. Its current repository and production deployment must remain untouched during platform development. The separate platform repository is currently public and has not been pushed. Do not connect or switch the existing production project or domain without explicit approval and a reviewed rollback plan. Check actual Vercel settings and current production before migration; repository state alone does not establish what is live.
 
 ## Current baseline
 
@@ -19,9 +19,9 @@ The root AGENTS.md records client 1's design constraints, features, content cave
 - `core/components`: reusable sections and shared behavior.
 - `core/variants`: selectable section designs with consistent, typed props per section.
 - `core/layouts`: page and section arrangements; retain Astro's required routing structure as needed.
-- `core/themes`: theme tokens for colors, fonts, radius, shadows and spacing.
+- `core/themes`: legacy color and font tokens and five provisional theme palettes.
 - `clients/<slug>/config.json`, `products.json` and `images/`: client identity, content, design choices, products and assets. Include all additional existing content, such as reviews and services, in the client data model as needed.
-- `scripts/new-client.mjs`: guided setup from a template, without overwriting existing clients.
+- `scripts/new-client.mjs`: guided setup from a template, without overwriting existing clients. The generated client requires real details and images before launch.
 - Shared TypeScript types and build-time validation for all client data, including clear errors for missing or invalid `CLIENT`, unsafe slugs, missing files and unknown design keys.
 
 The exact structure can adapt to Astro's build and asset handling. A registry maps configuration keys to files; adding a variant requires its file and registry key. Distinctive new designs may require new code, not merely a color change. Client-specific URLs, sitemap metadata, assets and WhatsApp messages must come from the selected client, with no cross-client data leakage.
@@ -35,7 +35,7 @@ The exact structure can adapt to Astro's build and asset handling. A registry ma
 5. **Client setup.** Add the interactive scaffold, validate input, test duplicate and invalid slugs and verify that a generated client builds with its own content.
 6. **Vercel documentation and build filtering.** Document separate projects, environment variables, domains, previews and rollback. Implement and test an ignored-build step that rebuilds for shared code, build/config/dependency changes and the selected client; skip only when safe. First builds, missing Git history and ambiguous diffs must build rather than silently skip. Check Vercel's current documented behavior before implementation.
 
-Make small commits by stage in the new repository. After each stage, run the build and compare client 1 against the baseline with representative desktop and mobile screenshots, routes and interactions. Explain any unavoidable output differences; do not claim pixel-identical rendering without evidence. Do not push, deploy, migrate a domain or change a production project merely because an earlier step was approved. The user must approve visible design changes and the eventual production switch.
+Make small commits by stage in the new repository. Build and compare client 1 against the baseline at each stage, recording the checks actually performed. Explain output differences; do not claim pixel-identical rendering without evidence. Do not push, deploy, migrate a domain or change a production project merely because an earlier step was approved. The user must approve visible design changes and the eventual production switch.
 
 ## Verification checklist
 
