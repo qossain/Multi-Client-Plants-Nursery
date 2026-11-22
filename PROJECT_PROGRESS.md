@@ -34,3 +34,9 @@ Update this file after each meaningful change: date, scope, verification, next s
 
 - Materialized the existing categories and plants into `clients/abdul-jabbar/products.json` and updated the catalog module to read them. This is an intermediate step: client selection and validation are not yet implemented, and other content remains hardcoded.
 - Build succeeded with 259 pages; all 644 files in the existing original `dist` matched the corresponding new files byte for byte. No visual comparison or cross-client isolation test was performed.
+
+## 2026-11-22 — Initial client selection
+
+- Added a first-client configuration and a build-time loader. `CLIENT=abdul-jabbar` selects its catalog and site URL; missing or unsafe slugs fail clearly. Other clients are deliberately rejected until content isolation is complete, to prevent cross-client leakage. The current configuration schema and validation are incomplete.
+- With `CLIENT=abdul-jabbar`, the build produced 259 pages and matched all 644 existing original `dist` files byte for byte. Focused selection checks passed. No mobile visual comparison or cross-client isolation test was performed.
+- Next: extract and validate the remaining client data and assets, implement and test multiple-client support, themes and variants, scaffolding and deployment filtering. Nothing has been pushed or deployed.

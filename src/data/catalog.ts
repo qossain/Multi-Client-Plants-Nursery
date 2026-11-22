@@ -1,4 +1,4 @@
-import catalog from '../../clients/abdul-jabbar/products.json';
+import catalog from '@client-products';
 
 export type Category = {
   slug: string;

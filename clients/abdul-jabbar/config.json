@@ -1,0 +1,11 @@
+{
+  "name": "Abdul Jabbar Nursery Farm",
+  "phone": "+923126047941",
+  "whatsapp": "923126047941",
+  "site": "https://www.abduljabbarnursery.com",
+  "theme": "legacy",
+  "layout": "legacy",
+  "hero": "legacy",
+  "productCard": "legacy",
+  "sections": ["hero", "about", "categories", "services", "featured", "testimonials"]
+}
