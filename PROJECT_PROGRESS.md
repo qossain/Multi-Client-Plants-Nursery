@@ -22,3 +22,10 @@ Update this file after each meaningful change: date, scope, verification, next s
 - The isolated copy has no commits. No push, production change or domain change has been made.
 - `npm ci` succeeded using Node 24.11.1; npm reported one moderate advisory (not investigated). `npm run build` succeeded with a temporary APPDATA and telemetry disabled, producing 259 pages. The first attempt failed because the sandbox blocked Astro's user configuration directory. No visual or behavioral comparison has been made.
 - Next: establish a visual and functional baseline before any restructure. The copied AGENTS.md describes an older catalog snapshot; use current source and build output when assessing scope.
+
+## 2026-11-22 — Isolated baseline and shared-code move
+
+- User authorized the full platform implementation in the separate folder, with no push until requested and no changes to the original site.
+- Saved local baseline commit in the platform repository. All tracked original site files matched the isolated copy before restructuring, excluding the agent handoff document. The local homepage was inspected in a browser.
+- Moved existing components, layout and styles into `core/`, adjusting imports only. The static build succeeded with 259 pages. Every file in the original existing `dist` matched the corresponding output byte for byte (644 files in the new output); the original dist's generation date was not independently established. No mobile visual comparison or interaction regression was performed yet.
+- Next: client-specific data extraction, configuration validation and isolation. Themes, variants, scaffolding and Vercel build filtering remain unimplemented. No push or deployment.
