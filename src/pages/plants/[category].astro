@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PlantGrid from '../../components/PlantGrid.astro';
+import { categories, plantsFor } from '../../data/catalog';
+
+export function getStaticPaths() {
+  return categories.map((category) => ({
+    params: { category: category.slug },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+const listings = plantsFor(category.slug);
+const hero = ['trees', 'topiary', 'shrubs'].includes(category.slug) ? 'outdoor' : category.slug;
+---
+
+<BaseLayout title={`${category.title} in Pattoki | Abdul Jabbar Nursery Farm`} description={`${category.description} Contact Abdul Jabbar Nursery Farm in Pattoki, Pakistan, for availability and prices.`} image={category.coverImage}>
+  <main id="main">
+    <header class="category-hero">
+      <picture class="category-hero-image">
+        <source media="(max-width: 700px)" srcset={`/category-heroes/${hero}-mobile.webp`} />
+        <img src={`/category-heroes/${hero}-desktop.webp`} width="840" height="520" alt="" fetchpriority="high" decoding="async" />
+      </picture>
+      <div class="category-hero-copy">
+        <p>Plant collection</p>
+        <h1>{category.title}</h1>
+        <p>{category.description}</p>
+      </div>
+    </header>
+    <div class="section-wrap category-listings">
+      <PlantGrid plants={listings} />
+    </div>
+  </main>
+</BaseLayout>
