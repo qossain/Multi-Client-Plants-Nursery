@@ -29,3 +29,8 @@ Update this file after each meaningful change: date, scope, verification, next s
 - Saved local baseline commit in the platform repository. All tracked original site files matched the isolated copy before restructuring, excluding the agent handoff document. The local homepage was inspected in a browser.
 - Moved existing components, layout and styles into `core/`, adjusting imports only. The static build succeeded with 259 pages. Every file in the original existing `dist` matched the corresponding output byte for byte (644 files in the new output); the original dist's generation date was not independently established. No mobile visual comparison or interaction regression was performed yet.
 - Next: client-specific data extraction, configuration validation and isolation. Themes, variants, scaffolding and Vercel build filtering remain unimplemented. No push or deployment.
+
+## 2026-11-22 — Catalog extraction
+
+- Materialized the existing categories and plants into `clients/abdul-jabbar/products.json` and updated the catalog module to read them. This is an intermediate step: client selection and validation are not yet implemented, and other content remains hardcoded.
+- Build succeeded with 259 pages; all 644 files in the existing original `dist` matched the corresponding new files byte for byte. No visual comparison or cross-client isolation test was performed.

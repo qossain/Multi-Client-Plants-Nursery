@@ -1,0 +1,2086 @@
+{
+  "categories": [
+    {
+      "slug": "indoor",
+      "title": "Indoor plants",
+      "basePrice": 1200,
+      "images": [
+        "/plant-images/indoor-001.webp",
+        "/plant-images/indoor-002.webp",
+        "/plant-images/indoor-003.webp",
+        "/plant-images/indoor-004.webp",
+        "/plant-images/indoor-005.webp",
+        "/plant-images/indoor-006.webp",
+        "/plant-images/indoor-007.webp",
+        "/plant-images/indoor-008.webp",
+        "/plant-images/indoor-009.webp",
+        "/plant-images/indoor-010.webp",
+        "/plant-images/ornamental-01-bird-of-paradise.webp",
+        "/plant-images/ornamental-02-cordyline.webp",
+        "/plant-images/ornamental-03-dracaena-marginata.webp",
+        "/plant-images/ornamental-04-coleus.webp",
+        "/plant-images/ornamental-05-caladium.webp",
+        "/plant-images/ornamental-06-fern.webp",
+        "/plant-images/ornamental-10-red-anthurium.webp"
+      ],
+      "coverImage": "/plant-images/indoor-001.webp",
+      "description": "Explore indoor plants for rooms, offices and sheltered spaces. Ask our Pattoki nursery about suitable plants and current availability."
+    },
+    {
+      "slug": "outdoor",
+      "title": "Outdoor plants",
+      "basePrice": 1600,
+      "images": [
+        "/plant-images/outdoor-01-bougainvillea.webp",
+        "/plant-images/outdoor-02-hibiscus-shrub.webp",
+        "/plant-images/outdoor-03-jasmine-shrub.webp",
+        "/plant-images/outdoor-04-gardenia-shrub.webp",
+        "/plant-images/outdoor-05-oleander-shrub.webp",
+        "/plant-images/outdoor-06-ixora-flowering-shrub.webp",
+        "/plant-images/outdoor-07-lantana-plant.webp",
+        "/plant-images/outdoor-08-ficus-benjamina.webp",
+        "/plant-images/outdoor-09-duranta-golden-shrub.webp",
+        "/plant-images/outdoor-10-croton-shrub.webp",
+        "/plant-images/trees-01-neem-tree.webp",
+        "/plant-images/trees-02-amaltas-golden-shower-tree.webp",
+        "/plant-images/trees-03-jacaranda-tree.webp",
+        "/plant-images/trees-04-gulmohar-flamboyant-tree.webp",
+        "/plant-images/trees-05-banyan-sapling.webp",
+        "/plant-images/trees-06-moringa-tree.webp",
+        "/plant-images/trees-07-ficus-tree.webp",
+        "/plant-images/trees-08-jamun-tree.webp",
+        "/plant-images/trees-09-peepal-tree.webp",
+        "/plant-images/trees-10-bottlebrush-tree.webp"
+      ],
+      "coverImage": "/plant-images/outdoor-08-ficus-benjamina.webp",
+      "description": "Browse outdoor plants for gardens, courtyards and open spaces, including shrubs and ornamental greenery."
+    },
+    {
+      "slug": "fruit",
+      "title": "Fruit plants",
+      "basePrice": 1800,
+      "images": [
+        "/plant-images/fruit-01-mango-sapling.webp",
+        "/plant-images/fruit-02-guava-sapling.webp",
+        "/plant-images/fruit-03-lemon-tree.webp",
+        "/plant-images/fruit-04-orange-tree.webp",
+        "/plant-images/fruit-05-pomegranate-tree.webp",
+        "/plant-images/fruit-06-fig-tree.webp",
+        "/plant-images/fruit-07-olive-tree.webp",
+        "/plant-images/fruit-08-dragon-fruit-cactus.webp",
+        "/plant-images/fruit-09-blueberry-bush.webp",
+        "/plant-images/fruit-10-pineapple-plant.webp"
+      ],
+      "coverImage": "/plant-images/fruit-01-mango-sapling.webp",
+      "description": "Explore fruit plants and young trees for home gardens and orchards. Contact the nursery about varieties, sizes and prices."
+    },
+    {
+      "slug": "bonsai",
+      "title": "Bonsai",
+      "basePrice": 4500,
+      "images": [
+        "/plant-images/bonsai-01-ficus-bonsai.webp",
+        "/plant-images/bonsai-02-juniper-bonsai.webp",
+        "/plant-images/bonsai-03-bougainvillea-bonsai.webp",
+        "/plant-images/bonsai-04-chinese-elm-bonsai.webp",
+        "/plant-images/bonsai-05-jade-bonsai.webp",
+        "/plant-images/bonsai-06-olive-bonsai.webp",
+        "/plant-images/bonsai-07-pomegranate-bonsai.webp",
+        "/plant-images/bonsai-08-ficus-banyan-bonsai.webp",
+        "/plant-images/bonsai-09-azalea-bonsai.webp",
+        "/plant-images/bonsai-10-carmona-bonsai.webp"
+      ],
+      "coverImage": "/plant-images/bonsai-01-ficus-bonsai.webp",
+      "description": "Discover bonsai and shaped miniature trees for terraces, courtyards and indoor spaces. Contact us to confirm availability."
+    },
+    {
+      "slug": "cactus",
+      "title": "Cactus plants",
+      "basePrice": 700,
+      "images": [
+        "/plant-images/succulents-01-aloe-vera.webp",
+        "/plant-images/succulents-02-echeveria-rosette-succulent.webp",
+        "/plant-images/succulents-03-haworthia-succulent.webp",
+        "/plant-images/succulents-04-jade-plant.webp",
+        "/plant-images/succulents-05-prickly-pear-cactus.webp",
+        "/plant-images/succulents-06-golden-barrel-cactus.webp",
+        "/plant-images/succulents-07-columnar-cactus.webp",
+        "/plant-images/succulents-08-agave.webp",
+        "/plant-images/succulents-09-burro-tail-succulent.webp",
+        "/plant-images/succulents-10-sedum-succulent.webp"
+      ],
+      "coverImage": "/plant-images/succulents-06-golden-barrel-cactus.webp",
+      "description": "Browse cactus plants and succulents for bright windows, patios and rock gardens. Ask the nursery about available varieties."
+    },
+    {
+      "slug": "flowering",
+      "title": "Flowering plants",
+      "basePrice": 900,
+      "images": [
+        "/plant-images/flowering-01-red-rose.webp",
+        "/plant-images/flowering-02-pink-rose.webp",
+        "/plant-images/flowering-03-marigold.webp",
+        "/plant-images/flowering-04-petunia.webp",
+        "/plant-images/flowering-05-geranium.webp",
+        "/plant-images/flowering-06-chrysanthemum.webp",
+        "/plant-images/flowering-07-bougainvillea.webp",
+        "/plant-images/flowering-08-plumeria.webp",
+        "/plant-images/flowering-09-hibiscus.webp",
+        "/plant-images/flowering-10-zinnia.webp",
+        "/plant-images/ornamental-07-ornamental-grass.webp",
+        "/plant-images/ornamental-08-canna-lily.webp",
+        "/plant-images/ornamental-09-tropical-heliconia.webp"
+      ],
+      "coverImage": "/plant-images/flowering-01-red-rose.webp",
+      "description": "Explore flowering plants for pots, garden borders and landscaping. Ask our nursery about seasonal selection and availability."
+    },
+    {
+      "slug": "palms",
+      "title": "Palms",
+      "basePrice": 2200,
+      "images": [
+        "/plant-images/palms-01-areca-palm.webp",
+        "/plant-images/palms-02-date-palm.webp",
+        "/plant-images/palms-03-foxtail-palm.webp",
+        "/plant-images/palms-04-bottle-palm.webp",
+        "/plant-images/palms-05-fan-palm.webp",
+        "/plant-images/palms-06-lady-palm.webp",
+        "/plant-images/palms-07-sago-palm.webp",
+        "/plant-images/palms-08-parlour-palm.webp",
+        "/plant-images/palms-09-majesty-palm.webp",
+        "/plant-images/palms-10-coconut-palm-sapling.webp"
+      ],
+      "coverImage": "/plant-images/palms-01-areca-palm.webp",
+      "description": "Browse palms for entrances, terraces and larger gardens, including the nursery’s Royal, Sylvester and Alexandra palms."
+    },
+    {
+      "slug": "trees",
+      "title": "Trees",
+      "basePrice": 200,
+      "images": [
+        "/plant-images/nursery-terminalia.webp"
+      ],
+      "coverImage": "/plant-images/nursery-terminalia.webp",
+      "description": "Explore trees for gardens, avenues and landscape projects, including Terminalia, Jamun and Pink Tabebuia."
+    },
+    {
+      "slug": "topiary",
+      "title": "Topiary art",
+      "basePrice": 0,
+      "images": [
+        "/plant-images/topiary-enhanced-swan-pair.webp"
+      ],
+      "coverImage": "/plant-images/topiary-enhanced-swan-pair.webp",
+      "description": "Discover shaped plants and living sculptures, from Buxus cones and spirals to animal topiary for gardens and landscape projects."
+    },
+    {
+      "slug": "shrubs",
+      "title": "Shrubs and hedges",
+      "basePrice": 0,
+      "images": [
+        "/plant-images/outdoor-09-duranta-golden-shrub.webp"
+      ],
+      "coverImage": "/plant-images/outdoor-09-duranta-golden-shrub.webp",
+      "description": "Explore shrubs and hedging plants for garden borders, screens and outdoor spaces. Contact the nursery to check availability."
+    }
+  ],
+  "plants": [
+    {
+      "slug": "indoor-monstera-deliciosa",
+      "name": "Monstera Deliciosa",
+      "category": "indoor",
+      "image": "/plant-images/indoor-001.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-monstera-adansonii",
+      "name": "Monstera Adansonii",
+      "category": "indoor",
+      "image": "/plant-images/indoor-002.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-philodendron-brasil",
+      "name": "Philodendron Brasil",
+      "category": "indoor",
+      "image": "/plant-images/indoor-003.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-heartleaf-philodendron",
+      "name": "Heartleaf Philodendron",
+      "category": "indoor",
+      "image": "/plant-images/indoor-004.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-golden-pothos",
+      "name": "Golden Pothos",
+      "category": "indoor",
+      "image": "/plant-images/indoor-005.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-marble-queen-pothos",
+      "name": "Marble Queen Pothos",
+      "category": "indoor",
+      "image": "/plant-images/indoor-006.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-snake-plant-laurentii",
+      "name": "Snake Plant Laurentii",
+      "category": "indoor",
+      "image": "/plant-images/indoor-007.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-zz-plant",
+      "name": "ZZ Plant",
+      "category": "indoor",
+      "image": "/plant-images/indoor-008.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-peace-lily",
+      "name": "Peace Lily",
+      "category": "indoor",
+      "image": "/plant-images/indoor-009.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-rubber-plant-burgundy",
+      "name": "Rubber Plant Burgundy",
+      "category": "indoor",
+      "image": "/plant-images/indoor-010.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-fiddle-leaf-fig",
+      "name": "Fiddle Leaf Fig",
+      "category": "indoor",
+      "image": "/plant-images/ornamental-01-bird-of-paradise.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-areca-palm",
+      "name": "Areca Palm",
+      "category": "indoor",
+      "image": "/plant-images/ornamental-02-cordyline.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-parlor-palm",
+      "name": "Parlor Palm",
+      "category": "indoor",
+      "image": "/plant-images/ornamental-03-dracaena-marginata.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-calathea-orbifolia",
+      "name": "Calathea Orbifolia",
+      "category": "indoor",
+      "image": "/plant-images/ornamental-04-coleus.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-calathea-medallion",
+      "name": "Calathea Medallion",
+      "category": "indoor",
+      "image": "/plant-images/ornamental-05-caladium.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-aglaonema-red",
+      "name": "Aglaonema Red",
+      "category": "indoor",
+      "image": "/plant-images/ornamental-06-fern.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-chinese-evergreen-silver-bay",
+      "name": "Chinese Evergreen Silver Bay",
+      "category": "indoor",
+      "image": "/plant-images/ornamental-10-red-anthurium.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-dracaena-marginata",
+      "name": "Dracaena Marginata",
+      "category": "indoor",
+      "image": "/plant-images/indoor-001.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-dracaena-fragrans",
+      "name": "Dracaena Fragrans",
+      "category": "indoor",
+      "image": "/plant-images/indoor-002.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-lucky-bamboo",
+      "name": "Lucky Bamboo",
+      "category": "indoor",
+      "image": "/plant-images/indoor-003.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-boston-fern",
+      "name": "Boston Fern",
+      "category": "indoor",
+      "image": "/plant-images/indoor-004.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-bird-of-paradise",
+      "name": "Bird of Paradise",
+      "category": "indoor",
+      "image": "/plant-images/indoor-005.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-alocasia-polly",
+      "name": "Alocasia Polly",
+      "category": "indoor",
+      "image": "/plant-images/indoor-006.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-syngonium-pink",
+      "name": "Syngonium Pink",
+      "category": "indoor",
+      "image": "/plant-images/indoor-007.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-spider-plant",
+      "name": "Spider Plant",
+      "category": "indoor",
+      "image": "/plant-images/indoor-008.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-aloe-vera",
+      "name": "Aloe Vera",
+      "category": "indoor",
+      "image": "/plant-images/indoor-009.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-english-ivy",
+      "name": "English Ivy",
+      "category": "indoor",
+      "image": "/plant-images/indoor-010.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-red-anthurium",
+      "name": "Red Anthurium",
+      "category": "indoor",
+      "image": "/plant-images/ornamental-01-bird-of-paradise.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-dieffenbachia",
+      "name": "Dieffenbachia",
+      "category": "indoor",
+      "image": "/plant-images/ornamental-02-cordyline.webp",
+      "example": true
+    },
+    {
+      "slug": "indoor-hoya-carnosa",
+      "name": "Hoya Carnosa",
+      "category": "indoor",
+      "image": "/plant-images/ornamental-03-dracaena-marginata.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-bougainvillea",
+      "name": "Bougainvillea",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-01-bougainvillea.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-ficus-nitida",
+      "name": "Ficus Nitida",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-02-hibiscus-shrub.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-ficus-benjamina",
+      "name": "Ficus Benjamina",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-03-jasmine-shrub.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-murraya",
+      "name": "Murraya",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-04-gardenia-shrub.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-duranta-gold",
+      "name": "Duranta Gold",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-05-oleander-shrub.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-ixora",
+      "name": "Ixora",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-06-ixora-flowering-shrub.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-hibiscus",
+      "name": "Hibiscus",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-07-lantana-plant.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-plumeria",
+      "name": "Plumeria",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-08-ficus-benjamina.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-croton",
+      "name": "Croton",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-09-duranta-golden-shrub.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-thuja",
+      "name": "Thuja",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-10-croton-shrub.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-cypress",
+      "name": "Cypress",
+      "category": "outdoor",
+      "image": "/plant-images/trees-01-neem-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-juniper",
+      "name": "Juniper",
+      "category": "outdoor",
+      "image": "/plant-images/trees-02-amaltas-golden-shower-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-ashoka-tree",
+      "name": "Ashoka Tree",
+      "category": "outdoor",
+      "image": "/plant-images/trees-03-jacaranda-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-neem-tree",
+      "name": "Neem Tree",
+      "category": "outdoor",
+      "image": "/plant-images/trees-04-gulmohar-flamboyant-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-sukh-chain-tree",
+      "name": "Sukh Chain Tree",
+      "category": "outdoor",
+      "image": "/plant-images/trees-05-banyan-sapling.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-amaltas",
+      "name": "Amaltas",
+      "category": "outdoor",
+      "image": "/plant-images/trees-06-moringa-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-gul-mohar",
+      "name": "Gul Mohar",
+      "category": "outdoor",
+      "image": "/plant-images/trees-07-ficus-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-bottlebrush-tree",
+      "name": "Bottlebrush Tree",
+      "category": "outdoor",
+      "image": "/plant-images/trees-08-jamun-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-poinciana",
+      "name": "Poinciana",
+      "category": "outdoor",
+      "image": "/plant-images/trees-09-peepal-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-oleander",
+      "name": "Oleander",
+      "category": "outdoor",
+      "image": "/plant-images/trees-10-bottlebrush-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-lantana",
+      "name": "Lantana",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-01-bougainvillea.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-jasmine",
+      "name": "Jasmine",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-02-hibiscus-shrub.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-star-jasmine",
+      "name": "Star Jasmine",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-03-jasmine-shrub.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-schefflera",
+      "name": "Schefflera",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-04-gardenia-shrub.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-agave",
+      "name": "Agave",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-05-oleander-shrub.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-yucca",
+      "name": "Yucca",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-06-ixora-flowering-shrub.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-clumping-bamboo",
+      "name": "Clumping Bamboo",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-07-lantana-plant.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-podocarpus",
+      "name": "Podocarpus",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-08-ficus-benjamina.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-pittosporum",
+      "name": "Pittosporum",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-09-duranta-golden-shrub.webp",
+      "example": true
+    },
+    {
+      "slug": "outdoor-gardenia",
+      "name": "Gardenia",
+      "category": "outdoor",
+      "image": "/plant-images/outdoor-10-croton-shrub.webp",
+      "example": true
+    },
+    {
+      "name": "Grafted Kinnow",
+      "slug": "fruit-kinnow-mandarin",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-kinnow.webp",
+      "originalImage": "/plant-images/client-original-kinnow.webp",
+      "price": 1500,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Grafted Citrus Varieties",
+      "slug": "fruit-grafted-citrus",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-citrus.webp",
+      "originalImage": "/plant-images/client-original-citrus.webp",
+      "price": 1500,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Pineapple",
+      "slug": "fruit-pineapple",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-pineapple.webp",
+      "originalImage": "/plant-images/client-original-pineapple.webp",
+      "price": 1200,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Grafted China Lemon",
+      "slug": "fruit-china-lemon",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-china-lemon.webp",
+      "originalImage": "/plant-images/client-original-china-lemon.webp",
+      "price": 1500,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Grafted Loquat",
+      "slug": "fruit-loquat",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-loquat.webp",
+      "originalImage": "/plant-images/client-original-loquat.webp",
+      "price": 1100,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Avocado",
+      "slug": "fruit-avocado",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-avocado.webp",
+      "originalImage": "/plant-images/client-original-avocado.webp",
+      "price": 1200,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Jackfruit",
+      "slug": "fruit-jackfruit",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-jackfruit.webp",
+      "originalImage": "/plant-images/client-original-jackfruit.webp",
+      "price": 1500,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Sensation Jumbo Mango",
+      "slug": "fruit-sensation-jumbo-mango",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-sensation-jumbo-mango.webp",
+      "originalImage": "/plant-images/client-original-sensation-jumbo-mango.webp",
+      "price": 950,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Florida King Peach",
+      "slug": "fruit-florida-king-peach",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-florida-king-peach.webp",
+      "originalImage": "/plant-images/client-original-florida-king-peach.webp",
+      "price": 950,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Grafted Badami Plum",
+      "slug": "fruit-badami-plum",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-badami-plum.webp",
+      "originalImage": "/plant-images/client-original-badami-plum.webp",
+      "price": 950,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Apricot and Plum",
+      "slug": "fruit-apricot-plum",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-apricot-plum.webp",
+      "originalImage": "/plant-images/client-original-apricot-plum.webp",
+      "price": 950,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Grafted Anna Apple",
+      "slug": "fruit-anna-apple",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-anna-apple.webp",
+      "originalImage": "/plant-images/client-original-anna-apple.webp",
+      "price": 950,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Japanese Persimmon",
+      "slug": "fruit-persimmon",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-persimmon.webp",
+      "originalImage": "/plant-images/client-original-persimmon.webp",
+      "price": 950,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Black and White Fig",
+      "slug": "fruit-fig",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-fig.webp",
+      "originalImage": "/plant-images/client-original-fig.webp",
+      "price": 950,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Green Rose Apple",
+      "slug": "fruit-green-rose-apple",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-green-rose-apple.webp",
+      "originalImage": "/plant-images/client-original-green-rose-apple.webp",
+      "price": 7999,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Gola and Surahi Lychee",
+      "slug": "fruit-lychee",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-lychee.webp",
+      "originalImage": "/plant-images/client-original-lychee.webp",
+      "price": 1200,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Persian Lemon",
+      "slug": "fruit-persian-lemon",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-persian-lemon.webp",
+      "originalImage": "/plant-images/client-original-persian-lemon.webp",
+      "price": 1500,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Early Grand Peach",
+      "slug": "fruit-early-grand-peach",
+      "category": "fruit",
+      "image": "/plant-images/client-enhanced-early-grand-peach.webp",
+      "originalImage": "/plant-images/client-original-early-grand-peach.webp",
+      "price": 950,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "slug": "fruit-anwar-ratol-mango",
+      "name": "Anwar Ratol Mango",
+      "category": "fruit",
+      "image": "/plant-images/fruit-01-mango-sapling.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-chaunsa-mango",
+      "name": "Chaunsa Mango",
+      "category": "fruit",
+      "image": "/plant-images/fruit-02-guava-sapling.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-sindhri-mango",
+      "name": "Sindhri Mango",
+      "category": "fruit",
+      "image": "/plant-images/fruit-03-lemon-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-dusehri-mango",
+      "name": "Dusehri Mango",
+      "category": "fruit",
+      "image": "/plant-images/fruit-04-orange-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-langra-mango",
+      "name": "Langra Mango",
+      "category": "fruit",
+      "image": "/plant-images/fruit-05-pomegranate-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-sufaid-chaunsa-mango",
+      "name": "Sufaid Chaunsa Mango",
+      "category": "fruit",
+      "image": "/plant-images/fruit-06-fig-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-azeem-chaunsa-mango",
+      "name": "Azeem Chaunsa Mango",
+      "category": "fruit",
+      "image": "/plant-images/fruit-07-olive-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-neelam-mango",
+      "name": "Neelam Mango",
+      "category": "fruit",
+      "image": "/plant-images/fruit-08-dragon-fruit-cactus.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-malda-mango",
+      "name": "Malda Mango",
+      "category": "fruit",
+      "image": "/plant-images/fruit-09-blueberry-bush.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-fajri-mango",
+      "name": "Fajri Mango",
+      "category": "fruit",
+      "image": "/plant-images/fruit-10-pineapple-plant.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-gola-guava",
+      "name": "Gola Guava",
+      "category": "fruit",
+      "image": "/plant-images/fruit-01-mango-sapling.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-allahabadi-surkha-guava",
+      "name": "Allahabadi Surkha Guava",
+      "category": "fruit",
+      "image": "/plant-images/fruit-02-guava-sapling.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-sada-bahar-guava",
+      "name": "Sada Bahar Guava",
+      "category": "fruit",
+      "image": "/plant-images/fruit-03-lemon-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-mosambi-sweet-lime",
+      "name": "Mosambi Sweet Lime",
+      "category": "fruit",
+      "image": "/plant-images/fruit-05-pomegranate-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-kaghzi-lime",
+      "name": "Kaghzi Lime",
+      "category": "fruit",
+      "image": "/plant-images/fruit-06-fig-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-malta-orange",
+      "name": "Malta Orange",
+      "category": "fruit",
+      "image": "/plant-images/fruit-07-olive-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-grapefruit",
+      "name": "Grapefruit",
+      "category": "fruit",
+      "image": "/plant-images/fruit-08-dragon-fruit-cactus.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-falsa",
+      "name": "Falsa",
+      "category": "fruit",
+      "image": "/plant-images/fruit-09-blueberry-bush.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-jamun",
+      "name": "Jamun",
+      "category": "fruit",
+      "image": "/plant-images/fruit-10-pineapple-plant.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-indian-jujube-ber",
+      "name": "Indian Jujube Ber",
+      "category": "fruit",
+      "image": "/plant-images/fruit-01-mango-sapling.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-bhagwa-pomegranate",
+      "name": "Bhagwa Pomegranate",
+      "category": "fruit",
+      "image": "/plant-images/fruit-03-lemon-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-black-mission-fig",
+      "name": "Black Mission Fig",
+      "category": "fruit",
+      "image": "/plant-images/fruit-04-orange-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-dwarf-cavendish-banana",
+      "name": "Dwarf Cavendish Banana",
+      "category": "fruit",
+      "image": "/plant-images/fruit-05-pomegranate-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-red-lady-papaya",
+      "name": "Red Lady Papaya",
+      "category": "fruit",
+      "image": "/plant-images/fruit-06-fig-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-dragon-fruit",
+      "name": "Dragon Fruit",
+      "category": "fruit",
+      "image": "/plant-images/fruit-07-olive-tree.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-blueberry",
+      "name": "Blueberry",
+      "category": "fruit",
+      "image": "/plant-images/fruit-08-dragon-fruit-cactus.webp",
+      "example": true
+    },
+    {
+      "slug": "fruit-strawberry",
+      "name": "Strawberry",
+      "category": "fruit",
+      "image": "/plant-images/fruit-10-pineapple-plant.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-ficus-retusa-bonsai",
+      "name": "Ficus Retusa Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-01-ficus-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-ficus-microcarpa-bonsai",
+      "name": "Ficus Microcarpa Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-02-juniper-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-ficus-ginseng-bonsai",
+      "name": "Ficus Ginseng Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-03-bougainvillea-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-ficus-benjamina-bonsai",
+      "name": "Ficus Benjamina Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-04-chinese-elm-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-banyan-bonsai",
+      "name": "Banyan Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-05-jade-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-chinese-elm-bonsai",
+      "name": "Chinese Elm Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-06-olive-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-japanese-juniper-bonsai",
+      "name": "Japanese Juniper Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-07-pomegranate-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-chinese-juniper-bonsai",
+      "name": "Chinese Juniper Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-08-ficus-banyan-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-bougainvillea-bonsai",
+      "name": "Bougainvillea Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-09-azalea-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-jade-bonsai",
+      "name": "Jade Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-10-carmona-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-fukien-tea-bonsai",
+      "name": "Fukien Tea Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-01-ficus-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-pomegranate-bonsai",
+      "name": "Pomegranate Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-02-juniper-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-olive-bonsai",
+      "name": "Olive Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-03-bougainvillea-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-tamarind-bonsai",
+      "name": "Tamarind Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-04-chinese-elm-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-dwarf-jade-bonsai",
+      "name": "Dwarf Jade Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-05-jade-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-dwarf-umbrella-bonsai",
+      "name": "Dwarf Umbrella Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-06-olive-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-carmona-bonsai",
+      "name": "Carmona Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-07-pomegranate-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-serissa-bonsai",
+      "name": "Serissa Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-08-ficus-banyan-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-boxwood-bonsai",
+      "name": "Boxwood Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-09-azalea-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-privet-bonsai",
+      "name": "Privet Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-10-carmona-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-japanese-maple-bonsai",
+      "name": "Japanese Maple Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-01-ficus-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-azalea-bonsai",
+      "name": "Azalea Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-02-juniper-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-chinese-pine-bonsai",
+      "name": "Chinese Pine Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-03-bougainvillea-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-cypress-bonsai",
+      "name": "Cypress Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-04-chinese-elm-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-brush-cherry-bonsai",
+      "name": "Brush Cherry Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-05-jade-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-pemphis-bonsai",
+      "name": "Pemphis Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-06-olive-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-adenium-bonsai",
+      "name": "Adenium Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-07-pomegranate-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-mulberry-bonsai",
+      "name": "Mulberry Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-08-ficus-banyan-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-trident-maple-bonsai",
+      "name": "Trident Maple Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-09-azalea-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "bonsai-black-pine-bonsai",
+      "name": "Black Pine Bonsai",
+      "category": "bonsai",
+      "image": "/plant-images/bonsai-10-carmona-bonsai.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-golden-barrel-cactus",
+      "name": "Golden Barrel Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-01-aloe-vera.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-ladyfinger-cactus",
+      "name": "Ladyfinger Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-02-echeveria-rosette-succulent.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-old-lady-cactus",
+      "name": "Old Lady Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-03-haworthia-succulent.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-bunny-ears-cactus",
+      "name": "Bunny Ears Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-04-jade-plant.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-prickly-pear-cactus",
+      "name": "Prickly Pear Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-05-prickly-pear-cactus.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-peruvian-apple-cactus",
+      "name": "Peruvian Apple Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-06-golden-barrel-cactus.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-spiral-cereus-cactus",
+      "name": "Spiral Cereus Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-07-columnar-cactus.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-easter-lily-cactus",
+      "name": "Easter Lily Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-08-agave.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-moon-cactus",
+      "name": "Moon Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-09-burro-tail-succulent.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-bishop-cap-cactus",
+      "name": "Bishop Cap Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-10-sedum-succulent.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-monk-hood-cactus",
+      "name": "Monk Hood Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-01-aloe-vera.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-devil-tongue-cactus",
+      "name": "Devil Tongue Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-02-echeveria-rosette-succulent.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-melon-cactus",
+      "name": "Melon Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-03-haworthia-succulent.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-rebutia-cactus",
+      "name": "Rebutia Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-04-jade-plant.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-balloon-cactus",
+      "name": "Balloon Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-05-prickly-pear-cactus.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-mexican-fence-post-cactus",
+      "name": "Mexican Fence Post Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-06-golden-barrel-cactus.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-dragon-fruit-cactus",
+      "name": "Dragon Fruit Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-07-columnar-cactus.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-old-man-cactus",
+      "name": "Old Man Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-08-agave.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-silver-torch-cactus",
+      "name": "Silver Torch Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-09-burro-tail-succulent.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-night-blooming-cereus",
+      "name": "Night Blooming Cereus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-10-sedum-succulent.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-mistletoe-cactus",
+      "name": "Mistletoe Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-01-aloe-vera.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-holiday-cactus",
+      "name": "Holiday Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-02-echeveria-rosette-succulent.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-blue-torch-cactus",
+      "name": "Blue Torch Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-03-haworthia-succulent.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-peanut-cactus",
+      "name": "Peanut Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-04-jade-plant.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-feather-cactus",
+      "name": "Feather Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-05-prickly-pear-cactus.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-star-cactus",
+      "name": "Star Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-06-golden-barrel-cactus.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-paper-spine-cactus",
+      "name": "Paper Spine Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-07-columnar-cactus.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-browningia-candelaris",
+      "name": "Browningia Candelaris",
+      "category": "cactus",
+      "image": "/plant-images/succulents-08-agave.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-mexican-organ-pipe-cactus",
+      "name": "Mexican Organ Pipe Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-09-burro-tail-succulent.webp",
+      "example": true
+    },
+    {
+      "slug": "cactus-harrisia-cactus",
+      "name": "Harrisia Cactus",
+      "category": "cactus",
+      "image": "/plant-images/succulents-10-sedum-succulent.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-red-rose",
+      "name": "Red Rose",
+      "category": "flowering",
+      "image": "/plant-images/flowering-01-red-rose.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-pink-rose",
+      "name": "Pink Rose",
+      "category": "flowering",
+      "image": "/plant-images/flowering-02-pink-rose.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-white-rose",
+      "name": "White Rose",
+      "category": "flowering",
+      "image": "/plant-images/flowering-03-marigold.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-yellow-rose",
+      "name": "Yellow Rose",
+      "category": "flowering",
+      "image": "/plant-images/flowering-04-petunia.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-desi-rose",
+      "name": "Desi Rose",
+      "category": "flowering",
+      "image": "/plant-images/flowering-05-geranium.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-double-delight-rose",
+      "name": "Double Delight Rose",
+      "category": "flowering",
+      "image": "/plant-images/flowering-06-chrysanthemum.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-iceberg-rose",
+      "name": "Iceberg Rose",
+      "category": "flowering",
+      "image": "/plant-images/flowering-07-bougainvillea.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-marigold",
+      "name": "Marigold",
+      "category": "flowering",
+      "image": "/plant-images/flowering-08-plumeria.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-petunia",
+      "name": "Petunia",
+      "category": "flowering",
+      "image": "/plant-images/flowering-09-hibiscus.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-geranium",
+      "name": "Geranium",
+      "category": "flowering",
+      "image": "/plant-images/flowering-10-zinnia.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-chrysanthemum",
+      "name": "Chrysanthemum",
+      "category": "flowering",
+      "image": "/plant-images/ornamental-07-ornamental-grass.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-bougainvillea",
+      "name": "Bougainvillea",
+      "category": "flowering",
+      "image": "/plant-images/ornamental-08-canna-lily.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-plumeria",
+      "name": "Plumeria",
+      "category": "flowering",
+      "image": "/plant-images/ornamental-09-tropical-heliconia.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-hibiscus",
+      "name": "Hibiscus",
+      "category": "flowering",
+      "image": "/plant-images/flowering-01-red-rose.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-zinnia",
+      "name": "Zinnia",
+      "category": "flowering",
+      "image": "/plant-images/flowering-02-pink-rose.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-dahlia",
+      "name": "Dahlia",
+      "category": "flowering",
+      "image": "/plant-images/flowering-03-marigold.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-gardenia",
+      "name": "Gardenia",
+      "category": "flowering",
+      "image": "/plant-images/flowering-04-petunia.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-jasmine",
+      "name": "Jasmine",
+      "category": "flowering",
+      "image": "/plant-images/flowering-05-geranium.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-mogra",
+      "name": "Mogra",
+      "category": "flowering",
+      "image": "/plant-images/flowering-06-chrysanthemum.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-tuberose",
+      "name": "Tuberose",
+      "category": "flowering",
+      "image": "/plant-images/flowering-07-bougainvillea.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-canna-lily",
+      "name": "Canna Lily",
+      "category": "flowering",
+      "image": "/plant-images/flowering-08-plumeria.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-day-lily",
+      "name": "Day Lily",
+      "category": "flowering",
+      "image": "/plant-images/flowering-09-hibiscus.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-gladiolus",
+      "name": "Gladiolus",
+      "category": "flowering",
+      "image": "/plant-images/flowering-10-zinnia.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-carnation",
+      "name": "Carnation",
+      "category": "flowering",
+      "image": "/plant-images/ornamental-07-ornamental-grass.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-cosmos",
+      "name": "Cosmos",
+      "category": "flowering",
+      "image": "/plant-images/ornamental-08-canna-lily.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-vinca",
+      "name": "Vinca",
+      "category": "flowering",
+      "image": "/plant-images/ornamental-09-tropical-heliconia.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-pentas",
+      "name": "Pentas",
+      "category": "flowering",
+      "image": "/plant-images/flowering-01-red-rose.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-portulaca",
+      "name": "Portulaca",
+      "category": "flowering",
+      "image": "/plant-images/flowering-02-pink-rose.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-pansy",
+      "name": "Pansy",
+      "category": "flowering",
+      "image": "/plant-images/flowering-03-marigold.webp",
+      "example": true
+    },
+    {
+      "slug": "flowering-morning-glory",
+      "name": "Morning Glory",
+      "category": "flowering",
+      "image": "/plant-images/flowering-04-petunia.webp",
+      "example": true
+    },
+    {
+      "name": "Royal Palm",
+      "slug": "palms-royal-palm",
+      "category": "palms",
+      "image": "/plant-images/nursery-royal-palm.webp",
+      "price": 15000,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Copernicia Alba Palm",
+      "slug": "palms-copernicia-alba-palm",
+      "category": "palms",
+      "image": "/plant-images/nursery-copernicia-alba-palm.webp",
+      "price": 40000,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Sylvester Palm",
+      "slug": "palms-sylvester-palm",
+      "category": "palms",
+      "image": "/plant-images/nursery-sylvester-palm.webp",
+      "price": 60000,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Kangi Palm",
+      "slug": "palms-kangi-palm",
+      "category": "palms",
+      "image": "/plant-images/nursery-kangi-palm.webp",
+      "price": 5000,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Ponytail Palm",
+      "slug": "palms-ponytail-palm",
+      "category": "palms",
+      "image": "/plant-images/nursery-ponytail-palm.webp",
+      "price": 5000,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Alexandra Palm",
+      "slug": "palms-alexandra-palm",
+      "category": "palms",
+      "image": "/plant-images/nursery-alexandra-palm.webp",
+      "price": 5000,
+      "hideExampleActivity": true
+    },
+    {
+      "slug": "palms-areca-palm",
+      "name": "Areca Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-01-areca-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-foxtail-palm",
+      "name": "Foxtail Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-03-foxtail-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-bottle-palm",
+      "name": "Bottle Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-04-bottle-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-bismarck-palm",
+      "name": "Bismarck Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-05-fan-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-date-palm",
+      "name": "Date Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-06-lady-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-canary-island-date-palm",
+      "name": "Canary Island Date Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-07-sago-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-pygmy-date-palm",
+      "name": "Pygmy Date Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-08-parlour-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-chinese-fan-palm",
+      "name": "Chinese Fan Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-09-majesty-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-washingtonia-palm",
+      "name": "Washingtonia Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-10-coconut-palm-sapling.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-mexican-fan-palm",
+      "name": "Mexican Fan Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-01-areca-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-lady-palm",
+      "name": "Lady Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-02-date-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-bamboo-palm",
+      "name": "Bamboo Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-03-foxtail-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-kentia-palm",
+      "name": "Kentia Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-04-bottle-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-majesty-palm",
+      "name": "Majesty Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-05-fan-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-raphis-palm",
+      "name": "Raphis Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-06-lady-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-fishtail-palm",
+      "name": "Fishtail Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-07-sago-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-sabal-palm",
+      "name": "Sabal Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-08-parlour-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-queen-palm",
+      "name": "Queen Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-09-majesty-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-pindo-palm",
+      "name": "Pindo Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-10-coconut-palm-sapling.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-triangle-palm",
+      "name": "Triangle Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-01-areca-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-christmas-palm",
+      "name": "Christmas Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-02-date-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-coconut-palm",
+      "name": "Coconut Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-03-foxtail-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-traveller-palm",
+      "name": "Traveller Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-04-bottle-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-paurotis-palm",
+      "name": "Paurotis Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-05-fan-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-carpentaria-palm",
+      "name": "Carpentaria Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-07-sago-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-spindle-palm",
+      "name": "Spindle Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-08-parlour-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-licuala-palm",
+      "name": "Licuala Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-09-majesty-palm.webp",
+      "example": true
+    },
+    {
+      "slug": "palms-ravenala-palm",
+      "name": "Ravenala Palm",
+      "category": "palms",
+      "image": "/plant-images/palms-10-coconut-palm-sapling.webp",
+      "example": true
+    },
+    {
+      "name": "Gul e Nishtar",
+      "slug": "trees-gul-e-nishtar",
+      "category": "trees",
+      "image": "/plant-images/client-enhanced-gul-e-nishtar.webp",
+      "originalImage": "/plant-images/client-original-gul-e-nishtar.webp",
+      "price": 350,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Pine Tree",
+      "slug": "trees-pine",
+      "category": "trees",
+      "image": "/plant-images/client-enhanced-pine.webp",
+      "originalImage": "/plant-images/client-original-pine.webp",
+      "price": 3570,
+      "estimatedPrice": true,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Terminalia",
+      "slug": "trees-terminalia",
+      "category": "trees",
+      "image": "/plant-images/nursery-clean-terminalia.webp",
+      "originalImage": "/plant-images/nursery-original-terminalia.webp",
+      "price": 200,
+      "maxPrice": 5000,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "China Doll",
+      "slug": "trees-china-doll",
+      "category": "trees",
+      "image": "/plant-images/nursery-china-doll.webp",
+      "originalImage": "/plant-images/nursery-original-china-doll.webp",
+      "price": 200,
+      "maxPrice": 5000,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Jamun Fruit Tree",
+      "slug": "trees-jamun",
+      "category": "trees",
+      "image": "/plant-images/nursery-jamun.webp",
+      "originalImage": "/plant-images/nursery-original-jamun.webp",
+      "price": 200,
+      "maxPrice": 5000,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Amstel King Ficus",
+      "slug": "trees-amstel-king-ficus",
+      "category": "trees",
+      "image": "/plant-images/nursery-amstel-king-ficus.webp",
+      "originalImage": "/plant-images/nursery-original-amstel-king-ficus.webp",
+      "price": 200,
+      "maxPrice": 5000,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Pink Tabebuia",
+      "slug": "trees-pink-tabebuia",
+      "category": "trees",
+      "image": "/plant-images/nursery-pink-tabebuia.webp",
+      "originalImage": "/plant-images/nursery-original-pink-tabebuia.webp",
+      "price": 200,
+      "maxPrice": 5000,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Nursery Tree",
+      "slug": "trees-tree-six",
+      "category": "trees",
+      "image": "/plant-images/nursery-tree-six.webp",
+      "price": 200,
+      "maxPrice": 5000,
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Teddy Bear Topiary Large",
+      "slug": "topiary-bear",
+      "category": "topiary",
+      "price": 60000,
+      "image": "/plant-images/topiary-enhanced-bear.webp",
+      "originalImage": "/plant-images/topiary-original-bear.webp",
+      "additionalImages": [],
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Swan Topiary Pair",
+      "slug": "topiary-swan-pair",
+      "category": "topiary",
+      "price": 3000,
+      "image": "/plant-images/topiary-enhanced-swan-pair.webp",
+      "originalImage": "/plant-images/topiary-original-swan-pair.webp",
+      "additionalImages": [
+        "/plant-images/topiary-enhanced-swan-pair-b.webp",
+        "/plant-images/topiary-original-swan-pair-b.webp"
+      ],
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Football Topiary",
+      "slug": "topiary-football-15",
+      "category": "topiary",
+      "price": 2500,
+      "image": "/plant-images/topiary-enhanced-football-15.webp",
+      "originalImage": "/plant-images/topiary-original-football-15.webp",
+      "additionalImages": [],
+      "photoVariants": [
+        {
+          "image": "/plant-images/topiary-enhanced-football-15.webp",
+          "detail": "15 inch pot",
+          "price": 2500
+        },
+        {
+          "image": "/plant-images/topiary-original-football-15.webp",
+          "detail": "15 inch pot",
+          "price": 2500
+        },
+        {
+          "image": "/plant-images/topiary-enhanced-football-24-art.webp",
+          "detail": "24 inch size"
+        },
+        {
+          "image": "/plant-images/topiary-original-football-24-art.webp",
+          "detail": "24 inch size"
+        }
+      ],
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Buxus Surahi",
+      "slug": "topiary-surahi-4ft",
+      "category": "topiary",
+      "price": 4000,
+      "image": "/plant-images/topiary-enhanced-surahi-4ft.webp",
+      "originalImage": "/plant-images/topiary-original-surahi-4ft.webp",
+      "detail": "15 inch pot, 4 feet tall",
+      "additionalImages": [],
+      "photoVariants": [
+        {
+          "image": "/plant-images/topiary-enhanced-surahi-4ft.webp",
+          "detail": "15 inch pot, 4 feet tall",
+          "price": 4000
+        },
+        {
+          "image": "/plant-images/topiary-original-surahi-4ft.webp",
+          "detail": "15 inch pot, 4 feet tall",
+          "price": 4000
+        },
+        {
+          "image": "/plant-images/topiary-enhanced-surahi-24-b.webp",
+          "detail": "24 inch pot",
+          "price": 10000
+        },
+        {
+          "image": "/plant-images/topiary-original-surahi-24-b.webp",
+          "detail": "24 inch pot",
+          "price": 10000
+        },
+        {
+          "image": "/plant-images/topiary-enhanced-surahi-24-art.webp",
+          "detail": "24 inch pot, 6 feet tall",
+          "price": 12000
+        },
+        {
+          "image": "/plant-images/topiary-original-surahi-24-art.webp",
+          "detail": "24 inch pot, 6 feet tall",
+          "price": 12000
+        },
+        {
+          "image": "/plant-images/topiary-enhanced-surahi-24-a.webp",
+          "detail": "Size to be confirmed"
+        },
+        {
+          "image": "/plant-images/topiary-original-surahi-24-a.webp",
+          "detail": "Size to be confirmed"
+        }
+      ],
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Small Elephant Topiary",
+      "slug": "topiary-elephant-small",
+      "category": "topiary",
+      "price": 35000,
+      "image": "/plant-images/topiary-enhanced-elephant-small.webp",
+      "originalImage": "/plant-images/topiary-original-elephant-small.webp",
+      "additionalImages": [],
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Buxus Cone 8 feet",
+      "slug": "topiary-cone",
+      "category": "topiary",
+      "price": 10000,
+      "image": "/plant-images/topiary-enhanced-cone.webp",
+      "originalImage": "/plant-images/topiary-original-cone.webp",
+      "detail": "24 inch pot, 8 feet tall",
+      "additionalImages": [],
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Buxus Spiral 6 feet",
+      "slug": "topiary-spiral",
+      "category": "topiary",
+      "price": 9000,
+      "image": "/plant-images/topiary-enhanced-spiral.webp",
+      "originalImage": "/plant-images/topiary-original-spiral.webp",
+      "detail": "15 inch pot, 6 feet tall",
+      "additionalImages": [],
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Giraffe Topiary Medium",
+      "slug": "topiary-giraffe",
+      "category": "topiary",
+      "price": 90000,
+      "image": "/plant-images/topiary-enhanced-giraffe.webp",
+      "originalImage": "/plant-images/topiary-original-giraffe.webp",
+      "additionalImages": [],
+      "hideExampleActivity": true
+    },
+    {
+      "name": "Elephant Topiary",
+      "slug": "topiary-elephant-large",
+      "category": "topiary",
+      "image": "/plant-images/topiary-enhanced-elephant-large.webp",
+      "originalImage": "/plant-images/topiary-original-elephant-large.webp",
+      "additionalImages": [],
+      "hideExampleActivity": true
+    }
+  ]
+}
