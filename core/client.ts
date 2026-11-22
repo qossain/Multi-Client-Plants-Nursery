@@ -9,6 +9,7 @@ export interface ClientConfig {
   homeTitle: string; homeDescription: string; heroTitle: string; heroEmphasis: string;
   heroDescription: string; heroDesktop: string; heroMobile: string; shareImage: string;
   storyLocation: string; storyFact: string; founded: number;
+  featured: string[]; shrubs: string[]; awards: string[]; reviewCount: number; clientCount: number;
   theme: string; layout: string; hero: string; productCard: string; sections: string[];
 }
 

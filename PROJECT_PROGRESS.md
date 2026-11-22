@@ -51,3 +51,8 @@ Update this file after each meaningful change: date, scope, verification, next s
 - Moved services into the first client's data and parameterized its identity, contact links, page metadata, hero text and images, and story details. The first client's public assets now live in its client folder and Astro uses that folder as its public directory.
 - `CLIENT=abdul-jabbar npm run build` succeeded with 259 pages. Homepage markup compared with the existing original build differs in the experience counter's data attribute and script; visible homepage text was unchanged in that comparison. Product gallery scripts also changed to use the configured WhatsApp number. A mobile visual comparison and interaction tests are still required.
 - Other clients remain intentionally blocked; configuration validation, complete client content isolation, theme and variant handling, onboarding, and Vercel filtering remain unfinished. No push or deployment.
+
+## 2026-11-22 — More client-specific content
+
+- Moved featured product choices, shrub membership, award names, and displayed review and client counts into the first client's configuration. Empty award lists and zero counts no longer display those claims.
+- The first client build succeeded with 259 pages. Mobile visual comparison and interactions have not yet been checked. Other clients remain blocked until complete isolation and validation are in place.

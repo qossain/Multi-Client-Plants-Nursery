@@ -9,12 +9,7 @@ import PlantCard from '../../core/components/PlantCard.astro';
 import { plants } from '../data/catalog';
 import { client } from '../../core/client';
 
-const featuredSlugs = [
-  'indoor-monstera-deliciosa', 'outdoor-bougainvillea', 'fruit-anwar-ratol-mango',
-  'bonsai-ficus-retusa-bonsai', 'cactus-prickly-pear-cactus', 'flowering-red-rose',
-  'flowering-pink-rose', 'palms-areca-palm',
-];
-const featuredPlants = plants.filter((plant) => featuredSlugs.includes(plant.slug));
+const featuredPlants = plants.filter((plant) => client.featured.includes(plant.slug));
 ---
 
 <BaseLayout

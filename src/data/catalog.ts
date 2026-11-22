@@ -32,6 +32,6 @@ export const categories: Category[] = catalog.categories;
 export const plants: Plant[] = catalog.plants;
 
 export const categoryFor = (slug: string) => categories.find((category) => category.slug === slug);
-export const isShrub = (plant: Plant) => ['outdoor-murraya', 'outdoor-duranta-gold', 'outdoor-ixora', 'outdoor-hibiscus', 'outdoor-oleander', 'outdoor-lantana', 'outdoor-pittosporum', 'outdoor-gardenia'].includes(plant.slug);
+export const isShrub = (plant: Plant) => client.shrubs.includes(plant.slug);
 export const plantsFor = (slug: string) => plants.filter((plant) => slug === 'shrubs' ? isShrub(plant) : plant.category === slug);
 export const priceLabel = (amount: number, maxPrice?: number) => 'Rs ' + new Intl.NumberFormat('en-PK').format(amount) + (maxPrice ? ' to Rs ' + new Intl.NumberFormat('en-PK').format(maxPrice) : '');
