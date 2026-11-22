@@ -7,6 +7,7 @@ import Services from '../../core/components/Services.astro';
 import Testimonials from '../../core/components/Testimonials.astro';
 import PlantCard from '../../core/components/PlantCard.astro';
 import { plants } from '../data/catalog';
+import { client } from '../../core/client';
 
 const featuredSlugs = [
   'indoor-monstera-deliciosa', 'outdoor-bougainvillea', 'fruit-anwar-ratol-mango',
@@ -17,8 +18,8 @@ const featuredPlants = plants.filter((plant) => featuredSlugs.includes(plant.slu
 ---
 
 <BaseLayout
-  title="Abdul Jabbar Nursery | Plant Nursery in Pattoki, Pakistan"
-  description="Explore plants, fruit trees and topiary at Abdul Jabbar Nursery Farm in Pattoki, Pakistan. Contact our nursery for plant supply and landscaping."
+  title={client.homeTitle}
+  description={client.homeDescription}
   home
 >
   <main id="main">

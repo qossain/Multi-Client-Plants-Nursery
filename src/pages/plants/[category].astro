@@ -2,6 +2,7 @@
 import BaseLayout from '../../../core/layouts/BaseLayout.astro';
 import PlantGrid from '../../../core/components/PlantGrid.astro';
 import { categories, plantsFor } from '../../data/catalog';
+import { client } from '../../../core/client';
 
 export function getStaticPaths() {
   return categories.map((category) => ({
@@ -15,7 +16,7 @@ const listings = plantsFor(category.slug);
 const hero = ['trees', 'topiary', 'shrubs'].includes(category.slug) ? 'outdoor' : category.slug;
 ---
 
-<BaseLayout title={`${category.title} in Pattoki | Abdul Jabbar Nursery Farm`} description={`${category.description} Contact Abdul Jabbar Nursery Farm in Pattoki, Pakistan, for availability and prices.`} image={category.coverImage}>
+<BaseLayout title={`${category.title} in ${client.locality} | ${client.name}`} description={`${category.description} Contact ${client.name} in ${client.storyLocation}, for availability and prices.`} image={category.coverImage}>
   <main id="main">
     <header class="category-hero">
       <picture class="category-hero-image">

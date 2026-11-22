@@ -45,3 +45,9 @@ Update this file after each meaningful change: date, scope, verification, next s
 
 - Moved the existing review summaries and their source excerpts into the first client's `reviews.json`, selected through the build alias. The summaries remain distinct from quotations. Other-client builds remain blocked while isolation is incomplete.
 - The first client build succeeded with 259 pages; all 644 files present in the original existing build matched. Mobile visual and interaction comparisons remain outstanding.
+
+## 2026-11-22 — Client identity and asset ownership
+
+- Moved services into the first client's data and parameterized its identity, contact links, page metadata, hero text and images, and story details. The first client's public assets now live in its client folder and Astro uses that folder as its public directory.
+- `CLIENT=abdul-jabbar npm run build` succeeded with 259 pages. Homepage markup compared with the existing original build differs in the experience counter's data attribute and script; visible homepage text was unchanged in that comparison. Product gallery scripts also changed to use the configured WhatsApp number. A mobile visual comparison and interaction tests are still required.
+- Other clients remain intentionally blocked; configuration validation, complete client content isolation, theme and variant handling, onboarding, and Vercel filtering remain unfinished. No push or deployment.

@@ -1,4 +1,5 @@
 import catalog from '@client-products';
+import { client } from '../../core/client';
 
 export type Category = {
   slug: string;
@@ -25,8 +26,8 @@ export type Plant = {
   example?: boolean;
 };
 
-export const heroPhoto = '/hero-legacy-desktop.webp';
-export const heroPhotoMobile = '/hero-rooftop-mobile.webp';
+export const heroPhoto = client.shareImage;
+export const heroPhotoMobile = client.heroMobile;
 export const categories: Category[] = catalog.categories;
 export const plants: Plant[] = catalog.plants;
 
