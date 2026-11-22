@@ -56,3 +56,8 @@ Update this file after each meaningful change: date, scope, verification, next s
 
 - Moved featured product choices, shrub membership, award names, and displayed review and client counts into the first client's configuration. Empty award lists and zero counts no longer display those claims.
 - The first client build succeeded with 259 pages. Mobile visual comparison and interactions have not yet been checked. Other clients remain blocked until complete isolation and validation are in place.
+
+## 2026-11-22 — Initial validation and theme tokens
+
+- Added checks for client fields, catalog relationships, product prices and local image paths, plus a legacy theme and five provisional concept palettes. Color literals in the shared stylesheet were extracted to theme variables; reconstructing the original CSS from those variables matched the prior source exactly. The concept palettes are placeholders, not approved Figma designs.
+- The first client build succeeded with 259 pages and the existing client-selection test passed. No visual regression, multiple-client isolation, or malformed-data test suite has yet been completed; other-client builds remain blocked.
