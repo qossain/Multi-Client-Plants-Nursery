@@ -2,6 +2,19 @@
 
 Update this file after each meaningful change: date, scope, verification, next step and unresolved risks. Keep plans distinct from completed work. Update MULTI_CLIENT_PLAN.md when architecture or decisions change. Do not record credentials or sensitive client information.
 
+## 2026-11-27 — Nasaruldin navigation logo
+
+- Generated a transparent topiary wordmark and configured Nasaruldin's homepage and shared inner-page navigation to show it at left with a three-line menu at right. Parameterized the existing wordmark navigation so Usman retains its asset. Nasaruldin build passed (226 pages); checked the directory header in the local browser. Mobile and homepage appearance and interaction need further review; the generated artwork is a design concept. No push or deployment.
+- Increased the Nasaruldin wordmark width in homepage and inner-page headers, with a viewport-based maximum to preserve space for the menu. The Usman wordmark sizing remains independent.
+- Shifted Nasaruldin's logo slightly left and restored the topiary's original green on the homepage while keeping the wordmark white for contrast over the video.
+- At the user's request, hid the tree in the Nasaruldin navigation wordmark and retained the nursery name.
+- Generated a new name-only wordmark in a different typographic style and selected it for Nasaruldin's navigation. The previous logo asset remains available. The homepage uses a light version for readability over video.
+- Reduced the name-only wordmark to 150px maximum and moved it 6px left in the homepage and inner-page navigation to balance it with the menu icon. Scoped to Nasaruldin's logo asset.
+
+## 2026-11-27 — Nasaruldin directory background
+
+- Extended the mobile directory background across the screen and reduced the space above the heading, addressing the visible rectangular edge and gap in the supplied Nasaruldin screenshot. Scoped the new rules away from the Usman wordmark variant. Nasaruldin build passed (226 pages); copied the updated page to the isolated preview on port 4185. Mobile browser and physical-device verification remain outstanding. No push or deployment.
+
 ## 2026-11-27 — Multi-client handoff and directory responsiveness
 
 - Added `PROJECT_HANDOFF.md` as the first-read guide for a new chat, with repository and deployment boundaries, per-client preview status, local commands, a next-client checklist, data cautions and push/deploy safeguards. Linked it from `AGENTS.md`, `CLAUDE.md`, `README.md` and `MULTI_CLIENT_PLAN.md`; clarified that the Abdul Jabbar instructions in `AGENTS.md` are historical and client-specific. Updated the current plan status to reflect the pushed platform and current client previews. No commit or push.

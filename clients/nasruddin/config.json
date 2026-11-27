@@ -170,5 +170,7 @@
     "tagLabel": "View specimen",
     "enquiryLabel": "Ask about this plant on WhatsApp"
   },
-  "tiktok": "https://www.tiktok.com/@podayonline.pk"
+  "tiktok": "https://www.tiktok.com/@podayonline.pk",
+  "headerStyle": "wordmark",
+  "navWordmark": "/nasaruldin-name-logo.png"
 }

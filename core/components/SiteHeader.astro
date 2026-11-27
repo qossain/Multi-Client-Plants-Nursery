@@ -15,7 +15,7 @@ const links = [
 ---
 
 <header class:list={['site-header', home && 'home-header', client.headerStyle === 'wordmark' && 'usman-inner-header']}>
-  {client.headerStyle === 'wordmark' ? <a class="usman-inner-wordmark" href="/" aria-label={`${client.name} home`}><img src="/usman-wordmark-transparent.png" alt={client.name} width="700" height="320" /></a> : <a class="brand" href="/" aria-label={`${client.name} home`}>
+  {client.headerStyle === 'wordmark' ? <a class="usman-inner-wordmark" href="/" aria-label={`${client.name} home`}><img src={client.navWordmark || "/usman-wordmark-transparent.png"} alt={client.name} width="700" height="320" /></a> : <a class="brand" href="/" aria-label={`${client.name} home`}>
     <img src={client.logo} alt="" width="44" height="44" />
     <span>{client.brandTitle}<small>{client.brandSubtitle}</small></span>
   </a>}
@@ -29,7 +29,7 @@ const links = [
 
 <dialog class:list={['mobile-nav', client.headerStyle === 'wordmark' && 'usman-inner-menu']} id="mobile-nav" aria-label={client.copy.navigation} data-mobile-nav data-wordmark-menu={client.headerStyle === 'wordmark' ? 'true' : undefined}>
   <div class="mobile-nav-top">
-    {client.headerStyle === 'wordmark' ? <a class="usman-inner-wordmark usman-menu-wordmark" href="/" aria-label={`${client.name} home`}><img src="/usman-wordmark-transparent.png" alt={client.name} width="700" height="320" /><img class="usman-inner-leaf" src="/usman-wordmark-transparent.png" alt="" aria-hidden="true" width="700" height="320" /></a> : <span class="mobile-nav-brand"><img src={client.logo} alt="" width="42" height="42" /> {client.brandName}</span>}
+    {client.headerStyle === 'wordmark' ? <a class="usman-inner-wordmark usman-menu-wordmark" href="/" aria-label={`${client.name} home`}><img src={client.navWordmark || "/usman-wordmark-transparent.png"} alt={client.name} width="700" height="320" />{!client.navWordmark && <img class="usman-inner-leaf" src="/usman-wordmark-transparent.png" alt="" aria-hidden="true" width="700" height="320" />}</a> : <span class="mobile-nav-brand"><img src={client.logo} alt="" width="42" height="42" /> {client.brandName}</span>}
     <button class="mobile-nav-close" type="button" aria-label={client.copy.closeNavigation} data-menu-close><span aria-hidden="true">×</span></button>
   </div>
   <nav class="mobile-nav-links" aria-label={client.copy.mobileNavigation}>
@@ -64,6 +64,8 @@ const links = [
   .site-header.usman-inner-header{position:relative;top:auto;display:flex;justify-content:space-between;width:min(100% - 36px,1240px);min-height:66px;margin:0 auto 18px;padding:3px 0;background:transparent;border:0;border-radius:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
   .usman-inner-header .site-nav{display:none}.usman-inner-header .menu-toggle{display:flex;align-items:center;justify-content:center;width:44px;height:44px;margin:0;background:transparent;color:#173d2d}
   .usman-inner-wordmark{position:relative;display:flex;align-items:center;width:130px;height:60px;flex:none}.usman-inner-wordmark img{width:130px;height:60px;object-fit:contain}
+  .usman-inner-wordmark:has(img[src="/nasaruldin-name-logo.png"]){width:min(150px,48vw);margin-left:-6px}
+  .usman-inner-wordmark img[src="/nasaruldin-name-logo.png"]{width:100%;height:60px}
   .usman-menu-lines{display:flex;width:26px;flex-direction:column;gap:5px}.usman-menu-lines i{display:block;width:26px;height:3px;border-radius:3px;background:currentColor}
   .mobile-nav.usman-inner-menu[open]{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;width:100%;max-width:none;height:100%;height:100dvh;max-height:none;margin:0;padding:max(22px,env(safe-area-inset-top)) 24px max(24px,env(safe-area-inset-bottom));overflow-y:auto;color:#f8f8f0;background:#102b1d;border:0}
   .usman-inner-menu::backdrop{background:rgba(5,20,12,.45)}.usman-inner-menu .mobile-nav-top{display:flex;align-items:center;justify-content:space-between;gap:16px}.usman-inner-menu .mobile-nav-close{display:grid;width:46px;height:46px;place-items:center;color:#173d2d;background:#f7f8f2;border:0;border-radius:50%;font-size:27px;cursor:pointer}
