@@ -2,6 +2,8 @@
 
 An Astro static-site platform for separate nursery clients. Work in this repository is isolated from the original Abdul Jabbar website; no production switch is implied. See [MULTI_CLIENT_PLAN.md](MULTI_CLIENT_PLAN.md) and [PROJECT_PROGRESS.md](PROJECT_PROGRESS.md) for status, safeguards and verification.
 
+For a new chat or contributor, read [PROJECT_HANDOFF.md](PROJECT_HANDOFF.md) first. It records the live repository state, current client previews, Vercel settings, operational cautions and the exact next-client workflow.
+
 ## Local setup
 
 Use Node.js 22.23.4 or later and run `npm ci`. In PowerShell select a client before running the site:
@@ -13,6 +15,8 @@ npm run build
 npm run preview -- --port 4175
 npm test
 ```
+
+Change `CLIENT` to `nasruddin` or another folder name under `clients/` to run or build that client. Start the dev server only after selecting the intended client.
 
 The client must exist and pass build-time validation. The static output is `dist`. On systems that block Astro's user configuration directory, set `ASTRO_TELEMETRY_DISABLED=1` and point `APPDATA` to a writable temporary folder for the build.
 

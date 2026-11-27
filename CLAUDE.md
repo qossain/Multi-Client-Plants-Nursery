@@ -1,3 +1,3 @@
 # Agent handoff
 
-Read AGENTS.md for the existing site constraints, MULTI_CLIENT_PLAN.md for the agreed platform plan and PROJECT_PROGRESS.md for current status before acting. Update the plan when decisions change and the progress log after each meaningful change, including verification and remaining risks. The existing live site and its production deployment must not be altered as part of platform development without explicit approval.
+Read `PROJECT_HANDOFF.md` first for the current clients, repository, Vercel setup, commands, launch cautions and next steps. Then read `AGENTS.md`, `MULTI_CLIENT_PLAN.md` and `PROJECT_PROGRESS.md`; inspect the current Git state and code before acting. Keep the original Abdul Jabbar production repository and deployment separate. Never push or deploy without the user's current request. Update `PROJECT_PROGRESS.md` after meaningful work and `MULTI_CLIENT_PLAN.md` when a decision changes.

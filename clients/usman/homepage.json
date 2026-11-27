@@ -1,0 +1,134 @@
+{
+  "categories": [
+    "Indoor plants",
+    "Outdoor plants",
+    "Fruit plants",
+    "Bonsai",
+    "Cactus",
+    "Flowering plants",
+    "Palms",
+    "Trees"
+  ],
+  "featured": [
+    {
+      "name": "Premium Bonsai Ficus",
+      "image": "/trending/premium-ficus.webp",
+      "alt": "Illustration of Premium Bonsai Ficus"
+    },
+    {
+      "name": "China-Imported Landscape Bonsai",
+      "image": "/trending/china-bonsai.webp",
+      "alt": "Illustration of China-Imported Landscape Bonsai"
+    },
+    {
+      "name": "Grafted Multi-Head Bonsai",
+      "image": "/trending/grafted-multi-head.webp",
+      "alt": "Illustration of Grafted Multi-Head Bonsai"
+    },
+    {
+      "name": "Imported Thai Lemon Bonsai",
+      "image": "/trending/thai-lemon.webp",
+      "alt": "Illustration of Imported Thai Lemon Bonsai"
+    },
+    {
+      "name": "Dioon merolae",
+      "image": "/trending/dioon-merolae.webp",
+      "alt": "Illustration of Dioon merolae"
+    },
+    {
+      "name": "Ficus Pom-Pom Cloud Topiary",
+      "image": "/trending/ficus-cloud.webp",
+      "alt": "Illustration of Ficus Pom-Pom Cloud Topiary"
+    },
+    {
+      "name": "Ficus Cage Shape",
+      "image": "/trending/ficus-cage.webp",
+      "alt": "Illustration of Ficus Cage Shape"
+    },
+    {
+      "name": "Buxus Surahi",
+      "image": "/trending/buxus-surahi.webp",
+      "alt": "Illustration of Buxus Surahi"
+    },
+    {
+      "name": "Sylvester Palm (Phoenix sylvestris)",
+      "image": "/trending/sylvester-palm.webp",
+      "alt": "Illustration of Sylvester Palm (Phoenix sylvestris)"
+    },
+    {
+      "name": "Banta Ficus Topiary",
+      "image": "/trending/banta-ficus.webp",
+      "alt": "Illustration of Banta Ficus Topiary"
+    },
+    {
+      "name": "Bougainvillea",
+      "image": "/plant-images/flowering-07-bougainvillea.webp",
+      "alt": "Illustration of Bougainvillea"
+    },
+    {
+      "name": "Plumeria",
+      "image": "/plant-images/flowering-08-plumeria.webp",
+      "alt": "Illustration of Plumeria"
+    },
+    {
+      "name": "Pomegranate Tree",
+      "image": "/plant-images/fruit-05-pomegranate-tree.webp",
+      "alt": "Illustration of Pomegranate Tree"
+    },
+    {
+      "name": "Olive Tree",
+      "image": "/plant-images/fruit-07-olive-tree.webp",
+      "alt": "Illustration of Olive Tree"
+    },
+    {
+      "name": "Foxtail Palm",
+      "image": "/trending/palms-03-foxtail-palm.webp",
+      "alt": "Illustration of Foxtail Palm"
+    },
+    {
+      "name": "Bottle Palm",
+      "image": "/trending/palms-04-bottle-palm.webp",
+      "alt": "Illustration of Bottle Palm"
+    },
+    {
+      "name": "Date Palm",
+      "image": "/trending/palms-02-date-palm.webp",
+      "alt": "Illustration of Date Palm"
+    },
+    {
+      "name": "Mature Date Palm",
+      "image": "/trending/mature-date.webp",
+      "alt": "Illustration of Mature Date Palm"
+    },
+    {
+      "name": "Sculpted Topiary",
+      "image": "/why-topiary-generated.webp",
+      "alt": "Illustration of Sculpted Topiary"
+    },
+    {
+      "name": "Multi-Level Topiary",
+      "image": "/categories-topiary.webp",
+      "alt": "Illustration of Multi-Level Topiary"
+    }
+  ],
+  "whyChoose": [
+    {
+      "title": "Topiary that makes an entrance",
+      "description": "Explore sculpted forms that bring definition to entrances, gardens and landscape projects.",
+      "image": "/why-topiary-generated.webp",
+      "alt": "Illustration of a shaped topiary tree"
+    },
+    {
+      "title": "Choose the right scale",
+      "description": "From a single statement plant to a larger scheme, ask about sizes and quantities for your space.",
+      "image": "/why-scale-generated.webp",
+      "alt": "Illustration of topiary plants in different sizes"
+    },
+    {
+      "title": "See before you decide",
+      "description": "Ask the nursery for current photos, dimensions and availability of the plants you are considering.",
+      "image": "/why-landscape-generated.webp",
+      "alt": "Illustration of a palm in a garden"
+    }
+  ]
+}

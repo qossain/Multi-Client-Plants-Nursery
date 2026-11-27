@@ -1,12 +1,12 @@
 # Multi-client nursery platform
 
-Status: local platform implementation and initial verification completed, 2026-11-22. The five concept designs are placeholders, and actual client content, Vercel deployment and full regression verification remain to be completed. See PROJECT_PROGRESS.md for evidence and limitations. Update both files as decisions and implementation change.
+Status: multi-client platform is on GitHub `qossain/Multi-Client-Plants-Nursery` (`main`). Nasaruldin has a public, noindex review deployment; Usman is a local client preview under active development. The original Abdul Jabbar production site remains separate. Current state, verification and launch risks are maintained in [PROJECT_HANDOFF.md](PROJECT_HANDOFF.md) and [PROJECT_PROGRESS.md](PROJECT_PROGRESS.md); older dated notes below are historical snapshots and do not override the current handoff.
 
 ## Goal and production protection
 
 Maintain one Astro codebase for multiple nursery clients, each with its own content, visual identity, Vercel project and domain. Target approximately 30 minutes to set up a client once suitable designs and content exist; validate this target in practice.
 
-The existing Abdul Jabbar Nursery site is client 1. Its current repository and production deployment must remain untouched during platform development. The separate platform repository is currently public and has not been pushed. Do not connect or switch the existing production project or domain without explicit approval and a reviewed rollback plan. Check actual Vercel settings and current production before migration; repository state alone does not establish what is live.
+The existing Abdul Jabbar Nursery site is client 1. Its current repository and production deployment must remain untouched during platform development. The separate platform repository is public and pushed to GitHub. Do not connect or switch the existing production project or domain without explicit approval and a reviewed rollback plan. Check actual Vercel settings and current production before migration; repository state alone does not establish what is live.
 
 ## Current baseline
 

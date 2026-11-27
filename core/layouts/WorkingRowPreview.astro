@@ -1,6 +1,7 @@
 ---
 import { client } from '../client';
-import home from '../../clients/nasruddin/homepage.json';
+import home from '@client-home-data';
+import { customerReviews } from '../../src/data/customerReviews';
 import Testimonials from '../components/Testimonials.astro';
 import Services from '../components/Services.astro';
 import SiteFooter from '../components/SiteFooter.astro';
@@ -8,7 +9,7 @@ import '@client-theme';
 import '../styles/testimonials-preview.css';
 import '../styles/services-preview.css';
 import '../styles/footer-preview.css';
-const social = 'https://www.instagram.com/podayonline.pk/';
+const social = client.instagram;
 const categoryIcons = ['indoor', 'outdoor', 'fruit', 'bonsai', 'cactus', 'flowering', 'palms', 'trees'];
 ---
 <!doctype html>
@@ -26,19 +27,19 @@ const categoryIcons = ['indoor', 'outdoor', 'fruit', 'bonsai', 'cactus', 'flower
         <img class="hero-bg" src="/hero-reference-crop.webp" width="332" height="900" alt="" fetchpriority="high" />
         <video class="hero-video" muted loop playsinline preload="none" aria-hidden="true"></video>
         <div class="hero-shade" aria-hidden="true"></div>
-        <header class="nav glass">
-          <a href="#home" class="brand"><img src="/nursery-logo-reference.webp" width="232" height="232" alt="" /><span>Nasaruldin <small>Nursery Farm</small></span></a>
-          <button class="hero-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="hero-mobile-nav"><span class="hero-menu-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span></button>
+        <header class:list={['nav', client.headerStyle === 'wordmark' ? 'wordmark-nav' : 'glass']}>
+          {client.headerStyle === 'wordmark' ? <a href="#home" class="wordmark-brand" aria-label={`${client.name} home`}><img src="/usman-wordmark-transparent.png" width="700" height="320" alt={client.name} /><img class="wordmark-leaf" src="/usman-wordmark-transparent.png" width="700" height="320" alt="" aria-hidden="true" /></a> : <a href="#home" class="brand"><img src={client.logo} width="232" height="232" alt="" /><span>{client.brandName} <small>{client.brandSubtitle}</small></span></a>}
+          <button class="hero-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="hero-mobile-nav">{client.headerStyle === 'wordmark' ? <span class="hero-menu-lines" aria-hidden="true"><i></i><i></i><i></i></span> : <span class="hero-menu-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>}</button>
         </header>
         <div class="hero-copy">
           <p class="eyebrow glass"><span></span>Plants <b>·</b> Nature <b>·</b> Life</p>
           <h1 id="hero-heading">Grow<br /><em>Greener</em><br />Together</h1>
-          <p class="hero-description">Discover plants and shaped trees at Nasaruldin Nursery Farm.</p>
+          <p class="hero-description">Discover plants and shaped trees at {client.name}.</p>
           <a class="primary glass" href="#categories">Explore the nursery</a>
         </div>
       </section>
       <dialog class="hero-mobile-nav" id="hero-mobile-nav" aria-label="Navigation">
-        <div class="hero-menu-top"><span class="hero-menu-brand"><img src="/nursery-logo-reference.webp" alt="" width="42" height="42" /> Nasaruldin Nursery Farm</span><button class="hero-menu-close" type="button" aria-label="Close navigation">×</button></div>
+        <div class="hero-menu-top">{client.headerStyle === 'wordmark' ? <a href="#home" class="wordmark-brand menu-wordmark" aria-label={`${client.name} home`}><img src="/usman-wordmark-transparent.png" width="700" height="320" alt={client.name} /><img class="wordmark-leaf" src="/usman-wordmark-transparent.png" width="700" height="320" alt="" aria-hidden="true" /></a> : <span class="hero-menu-brand"><img src={client.logo} alt="" width="42" height="42" /> {client.shortName}</span>}<button class="hero-menu-close" type="button" aria-label="Close navigation">×</button></div>
         <nav class="hero-menu-links" aria-label="Main navigation"><a href="#home">Home</a><a href="/plants/">Plants</a><a href="#categories">Categories</a><a href="#services-title">Our services</a><a href={social} target="_blank" rel="noopener noreferrer">Instagram</a>{client.business?.whatsappConfirmed && <a class="hero-menu-contact" href={`https://wa.me/${client.whatsapp}`} target="_blank" rel="noopener noreferrer">Get in touch</a>}</nav>
       </dialog>
       <section class="catalog" id="categories" aria-labelledby="categories-title">
@@ -63,7 +64,7 @@ const categoryIcons = ['indoor', 'outdoor', 'fruit', 'bonsai', 'cactus', 'flower
         </div>
       </section>
       <Services />
-      <Testimonials />
+      {customerReviews.length > 0 && <Testimonials />}
     </main>
     <SiteFooter />
     {client.business?.whatsappConfirmed && <a class="whatsapp-float" href={`https://wa.me/${client.whatsapp}`} target="_blank" rel="noreferrer" aria-label={client.copy.messageWhatsApp.replace('{name}', client.shortName)}><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2a9.95 9.95 0 0 0-8.59 15.04L2 22l5.1-1.34A9.96 9.96 0 1 0 12.04 2Zm0 18.15a8.16 8.16 0 0 1-4.16-1.14l-.3-.18-3.03.8.8-2.95-.2-.31a8.19 8.19 0 1 1 6.89 3.78Zm4.5-6.13c-.25-.12-1.45-.71-1.67-.8-.23-.08-.4-.12-.56.13-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.36-1.7-.15-.24-.02-.38.1-.5.1-.11.24-.29.37-.43.12-.15.16-.25.04-.49-.12-.24-.55-1.33-.76-1.81-.2-.48-.4-.41-.56-.41h-.47c-.17 0-.44.06-.67.31-.23.24-.86.84-.86 2.05 0 1.2.88 2.36 1 2.52.12.16 1.72 2.63 4.16 3.69.58.25 1.03.4 1.38.51.58.18 1.08.16 1.48.11.46-.07 1.45-.59 1.65-1.16.2-.58.2-1.07.14-1.17Z"/></svg></a>}
@@ -150,4 +151,8 @@ const categoryIcons = ['indoor', 'outdoor', 'fruit', 'bonsai', 'cactus', 'flower
   @media(max-width:767px){.hero-copy{width:100%;max-width:500px;margin:auto;text-align:center;padding:35px 0}.hero-copy h1{font-family:RowFraunces,Georgia,serif;font-weight:600;font-size:clamp(52px,13vw,78px);line-height:.98;letter-spacing:-.04em}.hero-description{margin-left:auto;margin-right:auto}.hero-shade{background:linear-gradient(0deg,rgba(8,27,15,.65),rgba(8,27,15,.42) 55%,rgba(8,27,15,.28))}}
   @media(max-width:767px){.catalog .category-hero{min-height:0;padding:15px;gap:14px}.catalog .category-hero h3{font-size:18px;line-height:1.12}.catalog .category-hero p{font-size:13px;line-height:1.35;margin:8px 0 11px}.catalog .category-hero a{min-height:38px;padding:8px 15px;font-size:13px}.catalog .category-hero img{height:150px;border-radius:16px}}
   @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.nav-panel,.hero-mobile-nav[open]{animation:none}}
+  .hero .wordmark-nav{width:100%;max-width:none;min-height:72px;margin:0;padding:5px clamp(16px,3vw,36px);border:0;border-radius:0;background:transparent;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+  .wordmark-brand{position:relative;display:flex;align-items:center;min-width:0;height:62px}.wordmark-brand img{display:block;width:130px;height:60px;object-fit:contain;filter:brightness(0) invert(1) drop-shadow(0 1px 3px rgba(0,0,0,.65))}.wordmark-brand .wordmark-leaf{position:absolute;left:0;top:50%;transform:translateY(-50%);clip-path:ellipse(6.5% 18% at 17% 48%);filter:brightness(2.2) saturate(1.3) drop-shadow(0 1px 2px rgba(0,0,0,.7));pointer-events:none}
+  .wordmark-nav .hero-menu-toggle{color:#fff;filter:drop-shadow(0 1px 3px rgba(0,0,0,.5))}.hero-menu-lines{display:flex;width:26px;flex-direction:column;gap:5px}.hero-menu-lines i{display:block;width:26px;height:3px;background:currentColor;border-radius:3px}
+  @media(max-width:767px){.hero:has(.wordmark-nav){padding:0 0 40px}.hero .wordmark-nav{min-height:66px;padding:3px 15px}.wordmark-brand{height:60px}.wordmark-brand img{width:120px;height:55px}.hero:has(.wordmark-nav) .hero-copy{padding-inline:18px}}
 </style>

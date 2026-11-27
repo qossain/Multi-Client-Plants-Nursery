@@ -14,22 +14,22 @@ const links = [
 ];
 ---
 
-<header class={home ? 'site-header home-header' : 'site-header'}>
-  <a class="brand" href="/" aria-label={`${client.name} home`}>
+<header class:list={['site-header', home && 'home-header', client.headerStyle === 'wordmark' && 'usman-inner-header']}>
+  {client.headerStyle === 'wordmark' ? <a class="usman-inner-wordmark" href="/" aria-label={`${client.name} home`}><img src="/usman-wordmark-transparent.png" alt={client.name} width="700" height="320" /></a> : <a class="brand" href="/" aria-label={`${client.name} home`}>
     <img src={client.logo} alt="" width="44" height="44" />
     <span>{client.brandTitle}<small>{client.brandSubtitle}</small></span>
-  </a>
+  </a>}
   <nav class="site-nav" aria-label={client.copy.mainNavigation}>
     {links.map((link) => <a class={link.contact ? 'nav-contact' : undefined} href={link.href} target={link.external ? '_blank' : undefined} rel={link.external ? 'noreferrer' : undefined}>{link.label}</a>)}
   </nav>
   <button class="menu-toggle" type="button" aria-label={client.copy.openNavigation} aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle>
-    <span class="dot-matrix" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    {client.headerStyle === 'wordmark' ? <span class="usman-menu-lines" aria-hidden="true"><i></i><i></i><i></i></span> : <span class="dot-matrix" aria-hidden="true"><i></i><i></i><i></i><i></i></span>}
   </button>
 </header>
 
-<dialog class="mobile-nav" id="mobile-nav" aria-label={client.copy.navigation} data-mobile-nav>
+<dialog class:list={['mobile-nav', client.headerStyle === 'wordmark' && 'usman-inner-menu']} id="mobile-nav" aria-label={client.copy.navigation} data-mobile-nav data-wordmark-menu={client.headerStyle === 'wordmark' ? 'true' : undefined}>
   <div class="mobile-nav-top">
-    <span class="mobile-nav-brand"><img src={client.logo} alt="" width="42" height="42" /> {client.brandName}</span>
+    {client.headerStyle === 'wordmark' ? <a class="usman-inner-wordmark usman-menu-wordmark" href="/" aria-label={`${client.name} home`}><img src="/usman-wordmark-transparent.png" alt={client.name} width="700" height="320" /><img class="usman-inner-leaf" src="/usman-wordmark-transparent.png" alt="" aria-hidden="true" width="700" height="320" /></a> : <span class="mobile-nav-brand"><img src={client.logo} alt="" width="42" height="42" /> {client.brandName}</span>}
     <button class="mobile-nav-close" type="button" aria-label={client.copy.closeNavigation} data-menu-close><span aria-hidden="true">×</span></button>
   </div>
   <nav class="mobile-nav-links" aria-label={client.copy.mobileNavigation}>
@@ -55,7 +55,19 @@ const links = [
       document.body.classList.remove('menu-open');
     });
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 840 && mobileNav.open) mobileNav.close();
+      if (window.innerWidth > 840 && mobileNav.open && mobileNav.dataset.wordmarkMenu !== 'true') mobileNav.close();
     });
   }
 </script>
+
+<style is:global>
+  .site-header.usman-inner-header{position:relative;top:auto;display:flex;justify-content:space-between;width:min(100% - 36px,1240px);min-height:66px;margin:0 auto 18px;padding:3px 0;background:transparent;border:0;border-radius:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+  .usman-inner-header .site-nav{display:none}.usman-inner-header .menu-toggle{display:flex;align-items:center;justify-content:center;width:44px;height:44px;margin:0;background:transparent;color:#173d2d}
+  .usman-inner-wordmark{position:relative;display:flex;align-items:center;width:130px;height:60px;flex:none}.usman-inner-wordmark img{width:130px;height:60px;object-fit:contain}
+  .usman-menu-lines{display:flex;width:26px;flex-direction:column;gap:5px}.usman-menu-lines i{display:block;width:26px;height:3px;border-radius:3px;background:currentColor}
+  .mobile-nav.usman-inner-menu[open]{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;width:100%;max-width:none;height:100%;height:100dvh;max-height:none;margin:0;padding:max(22px,env(safe-area-inset-top)) 24px max(24px,env(safe-area-inset-bottom));overflow-y:auto;color:#f8f8f0;background:#102b1d;border:0}
+  .usman-inner-menu::backdrop{background:rgba(5,20,12,.45)}.usman-inner-menu .mobile-nav-top{display:flex;align-items:center;justify-content:space-between;gap:16px}.usman-inner-menu .mobile-nav-close{display:grid;width:46px;height:46px;place-items:center;color:#173d2d;background:#f7f8f2;border:0;border-radius:50%;font-size:27px;cursor:pointer}
+  .usman-inner-menu .mobile-nav-links{display:flex;flex:1;flex-direction:column;gap:2px;width:min(100%,430px);margin:32px auto 24px}.usman-inner-menu .mobile-nav-links a{display:block;padding:10px 14px;color:#f8f8f0;border-radius:12px;font-family:var(--serif);font-size:clamp(21px,6vw,27px);line-height:1.2}.usman-inner-menu .mobile-nav-links a:hover,.usman-inner-menu .mobile-nav-links a:focus-visible{background:rgba(255,255,255,.1)}.usman-inner-menu .mobile-nav-links .mobile-nav-contact{margin-top:16px;padding:16px 18px;color:#173d2d;background:#f7f8f2;border-radius:999px;font-family:var(--sans);font-size:14px;font-weight:700;text-align:center}
+  .usman-menu-wordmark img{filter:brightness(0) invert(1)}.usman-menu-wordmark .usman-inner-leaf{position:absolute;left:0;top:0;clip-path:ellipse(6.5% 18% at 17% 48%);filter:brightness(2.2) saturate(1.3);pointer-events:none}
+  body.menu-open:has(.usman-inner-menu){overflow:hidden}
+</style>
