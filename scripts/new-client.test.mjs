@@ -26,6 +26,21 @@ test('scaffold is isolated, validated, and does not overwrite an existing client
       if (previousVercelEnv === undefined) delete process.env.VERCEL_ENV;
       else process.env.VERCEL_ENV = previousVercelEnv;
     }
+    config.layout = 'working-row-preview';
+    config.workingRow = { ground: '#F2EEE4', ink: '#252922', deep: '#253D31', hessian: '#D5C7A7', accent: '#B62D6D', tape: '#FF1493', lightAccent: '#FFB8D6', specimenName: 'Topiary', exploreLabel: 'Explore', sectionNote: 'Look', sectionTitle: 'Plants', tagLabel: 'View', enquiryLabel: 'Ask' };
+    config.business = { whatsappConfirmed: false, stockStatus: { value: null, confirmed: false }, stockLastUpdated: { value: null, confirmed: false }, responseTimePromise: { value: null, confirmed: false } };
+    await writeFile(configPath, JSON.stringify(config));
+    assert.equal(loadClient(slug).config.business.stockStatus.confirmed, false);
+    process.env.VERCEL_ENV = 'production';
+    try { assert.throws(() => loadClient(slug), /preview cannot be deployed/); }
+    finally {
+      if (previousVercelEnv === undefined) delete process.env.VERCEL_ENV;
+      else process.env.VERCEL_ENV = previousVercelEnv;
+    }
+    delete config.business.stockStatus;
+    await writeFile(configPath, JSON.stringify(config));
+    assert.throws(() => loadClient(slug), /owner-confirmed fields/);
+    config.business.stockStatus = { value: null, confirmed: false };
     config.heroDesktop = '/../outside.svg';
     await writeFile(configPath, JSON.stringify(config));
     assert.throws(() => loadClient(slug), /image/);

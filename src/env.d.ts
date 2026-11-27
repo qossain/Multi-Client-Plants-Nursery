@@ -10,6 +10,10 @@ declare module '@client-config' {
   const config: import('../core/client').ClientConfig;
   export default config;
 }
+declare module '@client-home' {
+  const component: typeof import('../core/layouts/LegacyHome.astro').default;
+  export default component;
+}
 declare module '@client-services' {
   const services: { title: string; description: string; image: string; link: string; action: string }[];
   export default services;

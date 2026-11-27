@@ -3,6 +3,7 @@ dist/
 .astro/
 .taste-skill/
 assets/source-images/
+clients/*/source-images/
 .env
 .env.*
 !.env.example

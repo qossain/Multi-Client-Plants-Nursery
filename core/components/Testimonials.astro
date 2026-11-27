@@ -7,7 +7,7 @@ const reviewCategories = [...new Set(reviews.map((review) => review.category))];
 <section class="testimonials" aria-labelledby="testimonials-title">
   <div class="section-wrap">
     <div class="testimonials-heading">
-      <div><p class="section-kicker">{client.copy.reviewKicker}</p><h2 id="testimonials-title">{client.copy.reviewTitle}<br />{client.copy.reviewTitleEmphasis}</h2></div>
+      <div><p class="section-kicker">{client.copy.reviewKicker}</p><h2 id="testimonials-title">{client.copy.reviewTitle}<br />{client.copy.reviewTitleEmphasis}</h2>{client.layout === 'working-row-preview' && <p>Serving customers in Pakistan and international export markets.</p>}</div>
       <div class="testimonials-stats" data-review-stats>
         {client.reviewCount > 0 && <div class="testimonial-stat">
           <svg class="testimonial-stat-icon google-icon" viewBox="0 0 48 48" aria-hidden="true"><path fill="var(--google-blue)" d="M43.6 24.5c0-1.4-.1-2.8-.4-4.1H24v7.8h11c-.5 2.6-2 4.7-4.2 6.2v5h6.7c3.9-3.6 6.1-8.9 6.1-14.9Z"/><path fill="var(--google-green)" d="M24 44.5c5.6 0 10.3-1.8 13.7-5.1l-6.7-5c-1.9 1.3-4.3 2.1-7 2.1-5.4 0-9.9-3.6-11.5-8.5H5.6v5.1A20.7 20.7 0 0 0 24 44.5Z"/><path fill="var(--google-yellow)" d="M12.5 28a12.4 12.4 0 0 1 0-8V15H5.6a20.6 20.6 0 0 0 0 18.1l6.9-5.1Z"/><path fill="var(--google-red)" d="M24 11.4c3 0 5.7 1 7.8 3l5.9-5.8A20 20 0 0 0 24 3.5 20.7 20.7 0 0 0 5.6 15l6.9 5c1.6-5 6.1-8.6 11.5-8.6Z"/></svg>
@@ -19,21 +19,21 @@ const reviewCategories = [...new Set(reviews.map((review) => review.category))];
         </div>}
       </div>
     </div>
-    <div class="testimonial-toolbar">
+    {client.layout !== 'working-row-preview' && <div class="testimonial-toolbar">
       <div class="testimonial-filters" role="group" aria-label={client.copy.reviewFilters}>
         <button type="button" class="testimonial-filter" data-review-filter="all" aria-pressed="true">{client.copy.allFeedback} <span>{reviews.length}</span></button>
         {reviewCategories.map((category) => <button type="button" class="testimonial-filter" data-review-filter={category} aria-pressed="false">{category} <span>{reviews.filter((review) => review.category === category).length}</span></button>)}
       </div>
-    </div>
+    </div>}
     <div class="testimonial-grid" tabindex="0" role="region" aria-label={client.copy.reviewRegion} data-review-label={client.copy.reviewRegion} data-review-paused-label={client.copy.reviewRegionPaused}>
       <div class="testimonial-track" data-review-track style={`--review-duration: ${Math.max(32, reviews.length * 11)}s`}>
           <div class="testimonial-group" data-review-group="0">
             {reviews.map((review) => (
               <figure class="testimonial-card" data-review-category={review.category}>
                 <div class="testimonial-card-top"><span class="testimonial-feedback">{client.copy.customerFeedback}</span><span class="testimonial-quote" aria-hidden="true">“</span></div>
-                <span class="testimonial-category">{review.category}</span>
+                <span class="testimonial-category">{review.category}{'rating' in review && ` · ${review.rating} / 5`}</span>
                 <p class="testimonial-summary">{review.summary}</p>
-                <figcaption><span class="testimonial-avatar" aria-hidden="true">{review.initials}</span><span><strong>{review.name}</strong><small>{client.copy.reviewDisclaimer}</small></span></figcaption>
+                <figcaption><span class="testimonial-avatar" aria-hidden="true">{review.initials}</span><span><strong>{review.name}</strong><small>{'location' in review ? review.location : client.copy.reviewDisclaimer}</small></span></figcaption>
               </figure>
             ))}
           </div>

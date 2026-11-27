@@ -34,9 +34,19 @@ export function loadClient(slug) {
       catch { throw new Error(`Client ${slug}: ${key} must be an HTTPS URL.`); }
     }
   }
+  if (config.tiktok != null && config.tiktok !== '') {
+    try { if (typeof config.tiktok !== 'string' || new URL(config.tiktok).protocol !== 'https:') throw new Error(); }
+    catch { throw new Error(`Client ${slug}: tiktok must be an HTTPS URL.`); }
+  }
   if (config.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(config.email)) throw new Error(`Client ${slug}: invalid email.`);
   if (!themeKeys.includes(config.theme)) throw new Error(`Client ${slug}: unknown theme ${config.theme}.`);
-  if (!['legacy', 'catalog'].includes(config.layout)) throw new Error(`Client ${slug}: unknown layout ${config.layout}.`);
+  if (!['legacy', 'catalog', 'working-row-preview'].includes(config.layout)) throw new Error(`Client ${slug}: unknown layout ${config.layout}.`);
+  if (config.layout === 'working-row-preview' && process.env.VERCEL_ENV === 'production') throw new Error(`Client ${slug}: the unfinished Working Row preview cannot be deployed to production.`);
+  if (config.layout === 'working-row-preview' && (!config.workingRow || !config.business || typeof config.business.whatsappConfirmed !== 'boolean' || ['ground', 'ink', 'deep', 'hessian', 'accent', 'tape', 'lightAccent'].some((key) => !/^#[0-9a-f]{6}$/i.test(config.workingRow[key] || '')) || ['specimenName', 'exploreLabel', 'sectionNote', 'sectionTitle', 'tagLabel', 'enquiryLabel'].some((key) => typeof config.workingRow[key] !== 'string' || !config.workingRow[key].trim()))) throw new Error(`Client ${slug}: invalid Working Row preview settings.`);
+  if (config.layout === 'working-row-preview' && ['stockStatus', 'stockLastUpdated', 'responseTimePromise'].some((key) => {
+    const field = config.business[key];
+    return !field || typeof field.confirmed !== 'boolean' || (field.value !== null && typeof field.value !== 'string');
+  })) throw new Error(`Client ${slug}: invalid owner-confirmed fields.`);
   if (!Object.hasOwn(heroVariants, config.hero)) throw new Error(`Client ${slug}: unknown hero ${config.hero}.`);
   if (!Object.hasOwn(productCardVariants, config.productCard)) throw new Error(`Client ${slug}: unknown product card ${config.productCard}.`);
   if (!/^\+\d{7,15}$/.test(config.phone) || !/^\d{7,15}$/.test(config.whatsapp)) throw new Error(`Client ${slug}: phone and WhatsApp must use international digits.`);

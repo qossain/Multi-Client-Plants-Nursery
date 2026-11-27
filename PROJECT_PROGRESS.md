@@ -82,3 +82,113 @@ Update this file after each meaningful change: date, scope, verification, next s
 - All five automated tests passed. The final `CLIENT=abdul-jabbar` build succeeded with 259 pages. Extracted visible text and image/link targets on the home page, directory, one category, one product and 404 matched the existing original build. A fictional second client build with all sections passed content, section-order, WhatsApp and first-client identifier/asset isolation checks; its fixtures were removed afterward.
 - Desktop and 390 px mobile hero comparisons, the mobile menu and a directory search were checked locally. Other routes, all interactions, physical devices, Vercel deployments and client-specific designs have not been exhaustively checked. Five concept themes and heroes remain placeholders for later design approval. The 30-minute onboarding target has not been timed with a real client.
 - The separate GitHub repository is public. Review its contents, especially client review excerpts and business details, before any future push. No push, Vercel change or domain change has been made.
+
+## 2026-11-22 — Nasaruldin client planning
+
+- User requested a creative mobile-first website for Nasaruldin Nursery Farm, with preserved original reference screenshots, enhanced derivatives, international enquiry paths and a future ecommerce migration path. The user selected the business name and asked to support both overseas-opportunity enquiries and Pakistan-based orders/projects from abroad, subject to confirmation.
+- Added a client-specific plan, image inventory and status log under `clients/nasruddin/`. Preserved 17 user-supplied screenshots byte for byte in its Git-ignored `source-images/` folder. They are screenshots, not verified original individual photos. No design implementation, photo enhancement or website deployment has been made.
+- Saved an exploratory AI-generated design preview in the client folder. It is illustrative, unapproved and too close to a conventional nursery hero for the brief; a second concept attempt failed due to a connection error.
+- The planned push of the public platform repository was rejected by automatic approval review due to potential exposure of the first client's business content and review excerpts. No explicit approval to publish that specific material has been received; no push occurred.
+
+## 2026-11-22 — Working Row revision
+
+- User approved the initial Working Row direction and requested revised color contrast, typography, mobile layout, an early memorable interaction, audience wireframes, truthful empty states and a per-client theme/config design. User explicitly requested review before implementation.
+- Recorded the proposed revision in `clients/nasruddin/DESIGN_REVISION.md` and updated the client status. No code, generated photo assets, business data mechanisms, push or deployment was added in this step.
+
+## 2026-11-22 — Nasaruldin first build
+
+- User authorized only the hero and one additional section for review, with four viewport screenshots, mobile Lighthouse, rendered contrast and design critique. Created a production-blocked Working Row preview, candidate client config and an owner shot list. Added two non-reconstructed screenshot crops and self-hosted licensed fonts. Existing first-client source and deployment remain untouched.
+- The candidate WhatsApp number is unconfirmed and the preview enquiry action is disabled. No unconfirmed stock status, update time or response promise is displayed. Verification is in progress; see `clients/nasruddin/CLIENT_STATUS.md` for evidence and limitations.
+
+## 2026-11-23 — First-build checks and browser timeout
+
+- Both the Nasaruldin preview and Abdul Jabbar build succeeded; focused client-validation tests passed and representative first-client text and links matched the existing local build. Token-level contrast calculations passed for the selected text combinations, and first-client CSS is excluded from the new homepage.
+- The browser origin approval check timed out and the permitted retry also timed out. Requested responsive screenshots, actual rendered contrast and mobile Lighthouse remain unverified. The current motion and mismatched low-resolution screenshot crops do not yet achieve the intended signature; see the client status for the critique and next steps. No push or deployment.
+
+## 2026-11-23 — Reference-led hero revision
+
+- The user replaced the Working Row visual direction with the supplied green, glass-panel hero reference, requesting a hero only and clearer white text. Reworked the local Nasaruldin preview accordingly; the next section awaits the user's instruction. The supplied screenshot is a design reference, while the background and thumbnail are real, low-resolution crops from supplied nursery screenshots. No reconstructed plant imagery or unverified business claims were added.
+- The photo does not match the reference composition; an original, high-resolution client photograph is needed for a close visual match. This is a local, production-blocked preview; no push or deployment.
+
+## 2026-11-23 — Hero refinements
+
+- At the user's request, reduced the header, menu, action and glass panels, put the nursery name on one line, and removed both arrows and the scroll indicator. Replaced the nursery screenshot crops in the hero with a direct crop of the user's supplied reference image; this is reference artwork, not a photograph verified as the client's nursery. No AI reconstruction was used. No other section or deployment was added.
+
+## 2026-11-23 — Exact reference preview
+
+- Following the user's clarification to copy the full reference exactly, replaced the hero with the complete supplied image as a static, production-blocked design preview. This reproduces the reference's original arrows, text and claims, superseding the previous crop and removal for this preview. The image's buttons are not interactive and its claims, including “Since 1985,” are not verified for this nursery. It is not a finished website. Rebuild as accessible responsive HTML and replace or verify claims before any launch; await the user's next section.
+
+## 2026-11-23 — Working hero and categories
+
+- At the user's request, replaced the flat reference preview with a working glass navigation, readable hero content, category introduction, eight category buttons in a four-by-two grid and a plant section. The page uses the user's reference artwork as a background and real nursery screenshot crops for the logo and plant imagery. Menu entrance honors reduced-motion preferences. `clients/nasruddin/homepage.json` holds the category and plant display data.
+- The hand-and-plant composition is not complete: no suitable original was available, and the user previously disallowed reconstructed images. Category buttons show an enquiry hint rather than claiming a verified inventory. The two plant images, category availability and trending label need owner confirmation; no price or stock claims are included. Reference artwork is illustrative, not an authentic nursery photograph. The preview remains noindex and production-blocked. No push or deployment.
+
+## 2026-11-24 — Category reference revision
+
+- User requested matching the supplied dark category-card reference while retaining the current background and other sections. Updated only the category section: heading, introduction, dark feature card and four-by-two dark category cards. The small plant images are crops of the supplied design reference and are illustrative, not authenticated nursery inventory. Existing category enquiry controls remain. No push or deployment.
+- User then requested the single heading “Categories”, the one-word button “Discover”, and newly created imagery. Updated the text and attempted to generate illustrations, but the image generation service could not connect. Existing reference crops remain temporarily; newly created images are outstanding.
+- User subsequently requested reverting only the category section to the previous light layout. Restored its earlier heading, light feature card, category controls and copy; other sections were left unchanged. The unused reference crop files remain in the working tree.
+
+## 2026-11-24 — Category plant icons
+
+- Generated ten illustrative plant icons at the user's request. Eight existing cards use optimized WebP images; shrubs and grass are prepared for later without adding categories. Originals are preserved under ignored client source-images. These are illustrations, not verified nursery stock. No push or deployment.
+
+## 2026-11-25 — Trending plant grid
+
+- User requested a shorter centered heading and sixteen compact plant cards with names. Replaced the two-card section with a two-column mobile and four-column desktop grid. Reused sixteen generated concept images from the Abdul Jabbar prototype's named bonsai and palms assets; no client-original photographs or prices were copied. Image labels and the idea that these are expensive or trending are unverified; they are representative design content, not evidence of Nasaruldin stock or value. Confirm the actual catalog and image identity before launch. No push or deployment.
+
+## 2026-11-27 — Why choose us section
+
+- Added a responsive six-card section after Trending based on the supplied reference, with a scroll reveal where supported and a static reduced-motion fallback. Card copy is stored in the Nasaruldin homepage data. Avoided unsupported delivery, price, customer-count and quality guarantees; actual inventory and service details remain subject to owner confirmation. No push or deployment.
+- Refined the section with six inline SVG icons, a botanical background reveal, heading and description reveal, staggered cards, a final CTA and gently floating decorative leaves. Motion activates when the section enters view; reduced-motion and JavaScript-disabled users receive visible static content. No new image assets or dependencies.
+- User requested real images and stronger reasons instead of icons. Reduced the section to three cards focused on shaped plants, range and landscape enquiries, using three crops from user-supplied nursery social media screenshots. They are low-resolution reference crops, not verified individual product photos; retain their source and seek owner-approved originals. The scroll animation and reduced-motion fallback remain.
+- Following user feedback, researched buyer needs using the Royal Horticultural Society's tree and shrub buying guidance (https://www.rhs.org.uk/plants/types/trees/buying-trees-and-shrubs) and UMass Extension's right plant, right place guide (https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/right-plant-right-place-plant-selection-guide-managed-landscapes). Both support attention to plant size, condition and site suitability; neither verifies this nursery's service claims. Revised the three cards to emphasize shaped forms, choosing scale, and asking for current photos and dimensions. Kept the animation; used existing real screenshot crops, which still need owner-approved originals. The nursery's ability to supply up-to-date photos and measurements has not been independently verified.
+- User requested AI-generated images instead of original photos. Generated three conceptual images of a topiary, a range of plant sizes and a landscaped palm, saved optimized WebP versions for the cards and preserved originals under ignored client source-images. They do not depict verified nursery stock or projects. Retained the researched copy and animation.
+
+## 2026-11-27 — Category pages and customer feedback
+
+- User confirmed that the 200 supplied reviews are genuine and approved for publication and reported over 2,000 clients and national/international export. Imported 200 entries verbatim with names, locations and supplied ratings; the shared Abdul Jabbar testimonial component displays them with Pakistan/international filters. The review platform, client count, export destinations and documentary requirements are user-reported and not independently verified. The public-repository push remains separately blocked; no push or deployment.
+- Populated eight categories and 215 illustrative example listings using generated concept assets from the separate platform copy of Abdul Jabbar, omitting original/enhanced client photographs, prices and stock claims. Images can be representative rather than exact species. Home category controls open shared category pages. The Nasaruldin preview remains noindex and production-blocked; unconfirmed phone/WhatsApp actions are hidden on shared pages. Example catalog and user-reported claims need owner review before launch.
+- Nasaruldin static build generated 226 pages. Checks confirmed 200 review entries, eight category links, review locations/ratings, displayed client count, illustrative catalogue notice, noindex and no candidate WhatsApp number on sampled routes. Visual, interaction and real-device checks remain outstanding.
+- Abdul Jabbar platform client also built successfully (259 pages) after shared-component edits. This is a build check, not a visual regression test; the original production repository and deployment were untouched. Rebuilt Nasaruldin afterward.
+
+## 2026-11-27 - Testimonial spacing
+
+- Tightened the Nasaruldin testimonial cards and layout. As requested, retained automatic review motion, removed the scrollbar and filters, added the Google icon, and increased spacing between review and client counts. The user requested the Google mark; review platform attribution remains unverified. Checked the mobile preview; no real-device test or deployment.
+
+- Interleaved the 200 user-supplied reviews with international first and Pakistani reviews alternating, preserving the supplied text and ratings.
+
+## 2026-11-27 - Services and review spacing
+
+- Increased the spacing between review and client totals and added the shared services component immediately after Why choose us. The preview uses the existing responsive desktop accordion and mobile sticky-card layout, with five newly generated conceptual images; generated originals are kept in the ignored client source folder. Service descriptions are enquiry-oriented, and available services including garden care need owner confirmation. Project imagery is illustrative, not documentary. Nasaruldin build passed and mobile cards were inspected in the local browser. No deploy or push.
+
+- Adjusted the Garden design and Garden care service image focal positions to keep faces visible in the cropped cards. The Garden care crop was checked in the local mobile browser; both images are AI-generated concepts.
+
+- Adjusted the testimonial count spacing again to a fixed moderate gap, following user feedback that the full-width spacing was too wide.
+
+## 2026-11-27 - Shared footer
+
+- Added the shared Abdul Jabbar footer to the Nasaruldin homepage with client-specific logo, eight category links and Instagram. Unconfirmed phone and WhatsApp links stay hidden. Nasaruldin build passed; all eight category routes and the homepage footer were checked in generated output. The catalogue remains illustrative and requires owner confirmation. No visual browser check, push or deployment.
+
+- User requested activation of the supplied contact details. Added Facebook album, Instagram, TikTok and WhatsApp to the shared footer and restored the floating WhatsApp control using +92 301 111 2227 from the supplied screenshots. The user requested its use; ownership and destination remain unverified with the owner. Build passed, and footer links were inspected locally; the linked social accounts were not independently verified. No deployment or push.
+
+## 2026-11-27 - Nasaruldin hero videos
+
+- Used the user-selected portrait horticulturist video for mobile and the landscape nursery film for desktop. Originals are kept in the ignored client source-images folder; optimized silent H.264 files are 1,229,888 and 1,509,106 bytes respectively. Their provenance and whether they depict the client's actual nursery have not been verified.
+- The existing image remains visible until the appropriate video starts playing; reduced-motion visitors retain the still image. Removed the two hero panels, centered the hero text and made the navigation a slimmer single pill. Nasaruldin build passed (226 pages); locally checked video playback and the loading fallback at a 366px viewport and desktop playback at 1440px. No real-device testing, push or deployment.
+
+- Hid the Plants · Nature · Life label while video is playing, preserving it for the image fallback. Replaced the small dropdown with a full-screen, top-entering menu modeled on Abdul Jabbar's navigation, using Nasaruldin links; standardized the four dots at 5px each. The Nasaruldin build passed (226 pages); checked menu opening and closing, dot dimensions and label visibility during video playback in the local browser. No deployment or push.
+
+- Simplified the categories heading, increased card spacing, removed the selection instruction and added a Browse All Categories link. The feature card uses a new AI-generated conceptual topiary image, with the original saved in the ignored source-images folder and an optimized WebP for the site. Nasaruldin build passed (226 pages), and the section was visually checked in the local mobile browser. No push or deployment.
+
+- Replaced the Trending selection with the user's ten named specimens plus two flowering plants, two fruit plants, two palms, two date palms and two additional topiary selections (20 cards). Generated eleven conceptual plant images and saved originals in the ignored source-images folder; other cards reuse existing illustrative assets. All 20 local image references exist and the Nasaruldin build passed (226 pages). Names, origins, botanical accuracy, stock and premium prices need owner confirmation; the images do not document actual inventory. No push or deployment.
+
+- Applied the approved Trending card design with readable white names over a dark image gradient and increased grid gaps. Made the featured category card shorter on mobile by reducing its image height and internal spacing. Nasaruldin build passed (226 pages); inspected the Trending cards and checked the category card fits at a 390px browser viewport. No push or deployment.
+
+- Restyled Nasaruldin's all-plants directory with a botanical heading, grouped search and filters, image-overlay cards and functional grid/list controls. The existing catalogue, links and unconfirmed price handling remain in use; no premium or exclusive claims were added. Built successfully (226 pages); checked the 390px browser layout, search, category filtering and list mode. Product imagery and inventory remain illustrative and require owner verification. No push or deployment.
+
+- Fixed list-view text sitting against the photo by separating the image and text columns and increasing text padding. Nasaruldin build passed (226 pages); no fresh browser check, push or deployment.
+
+## 2026-11-27 - GitHub publication preparation
+
+- User requested the first push to the separate multi-client repository. The GitHub repository was confirmed public and empty before push. The five automated tests passed, as did local builds for Nasaruldin (226 pages) and Abdul Jabbar's separate platform copy (259 pages). Original client source images remain ignored. Nasaruldin is still an unfinished noindex preview: production builds deliberately reject its preview layout, and its site origin is a placeholder. Inventory, images and business claims need review before launch. This does not alter or migrate the original Abdul Jabbar production deployment.

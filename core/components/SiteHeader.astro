@@ -10,7 +10,7 @@ const links = [
   { label: client.copy.plantsLabel, href: '/plants/' },
   ...(client.sections.includes('about') ? [{ label: client.copy.storyLabel, href: '/#story' }] : []),
   ...(client.maps ? [{ label: client.visitLabel, href: client.maps, external: true }] : []),
-  { label: client.copy.getInTouch, href: `https://wa.me/${client.whatsapp}`, external: true, contact: true },
+  ...(client.business?.whatsappConfirmed === false ? [] : [{ label: client.copy.getInTouch, href: `https://wa.me/${client.whatsapp}`, external: true, contact: true }]),
 ];
 ---
 

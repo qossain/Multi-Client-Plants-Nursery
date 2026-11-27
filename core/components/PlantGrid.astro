@@ -39,6 +39,7 @@ const { plants, filterCategories = false } = Astro.props;
     </div>
   </details>}
   <span class={filterCategories ? 'result-count' : 'visually-hidden'} aria-live="polite" data-result-count data-plant-one={client.copy.plantSingular} data-plant-many={client.copy.plantPlural}>{plants.length} {client.copy.plantPlural}</span>
+  {filterCategories && client.layout === 'working-row-preview' && <div class="view-switch" role="group" aria-label="Plant view"><button type="button" aria-label="Grid view" aria-pressed="true" data-plant-view="grid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg></button><button type="button" aria-label="List view" aria-pressed="false" data-plant-view="list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h14"/></svg></button></div>}
 </div>
 <div class="plant-grid" data-plant-grid>
   {plants.map((plant, index) => <PlantCard plant={plant} priority={filterCategories && index < 4} />)}
@@ -53,6 +54,10 @@ const { plants, filterCategories = false } = Astro.props;
   const count = document.querySelector<HTMLElement>('[data-result-count]');
   const empty = document.querySelector<HTMLElement>('[data-empty-state]');
   const menu = document.querySelector<HTMLDetailsElement>('[data-sort-menu]');
+  document.querySelectorAll<HTMLButtonElement>('[data-plant-view]').forEach((button) => button.addEventListener('click', () => {
+    grid?.classList.toggle('is-list', button.dataset.plantView === 'list');
+    document.querySelectorAll<HTMLButtonElement>('[data-plant-view]').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+  }));
 
   if (grid && search && sort && count && empty) {
     const cards = Array.from(grid.querySelectorAll<HTMLElement>('[data-plant-card]'));

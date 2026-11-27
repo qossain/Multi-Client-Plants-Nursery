@@ -25,16 +25,18 @@ import { client } from '../client';
     <div class="footer-links footer-contact">
       <h2>{client.copy.contactTitle}</h2>
       {client.address && <span>{client.address}</span>}
-      <a href={`tel:${client.phone}`}>{client.displayPhone}</a>
+      {client.business?.whatsappConfirmed !== false && <a href={`tel:${client.phone}`}>{client.displayPhone}</a>}
       {client.email && <a href={`mailto:${client.email}`}>{client.email}</a>}
-      <a href={`https://wa.me/${client.whatsapp}`} target="_blank" rel="noreferrer">{client.copy.whatsappLabel}</a>
+      {client.business?.whatsappConfirmed !== false && <a href={`https://wa.me/${client.whatsapp}`} target="_blank" rel="noreferrer">{client.copy.whatsappLabel}</a>}
+      {client.business?.whatsappConfirmed === false && client.instagram && <a href={client.instagram} target="_blank" rel="noreferrer">{client.copy.instagram}</a>}
     </div>
     <div class="footer-social" aria-label={client.copy.socialLinksLabel}>
       {client.email && <a href={`mailto:${client.email}`} aria-label={client.copy.emailLabel}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></a>}
       {client.facebook && <a href={client.facebook} target="_blank" rel="noreferrer" aria-label={client.copy.facebook}><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.6 21v-8.2h2.8l.4-3.2h-3.2v-2c0-.9.3-1.5 1.6-1.5h1.7V3.2c-.3 0-1.2-.2-2.5-.2-2.5 0-4.2 1.5-4.2 4.3v2.3H7.4v3.2h2.8V21h3.4Z"/></svg></a>}
       {client.instagram && <a href={client.instagram} target="_blank" rel="noreferrer" aria-label={client.copy.instagram}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>}
+      {client.tiktok && <a href={client.tiktok} target="_blank" rel="noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 2c.3 2.3 1.7 3.7 4 3.9v3a7.4 7.4 0 0 1-4-1.2v6.6c0 3.7-2.1 6.2-5.7 6.2a5.8 5.8 0 0 1-.5-11.5v3.1a2.8 2.8 0 1 0 3.1 2.8V2h3.1Z"/></svg></a>}
       {client.maps && <a href={client.maps} target="_blank" rel="noreferrer" aria-label={client.copy.mapsLabel}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></a>}
-      <a href={`https://wa.me/${client.whatsapp}`} target="_blank" rel="noreferrer" aria-label={client.copy.whatsappLabel}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.7 7.4L3 20.5l1.5-4.6a8.5 8.5 0 1 1 16-4.3Z"/><path d="M8.5 7.8c.3-.5.6-.5.9-.5h.4l1 2.2-.7.8c.6 1.3 1.6 2.3 2.9 2.9l.8-.7 2.2 1v.4c0 .4-.1.7-.5 1-1.1.7-2.8 0-4.7-1.9S7.8 8.9 8.5 7.8Z"/></svg></a>
+      {client.business?.whatsappConfirmed !== false && <a href={`https://wa.me/${client.whatsapp}`} target="_blank" rel="noreferrer" aria-label={client.copy.whatsappLabel}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.7 7.4L3 20.5l1.5-4.6a8.5 8.5 0 1 1 16-4.3Z"/><path d="M8.5 7.8c.3-.5.6-.5.9-.5h.4l1 2.2-.7.8c.6 1.3 1.6 2.3 2.9 2.9l.8-.7 2.2 1v.4c0 .4-.1.7-.5 1-1.1.7-2.8 0-4.7-1.9S7.8 8.9 8.5 7.8Z"/></svg></a>}
     </div>
   </div>
 </footer>

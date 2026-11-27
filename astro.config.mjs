@@ -7,7 +7,7 @@ const client = loadClient(process.env.CLIENT);
 export default defineConfig({
   site: client.config.site,
   publicDir: resolve(client.directory, 'images'),
-  vite: { resolve: { alias: { '@client-products': resolve(client.directory, 'products.json'), '@client-reviews': resolve(client.directory, 'reviews.json'), '@client-services': resolve(client.directory, 'services.json'), '@client-config': resolve(client.directory, 'config.json'), '@client-theme': resolve('core/themes', `${client.config.theme}.css`) } } },
+  vite: { resolve: { alias: { '@client-products': resolve(client.directory, 'products.json'), '@client-reviews': resolve(client.directory, 'reviews.json'), '@client-services': resolve(client.directory, 'services.json'), '@client-config': resolve(client.directory, 'config.json'), '@client-theme': resolve('core/themes', `${client.config.theme}.css`), '@client-home': resolve('core/layouts', client.config.layout === 'working-row-preview' ? 'WorkingRowPreview.astro' : 'LegacyHome.astro') } } },
   output: 'static',
   compressHTML: true,
 });

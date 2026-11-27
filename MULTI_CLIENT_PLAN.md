@@ -51,3 +51,7 @@ Make small commits by stage in the new repository. Build and compare client 1 ag
 - The new repository is `qossain/Multi-Client-Plants-Nursery`; GitHub reported it public and empty on 2026-11-21. Confirm visibility and content suitability before publishing client material.
 - Confirm the real production domain, Vercel project, branch, deployment settings and rollback procedure before migration.
 - Define client-specific asset handling, schema and representative screenshot routes from the actual implementation during the baseline stage.
+
+## Nasaruldin hero decision
+
+- Use the user-selected portrait video on mobile and landscape nursery film on desktop, retaining the existing hero image until playback and for reduced motion. Keep original files in the ignored client source-images folder and publish optimized versions from the client image directory. Confirm whether the footage depicts the actual nursery before describing it as documentary.
