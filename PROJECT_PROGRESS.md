@@ -51,6 +51,10 @@ Update this file after each meaningful change: date, scope, verification, next s
 - User is creating a separate Vercel project and requested the configuration needed to make the site visible. Enabled Usman's production review build while retaining noindex and the placeholder-origin fallback to Vercel's exposed project production URL. Updated deployment and client documentation. The review can be accessed by anyone with its URL; noindex is not privacy. Copied reviews, illustrative products, media and business claims still require owner confirmation before launch.
 - A simulated Vercel production build with a test project domain produced 226 pages; homepage and directory noindex tags, sitemap origin, Usman branding and mobile-video asset checks passed. All five tests passed with Vercel simulation variables cleared. A first test run with the simulated production URL still set failed the scaffold's expected missing-domain check; no code failure was reproduced under the normal test environment. Actual Vercel project settings and deployment have not been verified.
 
+## 2026-11-27 — Usman homepage section order
+
+- At the user's request, reordered Usman's homepage to Hero, Why choose us, Categories, Our services, Trending, Testimonials and Footer. The choice is client-specific; Nasaruldin keeps its existing order. Usman and Nasaruldin builds each produced 226 pages, and the generated homepage markup confirmed both section orders. No browser or physical-device check, push or deployment was performed for this change. Existing copied reviews and other content remain subject to the documented launch cautions.
+
 ## 2026-11-21 — Planning
 
 - User requested one shared system for many nursery clients, separate Vercel projects, and preservation of the existing live client. User authorized planning documentation and creating a separate repository.

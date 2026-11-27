@@ -5,6 +5,7 @@ import { customerReviews } from '../../src/data/customerReviews';
 import Testimonials from '../components/Testimonials.astro';
 import Services from '../components/Services.astro';
 import SiteFooter from '../components/SiteFooter.astro';
+import PreviewWhyChoose from '../components/PreviewWhyChoose.astro';
 import '@client-theme';
 import '../styles/testimonials-preview.css';
 import '../styles/services-preview.css';
@@ -42,6 +43,7 @@ const categoryIcons = ['indoor', 'outdoor', 'fruit', 'bonsai', 'cactus', 'flower
         <div class="hero-menu-top">{client.headerStyle === 'wordmark' ? <a href="#home" class="wordmark-brand menu-wordmark" aria-label={`${client.name} home`}><img src={client.navWordmark || "/usman-wordmark-transparent.png"} width="700" height="320" alt={client.name} />{!client.navWordmark && <img class="wordmark-leaf" src="/usman-wordmark-transparent.png" width="700" height="320" alt="" aria-hidden="true" />}</a> : <span class="hero-menu-brand"><img src={client.logo} alt="" width="42" height="42" /> {client.shortName}</span>}<button class="hero-menu-close" type="button" aria-label="Close navigation">×</button></div>
         <nav class="hero-menu-links" aria-label="Main navigation"><a href="#home">Home</a><a href="/plants/">Plants</a><a href="#categories">Categories</a><a href="#services-title">Our services</a><a href={social} target="_blank" rel="noopener noreferrer">Instagram</a>{client.business?.whatsappConfirmed && <a class="hero-menu-contact" href={`https://wa.me/${client.whatsapp}`} target="_blank" rel="noopener noreferrer">Get in touch</a>}</nav>
       </dialog>
+      {client.whyBeforeCategories && <PreviewWhyChoose />}
       <section class="catalog" id="categories" aria-labelledby="categories-title">
         <div class="section-inner">
           <h2 id="categories-title">Categories</h2>
@@ -52,18 +54,10 @@ const categoryIcons = ['indoor', 'outdoor', 'fruit', 'bonsai', 'cactus', 'flower
           <div class="categories-action"><a href="/plants/">Browse All Categories</a></div>
         </div>
       </section>
+      {client.whyBeforeCategories && <Services />}
       <section class="trending" id="trending" aria-labelledby="trending-title"><div class="section-inner"><h2 id="trending-title">Trending</h2><div class="plant-grid">{home.featured.map(plant => <article class="plant-card"><img src={plant.image} alt={plant.alt} width="350" height="350" loading="lazy" /><div><h3>{plant.name}</h3></div></article>)}</div></div></section>
-      <section class="why" id="why-choose-us" aria-labelledby="why-title">
-        <div class="why-leaves" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-        <div class="why-inner">
-          <p class="why-kicker">Why choose us</p>
-          <h2 id="why-title">Why choose our<br /><em>plant nursery?</em></h2>
-          <p class="why-intro">Choose plants with the shape, scale and presence your space deserves.</p>
-          <div class="why-grid">{home.whyChoose.map((item, index) => <article class="why-card" style={`--card-delay:${550 + index * 120}ms`}><img class="why-photo" src={item.image} alt={item.alt} width="350" height="350" loading="lazy" /><h3>{item.title}</h3><p>{item.description}</p></article>)}</div>
-          <a href="#categories" class="why-action">Explore our collection</a>
-        </div>
-      </section>
-      <Services />
+      {!client.whyBeforeCategories && <PreviewWhyChoose />}
+      {!client.whyBeforeCategories && <Services />}
       {customerReviews.length > 0 && <Testimonials />}
     </main>
     <SiteFooter />

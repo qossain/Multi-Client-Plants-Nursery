@@ -171,5 +171,6 @@
     "enquiryLabel": "Ask about this plant on WhatsApp"
   },
   "tiktok": "",
-  "headerStyle": "wordmark"
+  "headerStyle": "wordmark",
+  "whyBeforeCategories": true
 }
