@@ -33,6 +33,11 @@ Update this file after each meaningful change: date, scope, verification, next s
 
 - User requested a push of the current platform work. Fetched `origin/main` and confirmed it matched the local base before committing. All five automated tests passed; the latest Usman and Nasaruldin builds each produced 226 pages, and the Abdul Jabbar platform copy built 259 pages. GitHub push can trigger connected Vercel projects; their actual deployment results need separate verification. Usman's copied reviews are for review only and must be replaced or verified before publication as Usman's feedback. Original client source screenshots and video are Git-ignored.
 
+## 2026-11-27 — Usman Vercel review preparation
+
+- User is creating a separate Vercel project and requested the configuration needed to make the site visible. Enabled Usman's production review build while retaining noindex and the placeholder-origin fallback to Vercel's exposed project production URL. Updated deployment and client documentation. The review can be accessed by anyone with its URL; noindex is not privacy. Copied reviews, illustrative products, media and business claims still require owner confirmation before launch.
+- A simulated Vercel production build with a test project domain produced 226 pages; homepage and directory noindex tags, sitemap origin, Usman branding and mobile-video asset checks passed. All five tests passed with Vercel simulation variables cleared. A first test run with the simulated production URL still set failed the scaffold's expected missing-domain check; no code failure was reproduced under the normal test environment. Actual Vercel project settings and deployment have not been verified.
+
 ## 2026-11-21 — Planning
 
 - User requested one shared system for many nursery clients, separate Vercel projects, and preservation of the existing live client. User authorized planning documentation and creating a separate repository.

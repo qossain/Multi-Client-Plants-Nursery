@@ -17,7 +17,7 @@ Suggested first message:
 - Branch: `main`; latest pushed commit at handoff: `a1f8541` (`Refine Nasaruldin responsive layout`). The current workspace may have further uncommitted work; always check `git status` first.
 - Each client has its own Vercel project and `CLIENT` environment variable. The public repository is shared; each project builds a single selected client.
 - Nasaruldin review deployment: `https://nasaruldin-nursery.vercel.app/`. It is public to anyone with the link and marked `noindex`; `noindex` is not access protection. It remains a review preview, not a verified final launch.
-- Usman has a separate `clients/usman/` folder and local preview implementation. No Usman Vercel project, production domain or deployment has been created.
+- Usman has a separate `clients/usman/` folder and a noindex review build configured for a separate Vercel project. The user is creating that project; its actual deployment and domain have not been verified.
 - Never push or deploy unless the user requests it in the current task. A push to `main` can trigger Vercel for connected projects.
 - Do not connect, migrate or modify the original Abdul Jabbar production project/domain as part of this platform work.
 
@@ -56,7 +56,7 @@ The target is approximately 30 minutes for a new client once approved content an
 | --- | --- | --- | --- |
 | `abdul-jabbar` | Abdul Jabbar Nursery Farm and Landscaping | Platform copy only | The original production repository and deployment are separate and must remain untouched. Client-specific historical design and content cautions are in `AGENTS.md`. |
 | `nasruddin` | Nasaruldin Nursery Farm | Public noindex review preview | Live link above. User-supplied number and social profiles are configured. Reviews and client count were approved/reported by the user; images, inventory, names, availability, prices and other claims still need owner review. |
-| `usman` | Usman Nursery Farm & Landscaping | Local preview, active work | Separate telephone and WhatsApp from supplied screenshots. The current copied reviews are Nasaruldin reviews and must not be published for Usman. Catalog, services and media are illustrative/copied pending replacement and owner confirmation. Preview content and contact data need visual and destination checks. No deployment. |
+| `usman` | Usman Nursery Farm & Landscaping | Review build ready, active work | Separate telephone and WhatsApp from supplied screenshots. The current copied reviews are Nasaruldin reviews and must not be represented as verified Usman feedback. Catalog, services and media are illustrative/copied pending replacement and owner confirmation. The user is setting up a separate Vercel project; deployment remains unverified. |
 
 ## Current responsive issue and verification status
 

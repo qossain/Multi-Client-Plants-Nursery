@@ -44,7 +44,7 @@
   "site": "https://usman.example.invalid",
   "theme": "legacy",
   "layout": "working-row-preview",
-  "allowPreviewProduction": false,
+  "allowPreviewProduction": true,
   "hero": "legacy",
   "productCard": "legacy",
   "sections": [
