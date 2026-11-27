@@ -29,7 +29,6 @@ const listings = plantsFor(category.slug);
       </div>
     </header>
     <div class="section-wrap category-listings">
-      {client.layout === 'working-row-preview' && <p>Plant images are illustrative. Please contact the nursery to confirm varieties and availability.</p>}
       <PlantGrid plants={listings} />
     </div>
   </main>

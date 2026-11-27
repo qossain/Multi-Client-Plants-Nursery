@@ -41,7 +41,7 @@ export function loadClient(slug) {
   if (config.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(config.email)) throw new Error(`Client ${slug}: invalid email.`);
   if (!themeKeys.includes(config.theme)) throw new Error(`Client ${slug}: unknown theme ${config.theme}.`);
   if (!['legacy', 'catalog', 'working-row-preview'].includes(config.layout)) throw new Error(`Client ${slug}: unknown layout ${config.layout}.`);
-  if (config.layout === 'working-row-preview' && process.env.VERCEL_ENV === 'production') throw new Error(`Client ${slug}: the unfinished Working Row preview cannot be deployed to production.`);
+  if (config.layout === 'working-row-preview' && process.env.VERCEL_ENV === 'production' && config.allowPreviewProduction !== true) throw new Error(`Client ${slug}: the unfinished Working Row preview cannot be deployed to production.`);
   if (config.layout === 'working-row-preview' && (!config.workingRow || !config.business || typeof config.business.whatsappConfirmed !== 'boolean' || ['ground', 'ink', 'deep', 'hessian', 'accent', 'tape', 'lightAccent'].some((key) => !/^#[0-9a-f]{6}$/i.test(config.workingRow[key] || '')) || ['specimenName', 'exploreLabel', 'sectionNote', 'sectionTitle', 'tagLabel', 'enquiryLabel'].some((key) => typeof config.workingRow[key] !== 'string' || !config.workingRow[key].trim()))) throw new Error(`Client ${slug}: invalid Working Row preview settings.`);
   if (config.layout === 'working-row-preview' && ['stockStatus', 'stockLastUpdated', 'responseTimePromise'].some((key) => {
     const field = config.business[key];
@@ -51,7 +51,13 @@ export function loadClient(slug) {
   if (!Object.hasOwn(productCardVariants, config.productCard)) throw new Error(`Client ${slug}: unknown product card ${config.productCard}.`);
   if (!/^\+\d{7,15}$/.test(config.phone) || !/^\d{7,15}$/.test(config.whatsapp)) throw new Error(`Client ${slug}: phone and WhatsApp must use international digits.`);
   try {
-    const site = new URL(config.site);
+    let site = new URL(config.site);
+    if (site.hostname.endsWith('.invalid') && process.env.VERCEL_PROJECT_PRODUCTION_URL) {
+      const host = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+      if (!/^[a-z0-9.-]+$/i.test(host)) throw new Error();
+      site = new URL(`https://${host}`);
+      config.site = site.origin;
+    }
     if (site.protocol !== 'https:' || site.username || site.password || site.pathname !== '/' || site.search || site.hash) throw new Error();
     if (process.env.VERCEL_ENV === 'production' && site.hostname.endsWith('.invalid')) throw new Error();
   } catch {

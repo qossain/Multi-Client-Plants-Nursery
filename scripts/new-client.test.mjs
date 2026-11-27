@@ -37,6 +37,18 @@ test('scaffold is isolated, validated, and does not overwrite an existing client
       if (previousVercelEnv === undefined) delete process.env.VERCEL_ENV;
       else process.env.VERCEL_ENV = previousVercelEnv;
     }
+    config.allowPreviewProduction = true;
+    await writeFile(configPath, JSON.stringify(config));
+    const previousUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+    process.env.VERCEL_ENV = 'production';
+    process.env.VERCEL_PROJECT_PRODUCTION_URL = 'example-nursery.vercel.app';
+    try { assert.equal(loadClient(slug).config.site, 'https://example-nursery.vercel.app'); }
+    finally {
+      if (previousVercelEnv === undefined) delete process.env.VERCEL_ENV;
+      else process.env.VERCEL_ENV = previousVercelEnv;
+      if (previousUrl === undefined) delete process.env.VERCEL_PROJECT_PRODUCTION_URL;
+      else process.env.VERCEL_PROJECT_PRODUCTION_URL = previousUrl;
+    }
     delete config.business.stockStatus;
     await writeFile(configPath, JSON.stringify(config));
     assert.throws(() => loadClient(slug), /owner-confirmed fields/);

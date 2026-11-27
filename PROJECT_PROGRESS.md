@@ -192,3 +192,8 @@ Update this file after each meaningful change: date, scope, verification, next s
 ## 2026-11-27 - GitHub publication preparation
 
 - User requested the first push to the separate multi-client repository. The GitHub repository was confirmed public and empty before push. The five automated tests passed, as did local builds for Nasaruldin (226 pages) and Abdul Jabbar's separate platform copy (259 pages). Original client source images remain ignored. Nasaruldin is still an unfinished noindex preview: production builds deliberately reject its preview layout, and its site origin is a placeholder. Inventory, images and business claims need review before launch. This does not alter or migrate the original Abdul Jabbar production deployment.
+
+## 2026-11-27 - Shareable Nasaruldin review deployment
+
+- Following the user's request and the Vercel error screenshot, enabled production deployment of Nasaruldin's preview layout explicitly for this client, leaving the safeguard in place for other clients. A placeholder origin resolves to Vercel's project production URL when exposed; production without a real URL still fails clearly. The site remains noindex for client review; noindex is not access protection. Removed the visible illustrative-image notice on category pages as requested; plant images, inventory, origins and pricing still require owner verification.
+- All five tests passed. A simulated Vercel production build with a test project domain generated 226 pages and a sitemap using that domain; the category notice was absent and homepage noindex remained. Actual Vercel build and deployment must be checked separately.

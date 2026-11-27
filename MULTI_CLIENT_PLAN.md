@@ -55,3 +55,4 @@ Make small commits by stage in the new repository. Build and compare client 1 ag
 ## Nasaruldin hero decision
 
 - Use the user-selected portrait video on mobile and landscape nursery film on desktop, retaining the existing hero image until playback and for reduced motion. Keep original files in the ignored client source-images folder and publish optimized versions from the client image directory. Confirm whether the footage depicts the actual nursery before describing it as documentary.
+- The user requested a shareable Vercel review. Nasaruldin explicitly permits its preview layout on a production deployment while retaining noindex; Vercel's exposed project production URL supplies the origin until a real custom domain is configured. This is not verification of client content.

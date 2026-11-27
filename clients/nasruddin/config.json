@@ -44,6 +44,7 @@
   "site": "https://nasruddin.example.invalid",
   "theme": "legacy",
   "layout": "working-row-preview",
+  "allowPreviewProduction": true,
   "hero": "legacy",
   "productCard": "legacy",
   "sections": [
