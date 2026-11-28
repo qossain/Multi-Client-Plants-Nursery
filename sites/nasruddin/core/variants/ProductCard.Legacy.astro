@@ -1,0 +1,7 @@
+---
+import PlantCard from '../components/PlantCard.astro';
+import type { Plant } from '../../src/data/catalog';
+interface Props { plant: Plant; priority?: boolean }
+const { plant, priority } = Astro.props;
+---
+<PlantCard plant={plant} priority={priority} />

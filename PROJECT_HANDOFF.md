@@ -1,6 +1,10 @@
 # Multi-client nursery platform handoff
 
-Updated: 2026-11-27. This is the current operating snapshot for the next chat. Recheck Git and deployment state before relying on it.
+## 2026-11-28 local architecture update
+
+The user approved separate applications. New local `sites/usman`, `sites/nasruddin` and `sites/abdulrehman` coexist with the legacy root; the existing clients have protected Vercel previews, while production still uses the legacy root. See `sites/README.md` before doing further migration or changing Vercel. The next-client workflow and structure descriptions below describe the old root application and must not be used as instructions for the new applications.
+
+Updated: 2026-11-28. This is the current operating snapshot for the next chat. Recheck Git and deployment state before relying on it.
 
 ## Start here in a new chat
 
@@ -14,10 +18,11 @@ Suggested first message:
 
 - Local repository: `E:\Nursery Websits\multi-client-platform`
 - GitHub: `https://github.com/qossain/Multi-Client-Plants-Nursery`
-- Branch: `main`; latest pushed commit at handoff: `a1f8541` (`Refine Nasaruldin responsive layout`). The current workspace may have further uncommitted work; always check `git status` first.
+- Branch: `main`; local `HEAD` and the last fetched `origin/main` were `a2f1890` (`Reorder Usman homepage sections`) on 2026-11-28. The remote and workspace may change; always recheck Git status.
 - Each client has its own Vercel project and `CLIENT` environment variable. The public repository is shared; each project builds a single selected client.
 - Nasaruldin review deployment: `https://nasaruldin-nursery.vercel.app/`. It is public to anyone with the link and marked `noindex`; `noindex` is not access protection. It remains a review preview, not a verified final launch.
-- Usman has a separate `clients/usman/` folder and a noindex review build configured for a separate Vercel project. The user is creating that project; its actual deployment and domain have not been verified.
+- The user reported on 2026-11-28 that Usman's website has been published. It has a separate `clients/usman/` folder and is configured for `CLIENT=usman` in a separate Vercel project. The live URL, project settings, deployed commit and actual index status have not been independently verified. Current source marks the preview noindex; noindex is not access protection.
+- Client content and public assets are selected from `clients/<slug>/` at build time, but clients share this repository, `core/`, routes and components. Shared-code changes can affect existing websites and trigger their connected Vercel builds. This is client-data separation, not fully isolated codebases or deployments. Check the affected clients after shared changes. The preview layout/header still contain Usman-specific asset fallbacks; remove or parameterize those before reusing them for another client, and check for cross-client data or image leakage.
 - Never push or deploy unless the user requests it in the current task. A push to `main` can trigger Vercel for connected projects.
 - Do not connect, migrate or modify the original Abdul Jabbar production project/domain as part of this platform work.
 
@@ -56,7 +61,9 @@ The target is approximately 30 minutes for a new client once approved content an
 | --- | --- | --- | --- |
 | `abdul-jabbar` | Abdul Jabbar Nursery Farm and Landscaping | Platform copy only | The original production repository and deployment are separate and must remain untouched. Client-specific historical design and content cautions are in `AGENTS.md`. |
 | `nasruddin` | Nasaruldin Nursery Farm | Public noindex review preview | Live link above. User-supplied number and social profiles are configured. Reviews and client count were approved/reported by the user; images, inventory, names, availability, prices and other claims still need owner review. |
-| `usman` | Usman Nursery Farm & Landscaping | Review build ready, active work | Separate telephone and WhatsApp from supplied screenshots. The current copied reviews are Nasaruldin reviews and must not be represented as verified Usman feedback. Catalog, services and media are illustrative/copied pending replacement and owner confirmation. The user is setting up a separate Vercel project; deployment remains unverified. |
+| `usman` | Usman Nursery Farm & Landscaping | Published, user-reported | Separate telephone and WhatsApp from supplied screenshots. Live URL and deployed commit have not been independently verified. Copied reviews are Nasaruldin reviews, not verified Usman feedback; catalog, services and media are illustrative/copied pending owner confirmation. Treat the published site as protected when working on the next client. |
+
+On 2026-11-28 the user explored a possible future Usman redesign but rejected the initial illustrative mockups. Later mobile mockups were shown for review; no approval or implementation is recorded. Preserve the published design unless a later request approves a change.
 
 ## Current responsive issue and verification status
 

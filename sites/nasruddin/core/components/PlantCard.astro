@@ -1,0 +1,40 @@
+---
+import { client } from '../client';
+import type { Plant } from '../../src/data/catalog';
+import { categoryFor, isShrub, priceLabel } from '../../src/data/catalog';
+import { responsiveImage } from '../image';
+
+interface Props {
+  plant: Plant;
+  priority?: boolean;
+}
+
+const { plant, priority = false } = Astro.props;
+const category = categoryFor(plant.category);
+---
+
+<a class="plant-card" href={'/plant/' + plant.slug + '/'} data-plant-card data-name={plant.name.toLocaleLowerCase()} data-category={plant.category} data-shrub={isShrub(plant) ? 'true' : undefined} data-price={plant.price}>
+  <span class="plant-card-image">
+    <img
+      src={plant.image}
+      srcset={`${responsiveImage(plant.image)} 600w, ${plant.image} 840w`}
+      sizes="(max-width: 700px) 45vw, (max-width: 940px) 30vw, 25vw"
+      alt={plant.name}
+      width="840"
+      height="1260"
+      loading={priority ? 'eager' : 'lazy'}
+      decoding="async"
+    />
+    <span class="plant-card-mark">{client.copy.viewLabel}</span>
+  </span>
+  <span class="plant-card-details">
+    <span>
+      <strong>{plant.name}</strong>
+      <span class="plant-card-category">{category?.title}</span>
+    </span>
+    <span class="plant-price">
+      <span>{plant.price == null ? client.copy.askForPrice : `${plant.estimatedPrice ? client.copy.estimatedPrefix : ''}${priceLabel(plant.price, plant.maxPrice)}`}</span>
+      {plant.photoVariants && <small>{client.copy.otherSizes}</small>}
+    </span>
+  </span>
+</a>

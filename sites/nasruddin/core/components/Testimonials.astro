@@ -1,0 +1,115 @@
+---
+import { customerReviews as reviews } from '../../src/data/customerReviews';
+import { client } from '../client';
+const reviewCategories = [...new Set(reviews.map((review) => review.category))];
+---
+
+<section class="testimonials" aria-labelledby="testimonials-title">
+  <div class="section-wrap">
+    <div class="testimonials-heading">
+      <div><p class="section-kicker">{client.copy.reviewKicker}</p><h2 id="testimonials-title">{client.copy.reviewTitle}<br />{client.copy.reviewTitleEmphasis}</h2>{client.layout === 'working-row-preview' && client.business?.exporterUserReported && <p>Serving customers in Pakistan and international export markets.</p>}</div>
+      <div class="testimonials-stats" data-review-stats>
+        {client.reviewCount > 0 && <div class="testimonial-stat">
+          <svg class="testimonial-stat-icon google-icon" viewBox="0 0 48 48" aria-hidden="true"><path fill="var(--google-blue)" d="M43.6 24.5c0-1.4-.1-2.8-.4-4.1H24v7.8h11c-.5 2.6-2 4.7-4.2 6.2v5h6.7c3.9-3.6 6.1-8.9 6.1-14.9Z"/><path fill="var(--google-green)" d="M24 44.5c5.6 0 10.3-1.8 13.7-5.1l-6.7-5c-1.9 1.3-4.3 2.1-7 2.1-5.4 0-9.9-3.6-11.5-8.5H5.6v5.1A20.7 20.7 0 0 0 24 44.5Z"/><path fill="var(--google-yellow)" d="M12.5 28a12.4 12.4 0 0 1 0-8V15H5.6a20.6 20.6 0 0 0 0 18.1l6.9-5.1Z"/><path fill="var(--google-red)" d="M24 11.4c3 0 5.7 1 7.8 3l5.9-5.8A20 20 0 0 0 24 3.5 20.7 20.7 0 0 0 5.6 15l6.9 5c1.6-5 6.1-8.6 11.5-8.6Z"/></svg>
+          <div><strong><span data-review-count={client.reviewCount}>{client.reviewCount.toLocaleString('en-US')}</span>+</strong><span class="testimonial-stat-label">{client.copy.reviewCountLabel}</span></div>
+        </div>}
+        {client.clientCount > 0 && <div class="testimonial-stat">
+          <svg class="testimonial-stat-icon client-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="16" r="6"/><path d="M13 38v-3a11 11 0 0 1 22 0v3M9 19a5 5 0 1 0 0-10M6 37v-3c0-4 2-7 5-9M39 19a5 5 0 1 1 0-10m3 28v-3c0-4-2-7-5-9"/></svg>
+          <div><strong><span data-review-count={client.clientCount}>{client.clientCount.toLocaleString('en-US')}</span>+</strong><span class="testimonial-stat-label">{client.copy.clientCountLabel}</span></div>
+        </div>}
+      </div>
+    </div>
+    {client.layout !== 'working-row-preview' && <div class="testimonial-toolbar">
+      <div class="testimonial-filters" role="group" aria-label={client.copy.reviewFilters}>
+        <button type="button" class="testimonial-filter" data-review-filter="all" aria-pressed="true">{client.copy.allFeedback} <span>{reviews.length}</span></button>
+        {reviewCategories.map((category) => <button type="button" class="testimonial-filter" data-review-filter={category} aria-pressed="false">{category} <span>{reviews.filter((review) => review.category === category).length}</span></button>)}
+      </div>
+    </div>}
+    <div class="testimonial-grid" tabindex="0" role="region" aria-label={client.copy.reviewRegion} data-review-label={client.copy.reviewRegion} data-review-paused-label={client.copy.reviewRegionPaused}>
+      <div class="testimonial-track" data-review-track style={`--review-duration: ${Math.max(32, reviews.length * 11)}s`}>
+          <div class="testimonial-group" data-review-group="0">
+            {reviews.map((review) => (
+              <figure class="testimonial-card" data-review-category={review.category}>
+                <div class="testimonial-card-top"><span class="testimonial-feedback">{client.copy.customerFeedback}</span><span class="testimonial-quote" aria-hidden="true">“</span></div>
+                <span class="testimonial-category">{review.category}{'rating' in review && ` · ${review.rating} / 5`}</span>
+                <p class="testimonial-summary">{review.summary}</p>
+                <figcaption><span class="testimonial-avatar" aria-hidden="true">{review.initials}</span><span><strong>{review.name}</strong><small>{'location' in review ? review.location : client.copy.reviewDisclaimer}</small></span></figcaption>
+              </figure>
+            ))}
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const filters = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-review-filter]'));
+  const viewport = document.querySelector<HTMLElement>('.testimonial-grid');
+  const track = document.querySelector<HTMLElement>('[data-review-track]');
+  const original = document.querySelector<HTMLElement>('[data-review-group="0"]');
+  let duplicate: HTMLElement | null = null;
+  const motion = window.matchMedia('(prefers-reduced-motion: no-preference)');
+  let selected = 'all';
+  let paused = false;
+  let lastPointerType = '';
+  const updateMotion = () => {
+    if (!track) return;
+    const moving = motion.matches && selected === 'all' && !!duplicate;
+    if (duplicate) duplicate.hidden = !moving;
+    track.classList.toggle('is-moving', moving);
+    track.classList.toggle('is-paused', paused);
+  };
+  filters.forEach((filter) => filter.addEventListener('click', () => {
+    selected = filter.dataset.reviewFilter || 'all';
+    filters.forEach((item) => item.setAttribute('aria-pressed', String(item === filter)));
+    viewport?.querySelectorAll<HTMLElement>('[data-review-category]').forEach((review) => { review.hidden = selected !== 'all' && review.dataset.reviewCategory !== selected; });
+    if (viewport) viewport.scrollLeft = 0;
+    updateMotion();
+  }));
+  viewport?.addEventListener('pointerdown', (event) => { lastPointerType = event.pointerType; });
+  viewport?.addEventListener('click', () => {
+    paused = !paused;
+    viewport.setAttribute('aria-label', paused ? viewport.dataset.reviewPausedLabel ?? '' : viewport.dataset.reviewLabel ?? '');
+    if (lastPointerType === 'touch' && document.activeElement === viewport) viewport.blur();
+    updateMotion();
+  });
+  motion.addEventListener('change', updateMotion);
+  updateMotion();
+
+  if (viewport && track && original) {
+    const prepareLoop = () => {
+      if (duplicate) return;
+      duplicate = original.cloneNode(true) as HTMLElement;
+      duplicate.dataset.reviewGroup = '1';
+      duplicate.setAttribute('aria-hidden', 'true');
+      duplicate.hidden = true;
+      track.append(duplicate);
+      updateMotion();
+    };
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) { prepareLoop(); observer.disconnect(); }
+      }, { rootMargin: '300px' });
+      observer.observe(viewport);
+    } else prepareLoop();
+  }
+
+  const stats = document.querySelector<HTMLElement>('[data-review-stats]');
+  if (stats && motion.matches) {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) return;
+      observer.disconnect();
+      stats.classList.add('is-visible');
+      const counters = Array.from(stats.querySelectorAll<HTMLElement>('[data-review-count]'));
+      const start = performance.now();
+      const animate = (now: number) => {
+        const progress = Math.min((now - start) / 1200, 1);
+        counters.forEach((counter) => { counter.textContent = Math.round(Number(counter.dataset.reviewCount) * (1 - (1 - progress) ** 3)).toLocaleString('en-PK'); });
+        if (progress < 1 && motion.matches) requestAnimationFrame(animate);
+        else counters.forEach((counter) => { counter.textContent = Number(counter.dataset.reviewCount).toLocaleString('en-PK'); });
+      };
+      requestAnimationFrame(animate);
+    }, { threshold: 0.3 });
+    observer.observe(stats);
+  }
+</script>

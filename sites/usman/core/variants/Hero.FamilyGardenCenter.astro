@@ -1,0 +1,7 @@
+---
+import Placeholder from './Hero.Placeholder.astro';
+import type { ClientConfig } from '../client';
+interface Props { client: ClientConfig }
+const { client } = Astro.props;
+---
+<Placeholder client={client} variant="family-garden-center" />

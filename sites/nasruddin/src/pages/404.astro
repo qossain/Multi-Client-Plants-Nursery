@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../core/layouts/BaseLayout.astro';
+import { client } from '../../core/client';
+---
+
+<BaseLayout title={`${client.copy.pageNotFoundTitle} | ${client.name}`} description={client.copy.pageNotFoundDescription}>
+  <main id="main" class="not-found section-wrap">
+    <h1>{client.copy.notFoundTitle}</h1>
+    <p>{client.copy.notFoundDescription}</p>
+    <a class="button button-dark" href="/plants/"><span>{client.copy.browseCollections}</span></a>
+  </main>
+</BaseLayout>

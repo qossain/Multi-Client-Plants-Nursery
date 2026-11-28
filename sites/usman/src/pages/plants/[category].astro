@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../../core/layouts/BaseLayout.astro';
+import PlantGrid from '../../../core/components/PlantGrid.astro';
+import { categories, plantsFor } from '../../data/catalog';
+import { client } from '../../../core/client';
+
+export function getStaticPaths() {
+  return categories.map((category) => ({
+    params: { category: category.slug },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+const listings = plantsFor(category.slug);
+---
+
+<BaseLayout title={`${category.title}${client.locality ? ` in ${client.locality}` : ''} | ${client.name}`} description={client.copy.categoryMeta.replace('{description}', category.description).replace('{name}', client.name).replace('{location}', client.storyLocation ? ` in ${client.storyLocation}` : '')} image={category.coverImage}>
+  <main id="main">
+    <header class="category-hero">
+      <picture class="category-hero-image">
+        <source media="(max-width: 700px)" srcset={category.heroMobile ?? category.coverImage} />
+        <img src={category.heroDesktop ?? category.coverImage} width="840" height="520" alt="" fetchpriority="high" decoding="async" />
+      </picture>
+      <div class="category-hero-copy">
+        <p>{client.copy.collectionKicker}</p>
+        <h1>{category.title}</h1>
+        <p>{category.description}</p>
+      </div>
+    </header>
+    <div class="section-wrap category-listings">
+      <PlantGrid plants={listings} />
+    </div>
+  </main>
+</BaseLayout>

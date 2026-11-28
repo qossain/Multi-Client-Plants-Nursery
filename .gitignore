@@ -7,3 +7,7 @@ clients/*/source-images/
 .env
 .env.*
 !.env.example
+
+# Private source material in separated applications
+sites/*/clients/*/source-images/
+sites/*/source-images/

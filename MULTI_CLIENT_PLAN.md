@@ -1,6 +1,10 @@
 # Multi-client nursery platform
 
-Status: multi-client platform is on GitHub `qossain/Multi-Client-Plants-Nursery` (`main`). Nasaruldin has a public, noindex review deployment; Usman is a local client preview under active development. The original Abdul Jabbar production site remains separate. Current state, verification and launch risks are maintained in [PROJECT_HANDOFF.md](PROJECT_HANDOFF.md) and [PROJECT_PROGRESS.md](PROJECT_PROGRESS.md); older dated notes below are historical snapshots and do not override the current handoff.
+## 2026-11-28 architecture decision
+
+The user approved moving toward three independent applications in one repository: `sites/usman`, `sites/nasruddin`, and `sites/abdulrehman`. The first two are local copies with protected Vercel previews; the third is an unfinished scaffold. Do not change production settings until preview and migration checks pass and approval is given. Runtime code is duplicated per app for isolation; no shared runtime package is yet in use. The original root application and Abdul Jabbar production remain separate. See `sites/README.md` for actual status and migration steps.
+
+Status: multi-client platform is on GitHub `qossain/Multi-Client-Plants-Nursery` (`main`). Nasaruldin has a public review deployment; the user reported on 2026-11-28 that Usman's site has been published, although its live URL and deployment have not been independently checked. The original Abdul Jabbar production site remains separate. Current state, verification and launch risks are maintained in [PROJECT_HANDOFF.md](PROJECT_HANDOFF.md) and [PROJECT_PROGRESS.md](PROJECT_PROGRESS.md); older dated notes below are historical snapshots and do not override the current handoff.
 
 ## Goal and production protection
 
@@ -59,4 +63,4 @@ Make small commits by stage in the new repository. Build and compare client 1 ag
 
 ## Usman review deployment
 
-- The user is creating a separate Vercel project for Usman. Permit this client's noindex review layout in production builds and use Vercel's exposed project production URL until a real origin is configured. Keep the existing client projects separate and verify the actual deployment after creation. Noindex is not access protection; copied reviews and illustrative content remain unverified for Usman.
+- The user reports that Usman's site is published. The source permits this client's noindex review layout in production builds and uses Vercel's exposed project production URL until a real origin is configured. The live URL and project settings have not been checked. Keep client projects separate; noindex is not access protection, and copied reviews and illustrative content remain unverified for Usman.

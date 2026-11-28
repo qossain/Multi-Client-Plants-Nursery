@@ -1,0 +1,11 @@
+@import './legacy.css';
+:root {
+  --legacy-color-0: #29483c;
+  --legacy-color-1: #182d26;
+  --legacy-color-2: #f1f0e9;
+  --legacy-color-3: #fcfcf8;
+  --legacy-color-6: #d27a48;
+  --legacy-color-7: #222a24;
+  --legacy-color-8: #6b706b;
+  --legacy-color-22: #345342;
+}

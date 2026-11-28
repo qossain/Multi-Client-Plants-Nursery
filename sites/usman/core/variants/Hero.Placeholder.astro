@@ -1,0 +1,16 @@
+---
+import type { ClientConfig } from '../client';
+interface Props { client: ClientConfig; variant: string }
+const { client, variant } = Astro.props;
+---
+<section class="concept-hero" data-variant={variant} aria-labelledby="hero-title">
+  <picture class="concept-hero-image">
+    <source media="(max-width: 700px)" srcset={client.heroMobile} />
+    <img src={client.heroDesktop} alt="" width="1600" height="900" fetchpriority="high" decoding="async" />
+  </picture>
+  <div class="concept-hero-copy">
+    <h1 id="hero-title">{client.heroTitle}<br /><em>{client.heroEmphasis}</em></h1>
+    <p>{client.heroDescription}</p>
+    <a class="button button-dark" href="/plants/">{client.copy.explorePlants}</a>
+  </div>
+</section>

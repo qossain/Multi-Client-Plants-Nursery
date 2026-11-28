@@ -1,0 +1,13 @@
+---
+import home from '@client-home-data';
+---
+<section class="why" id="why-choose-us" aria-labelledby="why-title">
+        <div class="why-leaves" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div class="why-inner">
+          <p class="why-kicker">Why choose us</p>
+          <h2 id="why-title">Why choose our<br /><em>plant nursery?</em></h2>
+          <p class="why-intro">Choose plants with the shape, scale and presence your space deserves.</p>
+          <div class="why-grid">{home.whyChoose.map((item, index) => <article class="why-card" style={`--card-delay:${550 + index * 120}ms`}><img class="why-photo" src={item.image} alt={item.alt} width="350" height="350" loading="lazy" /><h3>{item.title}</h3><p>{item.description}</p></article>)}</div>
+          <a href="#categories" class="why-action">Explore our collection</a>
+        </div>
+      </section>

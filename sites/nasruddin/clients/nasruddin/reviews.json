@@ -1,0 +1,1802 @@
+[
+  {
+    "name": "Sarah Jenkins",
+    "initials": "SJ",
+    "location": "London, UK",
+    "rating": 5,
+    "category": "International",
+    "source": "The organic lavender arrived in pristine condition with detailed care instructions. My garden smells amazing.",
+    "summary": "The organic lavender arrived in pristine condition with detailed care instructions. My garden smells amazing."
+  },
+  {
+    "name": "Ahmed Raza",
+    "initials": "AR",
+    "location": "Lahore, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Ordered 50 Kinnow citrus saplings; strong roots and excellent transport packaging. 100% survival after one month.",
+    "summary": "Ordered 50 Kinnow citrus saplings; strong roots and excellent transport packaging. 100% survival after one month."
+  },
+  {
+    "name": "David Miller",
+    "initials": "DM",
+    "location": "California, USA",
+    "rating": 5,
+    "category": "International",
+    "source": "Avocado trees shipped cross-country arrived green and intact. Two months later they are sprouting new leaves.",
+    "summary": "Avocado trees shipped cross-country arrived green and intact. Two months later they are sprouting new leaves."
+  },
+  {
+    "name": "Fatima Bilal",
+    "initials": "FB",
+    "location": "Karachi, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "They helped me choose shade-loving ferns and hostas for my Clifton balcony. All are thriving despite the humidity.",
+    "summary": "They helped me choose shade-loving ferns and hostas for my Clifton balcony. All are thriving despite the humidity."
+  },
+  {
+    "name": "Emma Thompson",
+    "initials": "ET",
+    "location": "Sydney, Australia",
+    "rating": 5,
+    "category": "International",
+    "source": "Their drought-tolerant succulents and native grasses were hardened off perfectly before shipping.",
+    "summary": "Their drought-tolerant succulents and native grasses were hardened off perfectly before shipping."
+  },
+  {
+    "name": "Usman Chaudhry",
+    "initials": "UC",
+    "location": "Islamabad, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The hybrid tea rose variety is superior to other Islamabad nurseries, and the staff knows local soil conditions well.",
+    "summary": "The hybrid tea rose variety is superior to other Islamabad nurseries, and the staff knows local soil conditions well."
+  },
+  {
+    "name": "Michael Chen",
+    "initials": "MC",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "category": "International",
+    "source": "Bonsai starters were healthy and well-shaped, and phytosanitary paperwork was handled smoothly.",
+    "summary": "Bonsai starters were healthy and well-shaped, and phytosanitary paperwork was handled smoothly."
+  },
+  {
+    "name": "Zainab Tariq",
+    "initials": "ZT",
+    "location": "Multan, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "My Chaunsa and Anwar Ratol mango saplings were perfectly grafted, and the owner followed up to check on them.",
+    "summary": "My Chaunsa and Anwar Ratol mango saplings were perfectly grafted, and the owner followed up to check on them."
+  },
+  {
+    "name": "Olivia Brown",
+    "initials": "OB",
+    "location": "Auckland, New Zealand",
+    "rating": 5,
+    "category": "International",
+    "source": "Eco-friendly packaging and beautiful native ferns. They are doing wonderfully in my shaded backyard.",
+    "summary": "Eco-friendly packaging and beautiful native ferns. They are doing wonderfully in my shaded backyard."
+  },
+  {
+    "name": "Bilal Khan",
+    "initials": "BK",
+    "location": "Peshawar, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Bought 500 tomato and chili seedlings for my kitchen garden. Every seedling was vigorous and disease-free.",
+    "summary": "Bought 500 tomato and chili seedlings for my kitchen garden. Every seedling was vigorous and disease-free."
+  },
+  {
+    "name": "James Wilson",
+    "initials": "JW",
+    "location": "Texas, USA",
+    "rating": 5,
+    "category": "International",
+    "source": "Herb plants arrived fresh and the rosemary is thriving in my dry Texas climate.",
+    "summary": "Herb plants arrived fresh and the rosemary is thriving in my dry Texas climate."
+  },
+  {
+    "name": "Ayesha Siddiqui",
+    "initials": "AS",
+    "location": "Rawalpindi, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The jasmine plants arrived healthy and hydrated, and the fragrance in my courtyard is amazing.",
+    "summary": "The jasmine plants arrived healthy and hydrated, and the fragrance in my courtyard is amazing."
+  },
+  {
+    "name": "Sophia Martinez",
+    "initials": "SM",
+    "location": "Madrid, Spain",
+    "rating": 5,
+    "category": "International",
+    "source": "Indoor air-purifying plants arrived beautiful and healthy. Fast international shipping.",
+    "summary": "Indoor air-purifying plants arrived beautiful and healthy. Fast international shipping."
+  },
+  {
+    "name": "Hamza Ali",
+    "initials": "HA",
+    "location": "Faisalabad, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Guava trees were healthy, well-rooted, and are already showing new growth. Very reliable nursery.",
+    "summary": "Guava trees were healthy, well-rooted, and are already showing new growth. Very reliable nursery."
+  },
+  {
+    "name": "Robert Taylor",
+    "initials": "RT",
+    "location": "Manchester, UK",
+    "rating": 5,
+    "category": "International",
+    "source": "Fruit trees were of excellent quality, and the planting guide was very useful.",
+    "summary": "Fruit trees were of excellent quality, and the planting guide was very useful."
+  },
+  {
+    "name": "Sana Malik",
+    "initials": "SM",
+    "location": "Hyderabad, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The succulent collection is excellent, and the care card included with each plant was very helpful.",
+    "summary": "The succulent collection is excellent, and the care card included with each plant was very helpful."
+  },
+  {
+    "name": "Linda Davis",
+    "initials": "LD",
+    "location": "Florida, USA",
+    "rating": 5,
+    "category": "International",
+    "source": "The tropical plants were packed with care and are thriving in Florida humidity.",
+    "summary": "The tropical plants were packed with care and are thriving in Florida humidity."
+  },
+  {
+    "name": "Kashif Mehmood",
+    "initials": "KM",
+    "location": "Sialkot, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Lawn grass plugs established quickly, and their fertilizer advice made a visible difference.",
+    "summary": "Lawn grass plugs established quickly, and their fertilizer advice made a visible difference."
+  },
+  {
+    "name": "Daniel Garcia",
+    "initials": "DG",
+    "location": "Barcelona, Spain",
+    "rating": 5,
+    "category": "International",
+    "source": "A great selection of Mediterranean herbs and shrubs. Everything arrived healthy.",
+    "summary": "A great selection of Mediterranean herbs and shrubs. Everything arrived healthy."
+  },
+  {
+    "name": "Nadia Hussain",
+    "initials": "NH",
+    "location": "Quetta, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Even with Quetta’s dry weather, the saplings they selected are doing well. Honest and knowledgeable service.",
+    "summary": "Even with Quetta’s dry weather, the saplings they selected are doing well. Honest and knowledgeable service."
+  },
+  {
+    "name": "Priya Sharma",
+    "initials": "PS",
+    "location": "Delhi, India",
+    "rating": 5,
+    "category": "International",
+    "source": "The balcony plant collection was perfect for Delhi weather, and all plants are growing well.",
+    "summary": "The balcony plant collection was perfect for Delhi weather, and all plants are growing well."
+  },
+  {
+    "name": "Imran Yousaf",
+    "initials": "IY",
+    "location": "Gujranwala, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Petunias and pansies bloomed beautifully within weeks. The seasonal flower selection is outstanding.",
+    "summary": "Petunias and pansies bloomed beautifully within weeks. The seasonal flower selection is outstanding."
+  },
+  {
+    "name": "Mohammed Al-Harbi",
+    "initials": "MA",
+    "location": "Riyadh, Saudi Arabia",
+    "rating": 5,
+    "category": "International",
+    "source": "They selected heat-tolerant plants for Riyadh, and they are surviving beautifully.",
+    "summary": "They selected heat-tolerant plants for Riyadh, and they are surviving beautifully."
+  },
+  {
+    "name": "Maryam Nawaz",
+    "initials": "MN",
+    "location": "Lahore, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Bought indoor air-purifying plants for my home; all arrived fresh and are growing steadily.",
+    "summary": "Bought indoor air-purifying plants for my home; all arrived fresh and are growing steadily."
+  },
+  {
+    "name": "Emily Clark",
+    "initials": "EC",
+    "location": "Toronto, Canada",
+    "rating": 5,
+    "category": "International",
+    "source": "The indoor plants arrived safely despite cold-weather shipping. Excellent insulation.",
+    "summary": "The indoor plants arrived safely despite cold-weather shipping. Excellent insulation."
+  },
+  {
+    "name": "Ali Hassan",
+    "initials": "AH",
+    "location": "Karachi, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The nursery packed my palm plants perfectly for Karachi delivery. Not a single leaf was damaged.",
+    "summary": "The nursery packed my palm plants perfectly for Karachi delivery. Not a single leaf was damaged."
+  },
+  {
+    "name": "Luca Rossi",
+    "initials": "LR",
+    "location": "Rome, Italy",
+    "rating": 5,
+    "category": "International",
+    "source": "Citrus saplings arrived healthy and are already showing new growth on my terrace.",
+    "summary": "Citrus saplings arrived healthy and are already showing new growth on my terrace."
+  },
+  {
+    "name": "Hira Shah",
+    "initials": "HS",
+    "location": "Islamabad, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Their organic compost and plant care guidance transformed my vegetable beds.",
+    "summary": "Their organic compost and plant care guidance transformed my vegetable beds."
+  },
+  {
+    "name": "Hannah Müller",
+    "initials": "HM",
+    "location": "Berlin, Germany",
+    "rating": 5,
+    "category": "International",
+    "source": "The herb seedlings were strong and organic. Perfect for my kitchen window garden.",
+    "summary": "The herb seedlings were strong and organic. Perfect for my kitchen window garden."
+  },
+  {
+    "name": "Omar Farooq",
+    "initials": "OF",
+    "location": "Multan, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Excellent citrus saplings and very fair bulk pricing. I will order again for my orchard expansion.",
+    "summary": "Excellent citrus saplings and very fair bulk pricing. I will order again for my orchard expansion."
+  },
+  {
+    "name": "Ahmed El-Sayed",
+    "initials": "AE",
+    "location": "Cairo, Egypt",
+    "rating": 5,
+    "category": "International",
+    "source": "Drought-tolerant plants were recommended well, and they are thriving in Cairo heat.",
+    "summary": "Drought-tolerant plants were recommended well, and they are thriving in Cairo heat."
+  },
+  {
+    "name": "Rabia Aslam",
+    "initials": "RA",
+    "location": "Peshawar, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The flowering shrubs arrived in perfect condition and are already budding.",
+    "summary": "The flowering shrubs arrived in perfect condition and are already budding."
+  },
+  {
+    "name": "Grace Lee",
+    "initials": "GL",
+    "location": "Seoul, South Korea",
+    "rating": 5,
+    "category": "International",
+    "source": "The compact indoor plants arrived in perfect condition and are lovely on my desk.",
+    "summary": "The compact indoor plants arrived in perfect condition and are lovely on my desk."
+  },
+  {
+    "name": "Tariq Jameel",
+    "initials": "TJ",
+    "location": "Rawalpindi, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Very professional nursery. The pots were clean, labeled, and the plants were healthier than expected.",
+    "summary": "Very professional nursery. The pots were clean, labeled, and the plants were healthier than expected."
+  },
+  {
+    "name": "Tom Baker",
+    "initials": "TB",
+    "location": "Melbourne, Australia",
+    "rating": 5,
+    "category": "International",
+    "source": "Native grasses and succulents arrived healthy and well-rooted.",
+    "summary": "Native grasses and succulents arrived healthy and well-rooted."
+  },
+  {
+    "name": "Mehwish Khan",
+    "initials": "MK",
+    "location": "Faisalabad, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Ordered herbs for my rooftop garden; mint, basil, and coriander all arrived fresh.",
+    "summary": "Ordered herbs for my rooftop garden; mint, basil, and coriander all arrived fresh."
+  },
+  {
+    "name": "Ana Silva",
+    "initials": "AS",
+    "location": "Lisbon, Portugal",
+    "rating": 5,
+    "category": "International",
+    "source": "The lavender and rosemary arrived fresh and are growing beautifully in my balcony pots.",
+    "summary": "The lavender and rosemary arrived fresh and are growing beautifully in my balcony pots."
+  },
+  {
+    "name": "Adnan Qureshi",
+    "initials": "AQ",
+    "location": "Sialkot, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The grafted lemon plants are strong and pest-free. Great value for the price.",
+    "summary": "The grafted lemon plants are strong and pest-free. Great value for the price."
+  },
+  {
+    "name": "Chris Johnson",
+    "initials": "CJ",
+    "location": "Dublin, Ireland",
+    "rating": 5,
+    "category": "International",
+    "source": "Ferns arrived lush and green, perfect for Ireland’s damp climate.",
+    "summary": "Ferns arrived lush and green, perfect for Ireland’s damp climate."
+  },
+  {
+    "name": "Farah Zaidi",
+    "initials": "FZ",
+    "location": "Hyderabad, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Their team guided me on watering schedules for succulents, and my plants have never looked better.",
+    "summary": "Their team guided me on watering schedules for succulents, and my plants have never looked better."
+  },
+  {
+    "name": "Fatima Noor",
+    "initials": "FN",
+    "location": "Dubai, UAE",
+    "rating": 5,
+    "category": "International",
+    "source": "They recommended excellent heat-resistant plants for my Dubai balcony.",
+    "summary": "They recommended excellent heat-resistant plants for my Dubai balcony."
+  },
+  {
+    "name": "Saad Butt",
+    "initials": "SB",
+    "location": "Lahore, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Bought shade trees for my farmhouse; the root balls were intact and planting advice was clear.",
+    "summary": "Bought shade trees for my farmhouse; the root balls were intact and planting advice was clear."
+  },
+  {
+    "name": "Peter Novak",
+    "initials": "PN",
+    "location": "Prague, Czech Republic",
+    "rating": 5,
+    "category": "International",
+    "source": "The indoor plants were well-packed and arrived without any damage.",
+    "summary": "The indoor plants were well-packed and arrived without any damage."
+  },
+  {
+    "name": "Nimra Sheikh",
+    "initials": "NS",
+    "location": "Karachi, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The balcony plant combo was beautifully selected and arrived safely despite the heat.",
+    "summary": "The balcony plant combo was beautifully selected and arrived safely despite the heat."
+  },
+  {
+    "name": "Yuki Tanaka",
+    "initials": "YT",
+    "location": "Tokyo, Japan",
+    "rating": 5,
+    "category": "International",
+    "source": "The bonsai starter was healthy and beautifully shaped. Excellent craftsmanship.",
+    "summary": "The bonsai starter was healthy and beautifully shaped. Excellent craftsmanship."
+  },
+  {
+    "name": "Haris Rauf",
+    "initials": "HR",
+    "location": "Islamabad, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Their nursery has a great range of native plants, and the staff is patient with first-time gardeners.",
+    "summary": "Their nursery has a great range of native plants, and the staff is patient with first-time gardeners."
+  },
+  {
+    "name": "Laura Fernández",
+    "initials": "LF",
+    "location": "Buenos Aires, Argentina",
+    "rating": 5,
+    "category": "International",
+    "source": "The flowering plants arrived in great condition and are blooming beautifully.",
+    "summary": "The flowering plants arrived in great condition and are blooming beautifully."
+  },
+  {
+    "name": "Sobia Anwar",
+    "initials": "SA",
+    "location": "Multan, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The guava and pomegranate saplings are healthy and already settling into my soil.",
+    "summary": "The guava and pomegranate saplings are healthy and already settling into my soil."
+  },
+  {
+    "name": "Mark Evans",
+    "initials": "ME",
+    "location": "Cape Town, South Africa",
+    "rating": 5,
+    "category": "International",
+    "source": "Drought-tolerant succulents were perfect for my garden and arrived healthy.",
+    "summary": "Drought-tolerant succulents were perfect for my garden and arrived healthy."
+  },
+  {
+    "name": "Danish Ali",
+    "initials": "DA",
+    "location": "Peshawar, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Bulk vegetable seedlings were uniform, strong, and delivered on time.",
+    "summary": "Bulk vegetable seedlings were uniform, strong, and delivered on time."
+  },
+  {
+    "name": "Nia Okafor",
+    "initials": "NO",
+    "location": "Lagos, Nigeria",
+    "rating": 5,
+    "category": "International",
+    "source": "Tropical plants arrived fresh and are thriving in Lagos humidity.",
+    "summary": "Tropical plants arrived fresh and are thriving in Lagos humidity."
+  },
+  {
+    "name": "Komal Rehman",
+    "initials": "KR",
+    "location": "Rawalpindi, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The rose bushes arrived with buds intact. Excellent packaging and very helpful after-sales advice.",
+    "summary": "The rose bushes arrived with buds intact. Excellent packaging and very helpful after-sales advice."
+  },
+  {
+    "name": "Ethan Brooks",
+    "initials": "EB",
+    "location": "Seattle, USA",
+    "rating": 5,
+    "category": "International",
+    "source": "Ferns and shade plants arrived healthy and are perfect for my shaded patio.",
+    "summary": "Ferns and shade plants arrived healthy and are perfect for my shaded patio."
+  },
+  {
+    "name": "Waqas Ahmed",
+    "initials": "WA",
+    "location": "Faisalabad, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Their fruit tree saplings are clearly well-maintained. I recommend them for serious gardeners.",
+    "summary": "Their fruit tree saplings are clearly well-maintained. I recommend them for serious gardeners."
+  },
+  {
+    "name": "Clara Dubois",
+    "initials": "CD",
+    "location": "Paris, France",
+    "rating": 5,
+    "category": "International",
+    "source": "The balcony herb collection was charming, fresh, and well-packaged.",
+    "summary": "The balcony herb collection was charming, fresh, and well-packaged."
+  },
+  {
+    "name": "Amna Ilyas",
+    "initials": "AI",
+    "location": "Sialkot, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The ornamental plants arrived healthy and matched the photos on their website.",
+    "summary": "The ornamental plants arrived healthy and matched the photos on their website."
+  },
+  {
+    "name": "Ravi Patel",
+    "initials": "RP",
+    "location": "Mumbai, India",
+    "rating": 5,
+    "category": "International",
+    "source": "The plants arrived healthy despite Mumbai heat, and the care guide was excellent.",
+    "summary": "The plants arrived healthy despite Mumbai heat, and the care guide was excellent."
+  },
+  {
+    "name": "Shahid Mahmood",
+    "initials": "SM",
+    "location": "Quetta, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Hardy plants for dry weather were recommended correctly, and they are surviving well.",
+    "summary": "Hardy plants for dry weather were recommended correctly, and they are surviving well."
+  },
+  {
+    "name": "Sofia Costa",
+    "initials": "SC",
+    "location": "São Paulo, Brazil",
+    "rating": 5,
+    "category": "International",
+    "source": "Tropical foliage plants arrived lush and green. Very impressed.",
+    "summary": "Tropical foliage plants arrived lush and green. Very impressed."
+  },
+  {
+    "name": "Areeba Khan",
+    "initials": "AK",
+    "location": "Gujranwala, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Very satisfied with the flowering plants and the eco-friendly packaging.",
+    "summary": "Very satisfied with the flowering plants and the eco-friendly packaging."
+  },
+  {
+    "name": "Ben Carter",
+    "initials": "BC",
+    "location": "Wellington, New Zealand",
+    "rating": 5,
+    "category": "International",
+    "source": "Native ferns and grasses arrived in excellent condition.",
+    "summary": "Native ferns and grasses arrived in excellent condition."
+  },
+  {
+    "name": "Naveed Akhtar",
+    "initials": "NA",
+    "location": "Lahore, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The nursery handled my large order of shrubs professionally and delivered exactly as promised.",
+    "summary": "The nursery handled my large order of shrubs professionally and delivered exactly as promised."
+  },
+  {
+    "name": "Aisha Rahman",
+    "initials": "AR",
+    "location": "Kuala Lumpur, Malaysia",
+    "rating": 5,
+    "category": "International",
+    "source": "The tropical plant selection is fantastic, and everything arrived healthy.",
+    "summary": "The tropical plant selection is fantastic, and everything arrived healthy."
+  },
+  {
+    "name": "Iqra Bashir",
+    "initials": "IB",
+    "location": "Karachi, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "My indoor ferns arrived lush and green. Their care instructions are simple and effective.",
+    "summary": "My indoor ferns arrived lush and green. Their care instructions are simple and effective."
+  },
+  {
+    "name": "Karl Johansson",
+    "initials": "KJ",
+    "location": "Stockholm, Sweden",
+    "rating": 5,
+    "category": "International",
+    "source": "Cold-weather packaging was excellent; indoor plants arrived warm and healthy.",
+    "summary": "Cold-weather packaging was excellent; indoor plants arrived warm and healthy."
+  },
+  {
+    "name": "Faisal Shah",
+    "initials": "FS",
+    "location": "Islamabad, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The maple and jacaranda saplings were strong and well-packed. Great experience.",
+    "summary": "The maple and jacaranda saplings were strong and well-packed. Great experience."
+  },
+  {
+    "name": "Elena Petrova",
+    "initials": "EP",
+    "location": "Moscow, Russia",
+    "rating": 5,
+    "category": "International",
+    "source": "The indoor plants were well-insulated and arrived in perfect condition.",
+    "summary": "The indoor plants were well-insulated and arrived in perfect condition."
+  },
+  {
+    "name": "Beenish Ali",
+    "initials": "BA",
+    "location": "Multan, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "They selected heat-tolerant plants for my courtyard, and everything is flourishing.",
+    "summary": "They selected heat-tolerant plants for my courtyard, and everything is flourishing."
+  },
+  {
+    "name": "Jose Hernandez",
+    "initials": "JH",
+    "location": "Mexico City, Mexico",
+    "rating": 5,
+    "category": "International",
+    "source": "Succulents and cacti arrived healthy and are perfect for my sunny balcony.",
+    "summary": "Succulents and cacti arrived healthy and are perfect for my sunny balcony."
+  },
+  {
+    "name": "Rizwan Ahmed",
+    "initials": "RA",
+    "location": "Peshawar, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The nursery’s grafting quality is excellent. My citrus trees are growing evenly.",
+    "summary": "The nursery’s grafting quality is excellent. My citrus trees are growing evenly."
+  },
+  {
+    "name": "Mei Lin",
+    "initials": "ML",
+    "location": "Singapore",
+    "rating": 5,
+    "category": "International",
+    "source": "Tropical plants arrived fresh and are thriving in Singapore humidity.",
+    "summary": "Tropical plants arrived fresh and are thriving in Singapore humidity."
+  },
+  {
+    "name": "Mahnoor Tariq",
+    "initials": "MT",
+    "location": "Rawalpindi, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Friendly service and healthy plants. The hanging baskets were especially beautiful.",
+    "summary": "Friendly service and healthy plants. The hanging baskets were especially beautiful."
+  },
+  {
+    "name": "Samir Haddad",
+    "initials": "SH",
+    "location": "Amman, Jordan",
+    "rating": 5,
+    "category": "International",
+    "source": "Heat-tolerant plants were recommended correctly, and they are growing well.",
+    "summary": "Heat-tolerant plants were recommended correctly, and they are growing well."
+  },
+  {
+    "name": "Asad Mehmood",
+    "initials": "AM",
+    "location": "Faisalabad, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Bought a mix of fruit and shade saplings; all were labeled and in excellent condition.",
+    "summary": "Bought a mix of fruit and shade saplings; all were labeled and in excellent condition."
+  },
+  {
+    "name": "Chloe Martin",
+    "initials": "CM",
+    "location": "Brussels, Belgium",
+    "rating": 5,
+    "category": "International",
+    "source": "The indoor plant collection arrived beautifully packed and healthy.",
+    "summary": "The indoor plant collection arrived beautifully packed and healthy."
+  },
+  {
+    "name": "Laiba Hassan",
+    "initials": "LH",
+    "location": "Sialkot, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The flower seedlings were strong and bloomed within weeks. Will order every season.",
+    "summary": "The flower seedlings were strong and bloomed within weeks. Will order every season."
+  },
+  {
+    "name": "Noah Williams",
+    "initials": "NW",
+    "location": "Chicago, USA",
+    "rating": 5,
+    "category": "International",
+    "source": "Herb plants arrived fresh and are growing well on my kitchen counter.",
+    "summary": "Herb plants arrived fresh and are growing well on my kitchen counter."
+  },
+  {
+    "name": "Noman Iqbal",
+    "initials": "NI",
+    "location": "Hyderabad, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Their advice on soil drainage saved my succulents. Very knowledgeable team.",
+    "summary": "Their advice on soil drainage saved my succulents. Very knowledgeable team."
+  },
+  {
+    "name": "Isabella Romano",
+    "initials": "IR",
+    "location": "Milan, Italy",
+    "rating": 5,
+    "category": "International",
+    "source": "The citrus sapling arrived healthy and is already flowering on my balcony.",
+    "summary": "The citrus sapling arrived healthy and is already flowering on my balcony."
+  },
+  {
+    "name": "Huma Nawaz",
+    "initials": "HN",
+    "location": "Lahore, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The nursery delivered my order on time and the plants were even better than expected.",
+    "summary": "The nursery delivered my order on time and the plants were even better than expected."
+  },
+  {
+    "name": "Arjun Nair",
+    "initials": "AN",
+    "location": "Bangalore, India",
+    "rating": 5,
+    "category": "International",
+    "source": "The terrace garden plants arrived healthy and well-suited to Bangalore weather.",
+    "summary": "The terrace garden plants arrived healthy and well-suited to Bangalore weather."
+  },
+  {
+    "name": "Zubair Khan",
+    "initials": "ZK",
+    "location": "Karachi, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Bought tropical plants for my apartment; they arrived fresh and are growing well.",
+    "summary": "Bought tropical plants for my apartment; they arrived fresh and are growing well."
+  },
+  {
+    "name": "Sarah O’Connor",
+    "initials": "SO",
+    "location": "Cork, Ireland",
+    "rating": 5,
+    "category": "International",
+    "source": "Ferns arrived lush and are perfect for my shaded garden.",
+    "summary": "Ferns arrived lush and are perfect for my shaded garden."
+  },
+  {
+    "name": "Anum Shahid",
+    "initials": "AS",
+    "location": "Islamabad, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The herb and vegetable starter pack was perfect for my first kitchen garden.",
+    "summary": "The herb and vegetable starter pack was perfect for my first kitchen garden."
+  },
+  {
+    "name": "Ali Mansour",
+    "initials": "AM",
+    "location": "Doha, Qatar",
+    "rating": 5,
+    "category": "International",
+    "source": "The heat-resistant plants arrived healthy and are doing well in Doha.",
+    "summary": "The heat-resistant plants arrived healthy and are doing well in Doha."
+  },
+  {
+    "name": "Shoaib Malik",
+    "initials": "SM",
+    "location": "Multan, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Mango saplings were properly grafted and delivered with clear planting guidance.",
+    "summary": "Mango saplings were properly grafted and delivered with clear planting guidance."
+  },
+  {
+    "name": "Jessica Taylor",
+    "initials": "JT",
+    "location": "Perth, Australia",
+    "rating": 5,
+    "category": "International",
+    "source": "Drought-tolerant plants arrived healthy and are perfect for Perth’s dry climate.",
+    "summary": "Drought-tolerant plants arrived healthy and are perfect for Perth’s dry climate."
+  },
+  {
+    "name": "Sidra Yasmin",
+    "initials": "SY",
+    "location": "Peshawar, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The nursery’s seasonal flower selection is colorful and healthy. Very pleased.",
+    "summary": "The nursery’s seasonal flower selection is colorful and healthy. Very pleased."
+  },
+  {
+    "name": "Omar Khalid",
+    "initials": "OK",
+    "location": "Muscat, Oman",
+    "rating": 5,
+    "category": "International",
+    "source": "The nursery recommended excellent low-water plants for my garden.",
+    "summary": "The nursery recommended excellent low-water plants for my garden."
+  },
+  {
+    "name": "Arslan Hafeez",
+    "initials": "AH",
+    "location": "Rawalpindi, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "My hedge plants arrived uniform and healthy, making lawn borders easy.",
+    "summary": "My hedge plants arrived uniform and healthy, making lawn borders easy."
+  },
+  {
+    "name": "Nina Kowalski",
+    "initials": "NK",
+    "location": "Warsaw, Poland",
+    "rating": 5,
+    "category": "International",
+    "source": "Indoor plants arrived well-packed and healthy despite the cold journey.",
+    "summary": "Indoor plants arrived well-packed and healthy despite the cold journey."
+  },
+  {
+    "name": "Kiran Aslam",
+    "initials": "KA",
+    "location": "Faisalabad, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Excellent compost quality and very responsive customer service.",
+    "summary": "Excellent compost quality and very responsive customer service."
+  },
+  {
+    "name": "Leo Fischer",
+    "initials": "LF",
+    "location": "Zurich, Switzerland",
+    "rating": 5,
+    "category": "International",
+    "source": "The balcony herbs arrived fresh and are growing beautifully.",
+    "summary": "The balcony herbs arrived fresh and are growing beautifully."
+  },
+  {
+    "name": "Junaid Akram",
+    "initials": "JA",
+    "location": "Sialkot, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "The fruit saplings are disease-free and growing strongly. Worth the price.",
+    "summary": "The fruit saplings are disease-free and growing strongly. Worth the price."
+  },
+  {
+    "name": "Maya Gupta",
+    "initials": "MG",
+    "location": "Toronto, Canada",
+    "rating": 5,
+    "category": "International",
+    "source": "The indoor plant set was perfect for my apartment and arrived in great condition.",
+    "summary": "The indoor plant set was perfect for my apartment and arrived in great condition."
+  },
+  {
+    "name": "Mehak Riaz",
+    "initials": "MR",
+    "location": "Quetta, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "They recommended drought-tolerant plants that look great and need little water.",
+    "summary": "They recommended drought-tolerant plants that look great and need little water."
+  },
+  {
+    "name": "Henry Adams",
+    "initials": "HA",
+    "location": "Boston, USA",
+    "rating": 5,
+    "category": "International",
+    "source": "The shade plants arrived healthy and are thriving in my backyard.",
+    "summary": "The shade plants arrived healthy and are thriving in my backyard."
+  },
+  {
+    "name": "Salman Yousaf",
+    "initials": "SY",
+    "location": "Gujranwala, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "Bulk order of ornamental plants arrived neatly packed and in perfect health.",
+    "summary": "Bulk order of ornamental plants arrived neatly packed and in perfect health."
+  },
+  {
+    "name": "Layla Hassan",
+    "initials": "LH",
+    "location": "Beirut, Lebanon",
+    "rating": 5,
+    "category": "International",
+    "source": "The flowering plants arrived fresh and are blooming beautifully on my balcony.",
+    "summary": "The flowering plants arrived fresh and are blooming beautifully on my balcony."
+  },
+  {
+    "name": "Aiman Zafar",
+    "initials": "AZ",
+    "location": "Lahore, Pakistan",
+    "rating": 5,
+    "category": "Pakistan",
+    "source": "A trustworthy nursery with healthy plants and honest advice. Highly recommended.",
+    "summary": "A trustworthy nursery with healthy plants and honest advice. Highly recommended."
+  },
+  {
+    "name": "Oliver Grant",
+    "initials": "OG",
+    "location": "Leeds, UK",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Healthy herb plants arrived well-packed. Delivery was a day late, but quality was good.",
+    "summary": "Healthy herb plants arrived well-packed. Delivery was a day late, but quality was good."
+  },
+  {
+    "name": "Hina Rauf",
+    "initials": "HR",
+    "location": "Rawalpindi, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "Very good quality jasmine plants; delivery was one day late, but the plants arrived healthy.",
+    "summary": "Very good quality jasmine plants; delivery was one day late, but the plants arrived healthy."
+  },
+  {
+    "name": "Natalie Brooks",
+    "initials": "NB",
+    "location": "Vancouver, Canada",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Indoor plants arrived healthy; one pot was slightly damaged, but the plant was fine.",
+    "summary": "Indoor plants arrived healthy; one pot was slightly damaged, but the plant was fine."
+  },
+  {
+    "name": "Umer Farooq",
+    "initials": "UF",
+    "location": "Lahore, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "Strong citrus saplings and good packaging. Slightly smaller pots than expected, but healthy plants.",
+    "summary": "Strong citrus saplings and good packaging. Slightly smaller pots than expected, but healthy plants."
+  },
+  {
+    "name": "Hiroshi Sato",
+    "initials": "HS",
+    "location": "Osaka, Japan",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Bonsai starter arrived healthy and well-shaped. Shipping took slightly longer than expected.",
+    "summary": "Bonsai starter arrived healthy and well-shaped. Shipping took slightly longer than expected."
+  },
+  {
+    "name": "Sadaf Naeem",
+    "initials": "SN",
+    "location": "Karachi, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "The succulents arrived healthy; colors were a little less vibrant than the photos, but they are growing well.",
+    "summary": "The succulents arrived healthy; colors were a little less vibrant than the photos, but they are growing well."
+  },
+  {
+    "name": "Amelie Laurent",
+    "initials": "AL",
+    "location": "Lyon, France",
+    "rating": 4.8,
+    "category": "International",
+    "source": "The lavender arrived healthy and fragrant. Packaging was good, though a little bulky.",
+    "summary": "The lavender arrived healthy and fragrant. Packaging was good, though a little bulky."
+  },
+  {
+    "name": "Yasir Ali",
+    "initials": "YA",
+    "location": "Islamabad, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "Great rose bushes and helpful staff. Delivery took a little longer than promised.",
+    "summary": "Great rose bushes and helpful staff. Delivery took a little longer than promised."
+  },
+  {
+    "name": "Daniel Osei",
+    "initials": "DO",
+    "location": "Accra, Ghana",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Tropical plants arrived fresh and healthy. Delivery tracking could be improved.",
+    "summary": "Tropical plants arrived fresh and healthy. Delivery tracking could be improved."
+  },
+  {
+    "name": "Bushra Khan",
+    "initials": "BK",
+    "location": "Multan, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "Mango saplings were healthy and well-grafted. Would have liked slightly larger pots.",
+    "summary": "Mango saplings were healthy and well-grafted. Would have liked slightly larger pots."
+  },
+  {
+    "name": "Sara Lindqvist",
+    "initials": "SL",
+    "location": "Oslo, Norway",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Cold-weather packaging worked well; plants arrived healthy with minor leaf damage.",
+    "summary": "Cold-weather packaging worked well; plants arrived healthy with minor leaf damage."
+  },
+  {
+    "name": "Fahad Iqbal",
+    "initials": "FI",
+    "location": "Peshawar, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "Vegetable seedlings were vigorous and disease-free. Minor delay in WhatsApp response.",
+    "summary": "Vegetable seedlings were vigorous and disease-free. Minor delay in WhatsApp response."
+  },
+  {
+    "name": "Rohan Mehta",
+    "initials": "RM",
+    "location": "Pune, India",
+    "rating": 4.8,
+    "category": "International",
+    "source": "The terrace plants arrived healthy and well-suited to local weather.",
+    "summary": "The terrace plants arrived healthy and well-suited to local weather."
+  },
+  {
+    "name": "Rida Ahmed",
+    "initials": "RA",
+    "location": "Faisalabad, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "The guava tree arrived healthy; one leaf was damaged, but it recovered quickly.",
+    "summary": "The guava tree arrived healthy; one leaf was damaged, but it recovered quickly."
+  },
+  {
+    "name": "Emily Carter",
+    "initials": "EC",
+    "location": "Brisbane, Australia",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Drought-tolerant plants arrived healthy; one pot was smaller than expected.",
+    "summary": "Drought-tolerant plants arrived healthy; one pot was smaller than expected."
+  },
+  {
+    "name": "Talha Mahmood",
+    "initials": "TM",
+    "location": "Sialkot, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "Good quality lawn plugs and useful fertilizer advice. Establishment took a little time.",
+    "summary": "Good quality lawn plugs and useful fertilizer advice. Establishment took a little time."
+  },
+  {
+    "name": "Marco Bianchi",
+    "initials": "MB",
+    "location": "Florence, Italy",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Citrus sapling arrived healthy and is growing well. Delivery was slightly delayed.",
+    "summary": "Citrus sapling arrived healthy and is growing well. Delivery was slightly delayed."
+  },
+  {
+    "name": "Noreen Aslam",
+    "initials": "NA",
+    "location": "Hyderabad, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "The indoor plants arrived healthy; packaging was slightly dented but plants were safe.",
+    "summary": "The indoor plants arrived healthy; packaging was slightly dented but plants were safe."
+  },
+  {
+    "name": "Ayesha Karim",
+    "initials": "AK",
+    "location": "Sharjah, UAE",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Heat-tolerant plants arrived healthy. Packaging was good but not fully plastic-free.",
+    "summary": "Heat-tolerant plants arrived healthy. Packaging was good but not fully plastic-free."
+  },
+  {
+    "name": "Shahzaib Khan",
+    "initials": "SK",
+    "location": "Gujranwala, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "Excellent herb seedlings. Delivery was slightly delayed, but quality made up for it.",
+    "summary": "Excellent herb seedlings. Delivery was slightly delayed, but quality made up for it."
+  },
+  {
+    "name": "Thomas Weber",
+    "initials": "TW",
+    "location": "Hamburg, Germany",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Indoor plants arrived in good condition; one leaf was damaged in transit.",
+    "summary": "Indoor plants arrived in good condition; one leaf was damaged in transit."
+  },
+  {
+    "name": "Mehwish Ali",
+    "initials": "MA",
+    "location": "Lahore, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "The flowering plants were healthy and bloomed well. Pots could be a bit larger for the price.",
+    "summary": "The flowering plants were healthy and bloomed well. Pots could be a bit larger for the price."
+  },
+  {
+    "name": "Valeria Cruz",
+    "initials": "VC",
+    "location": "Santiago, Chile",
+    "rating": 4.8,
+    "category": "International",
+    "source": "The flowering plants arrived healthy and are blooming. Shipping was a little slow.",
+    "summary": "The flowering plants arrived healthy and are blooming. Shipping was a little slow."
+  },
+  {
+    "name": "Arsalan Tariq",
+    "initials": "AT",
+    "location": "Karachi, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "Palm plants arrived in good condition. One frond was bent, but the plant is healthy.",
+    "summary": "Palm plants arrived in good condition. One frond was bent, but the plant is healthy."
+  },
+  {
+    "name": "Kevin Nguyen",
+    "initials": "KN",
+    "location": "Houston, USA",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Tropical plants arrived healthy despite the heat. Good customer support.",
+    "summary": "Tropical plants arrived healthy despite the heat. Good customer support."
+  },
+  {
+    "name": "Iqra Nadeem",
+    "initials": "IN",
+    "location": "Islamabad, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "Very good compost and plant advice. Delivery timing was slightly off.",
+    "summary": "Very good compost and plant advice. Delivery timing was slightly off."
+  },
+  {
+    "name": "Leila Haddad",
+    "initials": "LH",
+    "location": "Tunis, Tunisia",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Drought-tolerant succulents arrived healthy. Pot sizes were slightly smaller than expected.",
+    "summary": "Drought-tolerant succulents arrived healthy. Pot sizes were slightly smaller than expected."
+  },
+  {
+    "name": "Waleed Ahmed",
+    "initials": "WA",
+    "location": "Multan, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "Citrus saplings were strong and well-rooted. Packaging was good, though a little bulky.",
+    "summary": "Citrus saplings were strong and well-rooted. Packaging was good, though a little bulky."
+  },
+  {
+    "name": "Sam Taylor",
+    "initials": "ST",
+    "location": "Cardiff, UK",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Herb plants arrived fresh and well-rooted. Delivery was delayed by one day.",
+    "summary": "Herb plants arrived fresh and well-rooted. Delivery was delayed by one day."
+  },
+  {
+    "name": "Areej Fatima",
+    "initials": "AF",
+    "location": "Peshawar, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "The rose plants arrived healthy and are budding well. Customer service was responsive.",
+    "summary": "The rose plants arrived healthy and are budding well. Customer service was responsive."
+  },
+  {
+    "name": "Anna Kowalczyk",
+    "initials": "AK",
+    "location": "Krakow, Poland",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Indoor plants arrived healthy and well-insulated. Minor packaging issue.",
+    "summary": "Indoor plants arrived healthy and well-insulated. Minor packaging issue."
+  },
+  {
+    "name": "Hassan Raza",
+    "initials": "HR",
+    "location": "Rawalpindi, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "Good selection of shade plants. One plant was slightly wilted but recovered after watering.",
+    "summary": "Good selection of shade plants. One plant was slightly wilted but recovered after watering."
+  },
+  {
+    "name": "Miguel Santos",
+    "initials": "MS",
+    "location": "Porto, Portugal",
+    "rating": 4.8,
+    "category": "International",
+    "source": "The balcony plants arrived healthy and are growing well. Good value overall.",
+    "summary": "The balcony plants arrived healthy and are growing well. Good value overall."
+  },
+  {
+    "name": "Sana Javed",
+    "initials": "SJ",
+    "location": "Faisalabad, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "The seasonal flowers are healthy and colorful. Delivery was a day later than expected.",
+    "summary": "The seasonal flowers are healthy and colorful. Delivery was a day later than expected."
+  },
+  {
+    "name": "Rachel Green",
+    "initials": "RG",
+    "location": "Dublin, Ireland",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Ferns arrived lush and healthy. Delivery was slightly later than promised.",
+    "summary": "Ferns arrived lush and healthy. Delivery was slightly later than promised."
+  },
+  {
+    "name": "Bilal Hussain",
+    "initials": "BH",
+    "location": "Sialkot, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "Fruit saplings were healthy and labeled clearly. Would prefer more detailed planting instructions.",
+    "summary": "Fruit saplings were healthy and labeled clearly. Would prefer more detailed planting instructions."
+  },
+  {
+    "name": "Abdullah Al-Farsi",
+    "initials": "AA",
+    "location": "Muscat, Oman",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Low-water plants arrived healthy and are doing well in the heat.",
+    "summary": "Low-water plants arrived healthy and are doing well in the heat."
+  },
+  {
+    "name": "Momina Khan",
+    "initials": "MK",
+    "location": "Quetta, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "Hardy plants were recommended well. Slight delay in delivery, but quality was good.",
+    "summary": "Hardy plants were recommended well. Slight delay in delivery, but quality was good."
+  },
+  {
+    "name": "Grace Kim",
+    "initials": "GK",
+    "location": "Busan, South Korea",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Indoor plants arrived healthy; one pot was slightly cracked.",
+    "summary": "Indoor plants arrived healthy; one pot was slightly cracked."
+  },
+  {
+    "name": "Zeeshan Akram",
+    "initials": "ZA",
+    "location": "Gujranwala, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "The vegetable seedlings were strong and uniform. Packaging could be more eco-friendly.",
+    "summary": "The vegetable seedlings were strong and uniform. Packaging could be more eco-friendly."
+  },
+  {
+    "name": "Peter Brown",
+    "initials": "PB",
+    "location": "Auckland, New Zealand",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Native ferns arrived healthy and well-packed. Shipping took a little longer.",
+    "summary": "Native ferns arrived healthy and well-packed. Shipping took a little longer."
+  },
+  {
+    "name": "Amna Tariq",
+    "initials": "AT",
+    "location": "Lahore, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "Indoor plants arrived healthy and fresh. Customer support was helpful.",
+    "summary": "Indoor plants arrived healthy and fresh. Customer support was helpful."
+  },
+  {
+    "name": "Marta López",
+    "initials": "ML",
+    "location": "Valencia, Spain",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Mediterranean herbs arrived fresh and healthy. Packaging was good.",
+    "summary": "Mediterranean herbs arrived fresh and healthy. Packaging was good."
+  },
+  {
+    "name": "Nabeel Asghar",
+    "initials": "NA",
+    "location": "Karachi, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "Good tropical plants and safe packaging. One pot was cracked, but the plant was fine.",
+    "summary": "Good tropical plants and safe packaging. One pot was cracked, but the plant was fine."
+  },
+  {
+    "name": "Isaac Cohen",
+    "initials": "IC",
+    "location": "Tel Aviv, Israel",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Heat-tolerant plants arrived healthy; delivery timing was slightly off.",
+    "summary": "Heat-tolerant plants arrived healthy; delivery timing was slightly off."
+  },
+  {
+    "name": "Rabia Shahid",
+    "initials": "RS",
+    "location": "Islamabad, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "The herb collection was fresh and healthy. Delivery was slightly delayed.",
+    "summary": "The herb collection was fresh and healthy. Delivery was slightly delayed."
+  },
+  {
+    "name": "Fiona MacLeod",
+    "initials": "FM",
+    "location": "Edinburgh, UK",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Shade plants arrived healthy and are growing well. Good customer service.",
+    "summary": "Shade plants arrived healthy and are growing well. Good customer service."
+  },
+  {
+    "name": "Faizan Ali",
+    "initials": "FA",
+    "location": "Multan, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "Healthy mango saplings and good grafting. Would like larger pot sizes.",
+    "summary": "Healthy mango saplings and good grafting. Would like larger pot sizes."
+  },
+  {
+    "name": "Chen Wei",
+    "initials": "CW",
+    "location": "Shanghai, China",
+    "rating": 4.8,
+    "category": "International",
+    "source": "Indoor plants arrived healthy and well-packed. One pot was smaller than expected.",
+    "summary": "Indoor plants arrived healthy and well-packed. One pot was smaller than expected."
+  },
+  {
+    "name": "Hoorain Yousaf",
+    "initials": "HY",
+    "location": "Peshawar, Pakistan",
+    "rating": 4.8,
+    "category": "Pakistan",
+    "source": "The flowering shrubs were healthy and well-packed. Minor delay in dispatch.",
+    "summary": "The flowering shrubs were healthy and well-packed. Minor delay in dispatch."
+  },
+  {
+    "name": "Emma Walsh",
+    "initials": "EW",
+    "location": "Liverpool, UK",
+    "rating": 4.5,
+    "category": "International",
+    "source": "Herb plants arrived healthy, but one pot was crushed in transit. Replacement advice was helpful.",
+    "summary": "Herb plants arrived healthy, but one pot was crushed in transit. Replacement advice was helpful."
+  },
+  {
+    "name": "Komal Naveed",
+    "initials": "KN",
+    "location": "Hyderabad, Pakistan",
+    "rating": 4.5,
+    "category": "Pakistan",
+    "source": "Succulents arrived safely, but colors were less vibrant than the website photos. They are healthy and growing.",
+    "summary": "Succulents arrived safely, but colors were less vibrant than the website photos. They are healthy and growing."
+  },
+  {
+    "name": "Carlos Mendes",
+    "initials": "CM",
+    "location": "Lisbon, Portugal",
+    "rating": 4.5,
+    "category": "International",
+    "source": "Mediterranean plants were good quality, but delivery took longer than stated.",
+    "summary": "Mediterranean plants were good quality, but delivery took longer than stated."
+  },
+  {
+    "name": "Adil Rehman",
+    "initials": "AR",
+    "location": "Lahore, Pakistan",
+    "rating": 4.5,
+    "category": "Pakistan",
+    "source": "Good fruit trees overall. Shipping cost was a bit high, but the plants were healthy.",
+    "summary": "Good fruit trees overall. Shipping cost was a bit high, but the plants were healthy."
+  },
+  {
+    "name": "Priya Kapoor",
+    "initials": "PK",
+    "location": "Delhi, India",
+    "rating": 4.5,
+    "category": "International",
+    "source": "Balcony plants arrived healthy; pot sizes were smaller than expected.",
+    "summary": "Balcony plants arrived healthy; pot sizes were smaller than expected."
+  },
+  {
+    "name": "Hira Aslam",
+    "initials": "HA",
+    "location": "Karachi, Pakistan",
+    "rating": 4.5,
+    "category": "Pakistan",
+    "source": "The lawn grass plugs took time to establish, but the nursery gave good fertilizer advice.",
+    "summary": "The lawn grass plugs took time to establish, but the nursery gave good fertilizer advice."
+  },
+  {
+    "name": "Jack Wilson",
+    "initials": "JW",
+    "location": "Toronto, Canada",
+    "rating": 4.5,
+    "category": "International",
+    "source": "Indoor plants arrived okay, but cold-weather packaging could be better.",
+    "summary": "Indoor plants arrived okay, but cold-weather packaging could be better."
+  },
+  {
+    "name": "Shayan Ali",
+    "initials": "SA",
+    "location": "Islamabad, Pakistan",
+    "rating": 4.5,
+    "category": "Pakistan",
+    "source": "Plants arrived in okay condition. One sapling had a broken stem, but they offered a partial refund.",
+    "summary": "Plants arrived in okay condition. One sapling had a broken stem, but they offered a partial refund."
+  },
+  {
+    "name": "Sofia Rossi",
+    "initials": "SR",
+    "location": "Rome, Italy",
+    "rating": 4.5,
+    "category": "International",
+    "source": "Citrus plant was healthy, but one branch was broken on arrival.",
+    "summary": "Citrus plant was healthy, but one branch was broken on arrival."
+  },
+  {
+    "name": "Mehreen Tariq",
+    "initials": "MT",
+    "location": "Multan, Pakistan",
+    "rating": 4.5,
+    "category": "Pakistan",
+    "source": "The mango saplings are healthy, but pot sizes were smaller than expected.",
+    "summary": "The mango saplings are healthy, but pot sizes were smaller than expected."
+  },
+  {
+    "name": "Ahmed Zaki",
+    "initials": "AZ",
+    "location": "Cairo, Egypt",
+    "rating": 4.5,
+    "category": "International",
+    "source": "Heat-tolerant plants were decent, but delivery was slower than promised.",
+    "summary": "Heat-tolerant plants were decent, but delivery was slower than promised."
+  },
+  {
+    "name": "Owais Khan",
+    "initials": "OK",
+    "location": "Peshawar, Pakistan",
+    "rating": 4.5,
+    "category": "Pakistan",
+    "source": "Decent quality vegetable seedlings. Delivery was a little slow, but plants were usable.",
+    "summary": "Decent quality vegetable seedlings. Delivery was a little slow, but plants were usable."
+  },
+  {
+    "name": "Helen Brown",
+    "initials": "HB",
+    "location": "Melbourne, Australia",
+    "rating": 4.5,
+    "category": "International",
+    "source": "Native grasses arrived healthy; packaging was a bit loose.",
+    "summary": "Native grasses arrived healthy; packaging was a bit loose."
+  },
+  {
+    "name": "Anam Riaz",
+    "initials": "AR",
+    "location": "Faisalabad, Pakistan",
+    "rating": 4.5,
+    "category": "Pakistan",
+    "source": "The flowering plants were healthy, though one was slightly wilted on arrival.",
+    "summary": "The flowering plants were healthy, though one was slightly wilted on arrival."
+  },
+  {
+    "name": "Kenji Mori",
+    "initials": "KM",
+    "location": "Tokyo, Japan",
+    "rating": 4.5,
+    "category": "International",
+    "source": "Bonsai starter was good, but smaller than expected.",
+    "summary": "Bonsai starter was good, but smaller than expected."
+  },
+  {
+    "name": "Saif Ullah",
+    "initials": "SU",
+    "location": "Sialkot, Pakistan",
+    "rating": 4.5,
+    "category": "Pakistan",
+    "source": "Good rose plants and helpful advice. Packaging could be improved.",
+    "summary": "Good rose plants and helpful advice. Packaging could be improved."
+  },
+  {
+    "name": "Laura Meyer",
+    "initials": "LM",
+    "location": "Berlin, Germany",
+    "rating": 4.5,
+    "category": "International",
+    "source": "Indoor plants arrived healthy, but one pot was cracked.",
+    "summary": "Indoor plants arrived healthy, but one pot was cracked."
+  },
+  {
+    "name": "Nimra Javed",
+    "initials": "NJ",
+    "location": "Gujranwala, Pakistan",
+    "rating": 4.5,
+    "category": "Pakistan",
+    "source": "The herbs arrived fresh, but the pots were smaller than the photos suggested.",
+    "summary": "The herbs arrived fresh, but the pots were smaller than the photos suggested."
+  },
+  {
+    "name": "Daniel Smith",
+    "initials": "DS",
+    "location": "Chicago, USA",
+    "rating": 4.5,
+    "category": "International",
+    "source": "Herb plants were fresh, but shipping was delayed by a day.",
+    "summary": "Herb plants were fresh, but shipping was delayed by a day."
+  },
+  {
+    "name": "Haroon Rasheed",
+    "initials": "HR",
+    "location": "Quetta, Pakistan",
+    "rating": 4.5,
+    "category": "Pakistan",
+    "source": "Hardy plants were recommended well. Delivery took longer than expected.",
+    "summary": "Hardy plants were recommended well. Delivery took longer than expected."
+  },
+  {
+    "name": "Aisha Bello",
+    "initials": "AB",
+    "location": "Abuja, Nigeria",
+    "rating": 4.5,
+    "category": "International",
+    "source": "Tropical plants arrived okay; one was slightly wilted but recovered.",
+    "summary": "Tropical plants arrived okay; one was slightly wilted but recovered."
+  },
+  {
+    "name": "Aqsa Bibi",
+    "initials": "AB",
+    "location": "Lahore, Pakistan",
+    "rating": 4.5,
+    "category": "Pakistan",
+    "source": "Indoor plants arrived healthy, but customer response was a bit slow.",
+    "summary": "Indoor plants arrived healthy, but customer response was a bit slow."
+  },
+  {
+    "name": "Martin Novak",
+    "initials": "MN",
+    "location": "Bratislava, Slovakia",
+    "rating": 4.5,
+    "category": "International",
+    "source": "Indoor plants were healthy, but packaging could be more protective.",
+    "summary": "Indoor plants were healthy, but packaging could be more protective."
+  },
+  {
+    "name": "Taimoor Shah",
+    "initials": "TS",
+    "location": "Karachi, Pakistan",
+    "rating": 4.5,
+    "category": "Pakistan",
+    "source": "Tropical plants were okay; one leaf was damaged, but the plant survived.",
+    "summary": "Tropical plants were okay; one leaf was damaged, but the plant survived."
+  },
+  {
+    "name": "Grace Tan",
+    "initials": "GT",
+    "location": "Singapore",
+    "rating": 4.5,
+    "category": "International",
+    "source": "Tropical plants were good, but pot sizes were smaller than described.",
+    "summary": "Tropical plants were good, but pot sizes were smaller than described."
+  },
+  {
+    "name": "Alina Ahmed",
+    "initials": "AA",
+    "location": "Islamabad, Pakistan",
+    "rating": 4.5,
+    "category": "Pakistan",
+    "source": "Good compost quality. Plant sizes were slightly smaller than described.",
+    "summary": "Good compost quality. Plant sizes were slightly smaller than described."
+  },
+  {
+    "name": "Pablo Herrera",
+    "initials": "PH",
+    "location": "Madrid, Spain",
+    "rating": 4.5,
+    "category": "International",
+    "source": "Balcony plants arrived healthy; delivery timing was average.",
+    "summary": "Balcony plants arrived healthy; delivery timing was average."
+  },
+  {
+    "name": "Faisal Nadeem",
+    "initials": "FN",
+    "location": "Multan, Pakistan",
+    "rating": 4.5,
+    "category": "Pakistan",
+    "source": "Citrus saplings were healthy, but delivery was delayed by two days.",
+    "summary": "Citrus saplings were healthy, but delivery was delayed by two days."
+  },
+  {
+    "name": "Sarah Collins",
+    "initials": "SC",
+    "location": "Dublin, Ireland",
+    "rating": 4.5,
+    "category": "International",
+    "source": "Ferns arrived healthy, but one pot was damaged in transit.",
+    "summary": "Ferns arrived healthy, but one pot was damaged in transit."
+  },
+  {
+    "name": "Saba Yousaf",
+    "initials": "SY",
+    "location": "Peshawar, Pakistan",
+    "rating": 4.5,
+    "category": "Pakistan",
+    "source": "The seasonal flowers were nice, though not all bloomed at the same time.",
+    "summary": "The seasonal flowers were nice, though not all bloomed at the same time."
+  },
+  {
+    "name": "Mark Robinson",
+    "initials": "MR",
+    "location": "Florida, USA",
+    "rating": 4,
+    "category": "International",
+    "source": "Plant quality is good, but sizes were smaller than described. They are growing now, but website details should be clearer.",
+    "summary": "Plant quality is good, but sizes were smaller than described. They are growing now, but website details should be clearer."
+  },
+  {
+    "name": "Saima Khalid",
+    "initials": "SK",
+    "location": "Quetta, Pakistan",
+    "rating": 4,
+    "category": "Pakistan",
+    "source": "Plants arrived in okay condition. One sapling had a broken stem, but the nursery offered a partial refund.",
+    "summary": "Plants arrived in okay condition. One sapling had a broken stem, but the nursery offered a partial refund."
+  },
+  {
+    "name": "Elena García",
+    "initials": "EG",
+    "location": "Madrid, Spain",
+    "rating": 4,
+    "category": "International",
+    "source": "The plants arrived okay, but one pot was damaged and delivery was delayed.",
+    "summary": "The plants arrived okay, but one pot was damaged and delivery was delayed."
+  },
+  {
+    "name": "Asim Raza",
+    "initials": "AR",
+    "location": "Lahore, Pakistan",
+    "rating": 4,
+    "category": "Pakistan",
+    "source": "Plant quality is good, but sizes were smaller than expected from the website description.",
+    "summary": "Plant quality is good, but sizes were smaller than expected from the website description."
+  },
+  {
+    "name": "Simon Lee",
+    "initials": "SL",
+    "location": "Sydney, Australia",
+    "rating": 4,
+    "category": "International",
+    "source": "Drought-tolerant plants were decent, but packaging could be more secure.",
+    "summary": "Drought-tolerant plants were decent, but packaging could be more secure."
+  },
+  {
+    "name": "Kiran Shah",
+    "initials": "KS",
+    "location": "Karachi, Pakistan",
+    "rating": 4,
+    "category": "Pakistan",
+    "source": "The tropical plants were healthy, but delivery was delayed and one pot was cracked.",
+    "summary": "The tropical plants were healthy, but delivery was delayed and one pot was cracked."
+  },
+  {
+    "name": "Fatima Zahra",
+    "initials": "FZ",
+    "location": "Casablanca, Morocco",
+    "rating": 4,
+    "category": "International",
+    "source": "Heat-tolerant plants arrived okay; one was wilted but recovered after watering.",
+    "summary": "Heat-tolerant plants arrived okay; one was wilted but recovered after watering."
+  },
+  {
+    "name": "Naveed Anjum",
+    "initials": "NA",
+    "location": "Islamabad, Pakistan",
+    "rating": 4,
+    "category": "Pakistan",
+    "source": "Good selection, but customer service response was slow during peak season.",
+    "summary": "Good selection, but customer service response was slow during peak season."
+  },
+  {
+    "name": "George Patel",
+    "initials": "GP",
+    "location": "London, UK",
+    "rating": 4,
+    "category": "International",
+    "source": "Herb plants were fresh, but the pot sizes were smaller than expected.",
+    "summary": "Herb plants were fresh, but the pot sizes were smaller than expected."
+  },
+  {
+    "name": "Huma Naeem",
+    "initials": "HN",
+    "location": "Multan, Pakistan",
+    "rating": 4,
+    "category": "Pakistan",
+    "source": "Mango saplings were okay, but one was weaker than the others. Partial refund was handled honestly.",
+    "summary": "Mango saplings were okay, but one was weaker than the others. Partial refund was handled honestly."
+  },
+  {
+    "name": "Nina Petrova",
+    "initials": "NP",
+    "location": "Sofia, Bulgaria",
+    "rating": 4,
+    "category": "International",
+    "source": "Indoor plants arrived okay, but cold-weather packaging could be improved.",
+    "summary": "Indoor plants arrived okay, but cold-weather packaging could be improved."
+  },
+  {
+    "name": "Shakir Ali",
+    "initials": "SA",
+    "location": "Peshawar, Pakistan",
+    "rating": 4,
+    "category": "Pakistan",
+    "source": "Vegetable seedlings were decent, but packaging allowed some soil to spill.",
+    "summary": "Vegetable seedlings were decent, but packaging allowed some soil to spill."
+  },
+  {
+    "name": "David Kim",
+    "initials": "DK",
+    "location": "Los Angeles, USA",
+    "rating": 4,
+    "category": "International",
+    "source": "The plants were healthy, but delivery was slower than promised.",
+    "summary": "The plants were healthy, but delivery was slower than promised."
+  },
+  {
+    "name": "Rimsha Tariq",
+    "initials": "RT",
+    "location": "Faisalabad, Pakistan",
+    "rating": 4,
+    "category": "Pakistan",
+    "source": "Flowering plants arrived okay; blooms were fewer than shown in photos.",
+    "summary": "Flowering plants arrived okay; blooms were fewer than shown in photos."
+  },
+  {
+    "name": "Amara Okoye",
+    "initials": "AO",
+    "location": "Lagos, Nigeria",
+    "rating": 4,
+    "category": "International",
+    "source": "Tropical plants arrived okay, but one was damaged in transit.",
+    "summary": "Tropical plants arrived okay, but one was damaged in transit."
+  },
+  {
+    "name": "Zeeshan Haider",
+    "initials": "ZH",
+    "location": "Sialkot, Pakistan",
+    "rating": 4,
+    "category": "Pakistan",
+    "source": "Plants were healthy, but delivery took longer than promised.",
+    "summary": "Plants were healthy, but delivery took longer than promised."
+  },
+  {
+    "name": "Lucas Silva",
+    "initials": "LS",
+    "location": "Rio de Janeiro, Brazil",
+    "rating": 4,
+    "category": "International",
+    "source": "Good plant quality, but pot sizes and delivery timing were not as described.",
+    "summary": "Good plant quality, but pot sizes and delivery timing were not as described."
+  },
+  {
+    "name": "Areeba Nisar",
+    "initials": "AN",
+    "location": "Gujranwala, Pakistan",
+    "rating": 4,
+    "category": "Pakistan",
+    "source": "Good compost, but the plant pots were smaller than expected.",
+    "summary": "Good compost, but the plant pots were smaller than expected."
+  },
+  {
+    "name": "Sophie Turner",
+    "initials": "ST",
+    "location": "Manchester, UK",
+    "rating": 4,
+    "category": "International",
+    "source": "Plants arrived in acceptable condition, but one was smaller than expected and customer support was slow.",
+    "summary": "Plants arrived in acceptable condition, but one was smaller than expected and customer support was slow."
+  },
+  {
+    "name": "Kamran Yousaf",
+    "initials": "KY",
+    "location": "Rawalpindi, Pakistan",
+    "rating": 4,
+    "category": "Pakistan",
+    "source": "The plants arrived okay, but one was wilted and needed extra care.",
+    "summary": "The plants arrived okay, but one was wilted and needed extra care."
+  }
+]

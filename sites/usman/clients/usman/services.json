@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Plant supply",
+    "description": "Explore plants, trees and shaped specimens for your space.",
+    "image": "/service-images/plant-supply.webp",
+    "link": "/plants/",
+    "action": "Explore plants"
+  },
+  {
+    "title": "Landscape projects",
+    "description": "Discuss plants and landscaping ideas for gardens and larger spaces.",
+    "image": "/service-images/landscape.webp",
+    "link": "https://www.instagram.com/usman_nursery_farm_/",
+    "action": "Discuss your project"
+  },
+  {
+    "title": "Garden design",
+    "description": "Talk to the nursery about planting ideas for your garden.",
+    "image": "/service-images/garden.webp",
+    "link": "https://www.instagram.com/usman_nursery_farm_/",
+    "action": "Discuss your garden"
+  },
+  {
+    "title": "Topiary art",
+    "description": "Discover shaped plants for entrances, gardens and landscapes.",
+    "image": "/service-images/topiary.webp",
+    "link": "/#trending",
+    "action": "Explore plants"
+  },
+  {
+    "title": "Garden care",
+    "description": "Ask the nursery about care for your plants and outdoor spaces.",
+    "image": "/service-images/care.webp",
+    "link": "https://www.instagram.com/usman_nursery_farm_/",
+    "action": "Ask about care"
+  }
+]

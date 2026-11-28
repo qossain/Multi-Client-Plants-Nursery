@@ -1,0 +1,24 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Experience from '../components/Experience.astro';
+import CategoryCarousel from '../components/CategoryCarousel.astro';
+import Services from '../components/Services.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Featured from '../components/Featured.astro';
+import Contact from '../components/Contact.astro';
+import { client } from '../client';
+import { heroes } from '../variants/registry';
+
+const Hero = heroes[client.hero as keyof typeof heroes];
+const sections = { hero: Hero, about: Experience, categories: CategoryCarousel, services: Services, featured: Featured, testimonials: Testimonials, contact: Contact };
+---
+
+<BaseLayout
+  title={client.homeTitle}
+  description={client.homeDescription}
+  home
+>
+  <main id="main">
+    {client.sections.map((id) => { const Section = sections[id as keyof typeof sections]; return <Section client={client} />; })}
+  </main>
+</BaseLayout>

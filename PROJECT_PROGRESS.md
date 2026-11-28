@@ -1,5 +1,29 @@
 # Multi-client platform progress
 
+## 2026-11-28 — User preview review and push preparation
+
+- The user reported both separated-site previews were perfect and requested preparation for final migration and a GitHub push. Refetched origin/main: local HEAD matched the remote before the new commit. The root platform's five tests passed. Both existing projects still use repository root and main, so pushing may trigger their existing production deployments; moving to separated applications still requires project setting changes, production-mode verification and explicit approval. Existing unrelated original-client documentation and untracked Nasaruldin wordmark were kept outside the migration commit. No new design or production switch.
+
+## 2026-11-28 — Separated application Vercel previews
+
+- At user request, deployed local `sites/usman` and `sites/nasruddin` as previews to their respective existing Vercel projects. Both builds reported Ready: Usman https://multi-client-plants-nursery-amuaz7i22-qossain-awais.vercel.app and Nasaruldin https://nasaruldin-nursery-2lrkfcwqe-qossain-awais.vercel.app. These are login-protected. Both production domain aliases still resolved to the same prior production deployments verified before previews. No Git push, root-directory switch, domain change, or production deployment.
+- Authenticated CLI requests found correct business titles and noindex markers on each homepage, plant directory and one product page; sitemap returned content. Did not check visual layout, interactions, real devices, every page, canonical origins, links or owner content. Preview access is protected; noindex does not provide privacy.
+- Unexpected security setting change: `vercel curl` automatically generated deployment-protection bypass tokens for both projects using the Vercel project protection-bypass API. Token values were not recorded or shown. Prior bypass configuration was not recorded, so do not remove or rotate blindly; review in Vercel project settings and revoke unwanted tokens deliberately. Deployment protection itself was not disabled. Production migration still requires preview review, settings verification and explicit approval.
+
+## 2026-11-28 — Vercel read-only check and clean installs
+
+- Confirmed Vercel account qossain and projects `multi-client-plants-nursery` (public site title Usman Nursery Farm) and `nasaruldin-nursery`; both currently use repository `qossain/Multi-Client-Plants-Nursery`, production branch `main`, root `.`, Astro and `npm run build`. Both current production deployments were Ready, auto-assign custom domains is enabled, and project API reports no custom ignored-build command. The separate Abdul Jabbar project was not modified. Therefore a push to main can cause both client projects to deploy.
+- A full clean npm install exposed invalid incomplete dependency entries in the first offline lockfile repair. Repaired all three site lockfiles with online registry metadata, retaining original platform entries; `npm ci` succeeded separately for all three on Windows, and all three built with their own dependencies (226 pages each for Usman and Nasaruldin, one scaffold page for Abdulrehman). Linux/Vercel installs, browser checks, deployment previews, full settings verification, rollback and owner content verification remain outstanding. No push or project change.
+
+## 2026-11-28 — Local separated application preparation
+
+Created independent local copies for Usman and Nasaruldin and an unfinished noindex Abdulrehman scaffold with production builds blocked. Root platform and existing live deployments were not changed. Both original and copied existing applications built 226 pages, and the 227 HTML/XML files per client matched byte for byte using local dependencies. Existing root tests: five passed. Conflicting CLIENT selection and Abdulrehman production builds failed as intended. A clean offline install could not finish because the package cache lacked zwitch; generated lockfiles passed an offline npm ci dry run on Windows, with peer warnings. All three adjusted lockfiles passed offline npm ci dry runs on Windows. Vercel CLI reported no credentials and registry DNS lookup failed, so deployment inventory and previews could not be checked. No clean install on Linux, browser, preview deployment, live configuration, rollback or physical device verification was performed. Existing copied reviews, illustrative inventory and content risks remain. See sites/README.md.
+
+## 2026-11-28 — Usman publication and next-client handoff
+
+- User reported that Usman's website has been published and plans to start another client's website. Updated the handoff, platform plan and Usman client notes to reflect the report. The live URL, deployed commit, Vercel settings and actual index status were not independently verified.
+- Inspected local Git and build selection: local `HEAD` and last-fetched `origin/main` both point to `a2f1890`; an unrelated untracked Nasaruldin wordmark exists and was left untouched. `CLIENT` selects per-client data and public assets, but shared core, routes and client-specific fallback paths mean changes can affect other clients. Verify isolation and existing sites before reusing or modifying shared components. No site code, deployment or Git push was changed in this documentation update. Usman's copied reviews and illustrative inventory remain unverified for that business.
+
 Update this file after each meaningful change: date, scope, verification, next step and unresolved risks. Keep plans distinct from completed work. Update MULTI_CLIENT_PLAN.md when architecture or decisions change. Do not record credentials or sensitive client information.
 
 ## 2026-11-27 — Nasaruldin navigation logo

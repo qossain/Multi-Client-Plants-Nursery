@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../../../core/layouts/BaseLayout.astro';
+import { productCards } from '../../../core/variants/registry';
+import { categoryFor, plants, plantsFor, priceLabel } from '../../data/catalog';
+import { client } from '../../../core/client';
+import { responsiveImage } from '../../../core/image';
+
+export function getStaticPaths() {
+  return plants.map((plant) => ({ params: { slug: plant.slug }, props: { plant } }));
+}
+
+const { plant } = Astro.props;
+const PlantCard = productCards[client.productCard as keyof typeof productCards];
+const category = categoryFor(plant.category)!;
+const related = plantsFor(plant.category).filter((item) => item.slug !== plant.slug).slice(0, 4);
+const photos = plant.photoVariants ?? [plant.image, ...(plant.originalImage ? [plant.originalImage] : []), ...(plant.additionalImages ?? [])].map((image) => ({ image, detail: plant.detail, price: plant.price }));
+const hasGallery = photos.length > 1;
+const orderMessage = (detail?: string) => encodeURIComponent(client.orderMessage.replaceAll('{product}', plant.name).replaceAll('{detail}', detail ? ` (${detail})` : ''));
+const message = orderMessage(photos[0].detail);
+---
+
+<BaseLayout title={`${plant.name} | ${client.name}`} description={client.copy.productMeta.replace('{name}', plant.name).replace('{detail}', plant.detail ? `, ${plant.detail}` : '').replace('{business}', client.name).replace('{location}', client.locality ? ` in ${client.locality}` : '')} image={plant.image} noindex={plant.example}>
+  <main id="main" class="section-wrap">
+    <div class:list={['product-page', { 'has-gallery': hasGallery }]}>
+      <div class:list={['product-image', { 'has-original': hasGallery }]}>
+        <div class="product-gallery-track" data-gallery-track tabindex={hasGallery ? '0' : undefined} role={hasGallery ? 'region' : undefined} aria-label={hasGallery ? client.copy.photosOf.replace('{name}', plant.name) : undefined}>
+        {photos.map((photo, index) => <picture data-photo-price={photo.price == null ? client.copy.askForPrice : `${plant.estimatedPrice ? client.copy.estimatedPrefix : ''}${priceLabel(photo.price, plant.maxPrice)}`} data-photo-detail={photo.detail ?? ''} data-photo-message={orderMessage(photo.detail)}>
+          <source media="(max-width: 700px)" srcset={responsiveImage(photo.image)} />
+          <img src={photo.image} alt={index ? client.copy.photoAlt.replace('{name}', plant.name).replace('{number}', String(index + 1)) : plant.name} width="840" height="1260" fetchpriority={index === 0 ? 'high' : undefined} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" />
+        </picture>)}
+        </div>
+        {hasGallery && <div class="product-gallery-controls" role="group" aria-label={client.copy.choosePhoto}>
+          {photos.map((_, index) => <button type="button" data-gallery-page={index} aria-label={client.copy.showPhoto.replace('{number}', String(index + 1))} aria-pressed={index === 0 ? 'true' : 'false'}></button>)}
+        </div>}
+      </div>
+      <article class="product-info">
+        <a class="product-category" href={`/plants/${category.slug}/`}>{category.title}</a>
+        <h1>{plant.name}</h1>
+        <p class="product-price" data-gallery-price aria-live="polite">{plant.price == null ? client.copy.askForPrice : `${plant.estimatedPrice ? client.copy.estimatedPrefix : ''}${priceLabel(plant.price, plant.maxPrice)}`}</p>
+        {(plant.detail || plant.photoVariants) && <p data-gallery-detail aria-live="polite">{photos[0].detail}</p>}
+        {plant.estimatedPrice && <p>{client.copy.confirmPrice}</p>}
+        {client.business?.whatsappConfirmed !== false && <div class="product-actions">
+          <a class="button button-dark" data-gallery-enquiry href={`https://wa.me/${client.whatsapp}?text=${message}`} target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.7 7.4L3 20.5l1.5-4.6a8.5 8.5 0 1 1 16-4.3Z"/><path d="M8.5 7.8c.3-.5.6-.5.9-.5h.4l1 2.2-.7.8c.6 1.3 1.6 2.3 2.9 2.9l.8-.7 2.2 1v.4c0 .4-.1.7-.5 1-1.1.7-2.8 0-4.7-1.9S7.8 8.9 8.5 7.8Z"/></svg><span>{client.copy.askPlant}</span></a>
+          <a class="button product-call" href={`tel:${client.phone}`}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v2.8a2 2 0 0 1-2.2 2A19.7 19.7 0 0 1 2.3 4.2a2 2 0 0 1 2-2.2h2.8a2 2 0 0 1 2 1.7l.4 2.6a2 2 0 0 1-.6 1.8L7.7 9.3a16 16 0 0 0 7 7l1.2-1.2a2 2 0 0 1 1.8-.6l2.6.4a2 2 0 0 1 1.7 2Z"/></svg><span>{client.copy.callNursery}</span></a>
+        </div>}
+      </article>
+    </div>
+    <section class="related" aria-labelledby="related-title">
+      <div class="related-heading">
+        <h2 id="related-title">{client.copy.relatedTitle.replace('{category}', category.title)}</h2>
+        <a class="text-link" href={`/plants/${category.slug}/`}>{client.copy.viewCollection}</a>
+      </div>
+      <div class="plant-grid">
+        {related.map((item) => <PlantCard plant={item} />)}
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<script>
+  const track = document.querySelector<HTMLElement>('[data-gallery-track]');
+  const buttons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-gallery-page]'));
+  if (track && buttons.length) {
+    buttons.forEach((button, index) => button.addEventListener('click', () => {
+      track.scrollTo({ left: index * track.clientWidth, behavior: 'auto' });
+    }));
+    track.addEventListener('scroll', () => {
+      const active = Math.round(track.scrollLeft / track.clientWidth);
+      buttons.forEach((button, index) => button.setAttribute('aria-pressed', String(index === active)));
+      const photo = track.children[active] as HTMLElement | undefined;
+      const price = document.querySelector<HTMLElement>('[data-gallery-price]');
+      const detail = document.querySelector<HTMLElement>('[data-gallery-detail]');
+      const enquiry = document.querySelector<HTMLAnchorElement>('[data-gallery-enquiry]');
+      if (photo && price && photo.dataset.photoPrice) price.textContent = photo.dataset.photoPrice;
+      if (photo && detail) detail.textContent = photo.dataset.photoDetail ?? '';
+      if (photo && enquiry && photo.dataset.photoMessage) enquiry.href = `${enquiry.href.split('?')[0]}?text=${photo.dataset.photoMessage}`;
+    }, { passive: true });
+  }
+</script>

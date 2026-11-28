@@ -1,0 +1,99 @@
+---
+import { categories, type Plant } from '../../src/data/catalog';
+import { client } from '../client';
+import { productCards } from '../variants/registry';
+const PlantCard = productCards[client.productCard as keyof typeof productCards];
+
+interface Props {
+  plants: Plant[];
+  filterCategories?: boolean;
+}
+
+const { plants, filterCategories = false } = Astro.props;
+---
+
+<div class="plant-tools" data-plant-tools>
+  <label class="visually-hidden" for="plant-search">{client.copy.searchLabel}</label>
+  <input id="plant-search" class="plant-search" type="search" placeholder={client.copy.searchPlaceholder} autocomplete="off" data-plant-search />
+  {filterCategories && (
+    <>
+      <label class="visually-hidden" for="plant-category">{client.copy.chooseCollection}</label>
+      <select id="plant-category" class="plant-sort" data-plant-category>
+        <option value="all">{client.copy.allCollections}</option>
+        {categories.map((category) => <option value={category.slug}>{category.title}</option>)}
+      </select>
+    </>
+  )}
+  <label class="visually-hidden" for="plant-sort">{client.copy.sortLabel}</label>
+    <select id="plant-sort" class="plant-sort" data-plant-sort hidden={!filterCategories}>
+      <option value="featured">{client.copy.sortFeatured}</option>
+      <option value="low">{client.copy.sortLow}</option>
+      <option value="high">{client.copy.sortHigh}</option>
+    </select>
+  {!filterCategories && <details class="sort-control" data-sort-menu>
+    <summary aria-label={client.copy.sortPlants}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M7 12h10m-7 5h4" /></svg></summary>
+    <div class="sort-menu" aria-label={client.copy.sortPlants}>
+      <button type="button" data-sort-value="featured" aria-pressed="true">{client.copy.sortFeatured}</button>
+      <button type="button" data-sort-value="low" aria-pressed="false">{client.copy.sortLow}</button>
+      <button type="button" data-sort-value="high" aria-pressed="false">{client.copy.sortHigh}</button>
+    </div>
+  </details>}
+  <span class={filterCategories ? 'result-count' : 'visually-hidden'} aria-live="polite" data-result-count data-plant-one={client.copy.plantSingular} data-plant-many={client.copy.plantPlural}>{plants.length} {client.copy.plantPlural}</span>
+  {filterCategories && client.layout === 'working-row-preview' && <div class="view-switch" role="group" aria-label="Plant view"><button type="button" aria-label="Grid view" aria-pressed="true" data-plant-view="grid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg></button><button type="button" aria-label="List view" aria-pressed="false" data-plant-view="list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h14"/></svg></button></div>}
+</div>
+<div class="plant-grid" data-plant-grid>
+  {plants.map((plant, index) => <PlantCard plant={plant} priority={filterCategories && index < 4} />)}
+</div>
+<p class="empty-state" data-empty-state>{client.copy.noResults}</p>
+
+<script>
+  const grid = document.querySelector<HTMLElement>('[data-plant-grid]');
+  const search = document.querySelector<HTMLInputElement>('[data-plant-search]');
+  const category = document.querySelector<HTMLSelectElement>('[data-plant-category]');
+  const sort = document.querySelector<HTMLSelectElement>('[data-plant-sort]');
+  const count = document.querySelector<HTMLElement>('[data-result-count]');
+  const empty = document.querySelector<HTMLElement>('[data-empty-state]');
+  const menu = document.querySelector<HTMLDetailsElement>('[data-sort-menu]');
+  document.querySelectorAll<HTMLButtonElement>('[data-plant-view]').forEach((button) => button.addEventListener('click', () => {
+    grid?.classList.toggle('is-list', button.dataset.plantView === 'list');
+    document.querySelectorAll<HTMLButtonElement>('[data-plant-view]').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+  }));
+
+  if (grid && search && sort && count && empty) {
+    const cards = Array.from(grid.querySelectorAll<HTMLElement>('[data-plant-card]'));
+    const update = () => {
+      const query = search.value.trim().toLocaleLowerCase();
+      const selectedCategory = category?.value ?? 'all';
+      const matches = cards.filter((card) => {
+        const matchesText = card.dataset.name?.includes(query) ?? false;
+        const matchesCategory = selectedCategory === 'all' || card.dataset.category === selectedCategory || (selectedCategory === 'shrubs' && card.dataset.shrub === 'true');
+        return matchesText && matchesCategory;
+      });
+      const order = sort.value;
+      matches.sort((first, second) => order === 'featured'
+        ? cards.indexOf(first) - cards.indexOf(second)
+        : !first.dataset.price ? (!second.dataset.price ? 0 : 1)
+        : !second.dataset.price ? -1
+        : order === 'low'
+          ? Number(first.dataset.price) - Number(second.dataset.price)
+          : Number(second.dataset.price) - Number(first.dataset.price));
+      cards.forEach((card) => { card.hidden = !matches.includes(card); });
+      matches.forEach((card) => grid.append(card));
+      count.textContent = `${matches.length} ${matches.length === 1 ? count.dataset.plantOne : count.dataset.plantMany}`;
+      empty.style.display = matches.length ? 'none' : 'block';
+    };
+
+    search.addEventListener('input', update);
+    sort.addEventListener('change', update);
+    category?.addEventListener('change', update);
+    menu?.querySelectorAll<HTMLButtonElement>('[data-sort-value]').forEach((button) => button.addEventListener('click', () => {
+      sort.value = button.dataset.sortValue || 'featured';
+      menu.querySelectorAll<HTMLButtonElement>('[data-sort-value]').forEach((option) => option.setAttribute('aria-pressed', String(option === button)));
+      update();
+      menu.open = false;
+      menu.querySelector<HTMLElement>('summary')?.focus();
+    }));
+    document.addEventListener('click', (event) => { if (menu && !menu.contains(event.target as Node)) menu.open = false; });
+    document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && menu?.open) { menu.open = false; menu.querySelector<HTMLElement>('summary')?.focus(); } });
+  }
+</script>
